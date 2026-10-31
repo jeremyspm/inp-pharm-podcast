@@ -1,0 +1,236 @@
+% Module by module, in the order of her exam-prep slide 9: concepts, calculations, PK, PD, administration and education,
+% lifespan, vaccines and allergy, licit and illicit drugs, drug development, CAM and socioeconomic factors. Each answer
+% follows her formative model answers where one exists, then the Joan-format questions in pharm-final/content/joan/.
+
+# Pharmacokinetics
+@ why: Module 4 on her exam list. Her formative 3 asks it as a four-mark short answer (name the four processes for Angie's anti-inflammatory), the biggest single short answer she has set; formative 1 and 2 ask first-pass and the kidney.
+@ ask: Name and describe the four processes of pharmacokinetics that an oral medicine goes through. (4 marks) || Absorption: into the bloodstream, mostly in the small intestine | Distribution: around the body in the blood, bound to plasma proteins | Metabolism: in the liver, by enzymes, to make it water-soluble and less toxic | Elimination (excretion): mostly in the urine, by the kidneys | First-pass: an oral drug is metabolised by the liver before reaching the circulation | Half-life: time for the drug level to halve
+@ say: Pharmacokinetics
+
+Q: Four marks. Name and describe the four processes of pharmacokinetics that an oral medicine goes through once it's swallowed.
+
+Pharmacokinetics is what the body does to the drug. Four processes, A D M E, one mark each, and this is close to her own model answer.
+
+Absorption: the drug moves into the bloodstream, mostly from the small intestine.
+Distribution: it travels around the body in the blood, bound to plasma proteins.
+Metabolism: the liver's enzymes change it, to make it water-soluble and less toxic.
+Elimination, or excretion: it leaves the body, mostly in the urine, through the kidneys.
+
+Three related terms for the multi-choice. First-pass metabolism: a drug taken by mouth goes through the liver before it reaches the circulation, and a lot of it can be broken down there. So a drug with very high first-pass metabolism is not given orally. I V, sublingual and the other non-oral routes skip it. Dissolution is the tablet dissolving in the gut fluids to form a solution, before it can be absorbed. And half-life is the time it takes for the amount of drug in the body to drop by half.
+
+{recap} Pharmacokinetics, what the body does to the drug, A D M E. Absorption into the blood, mostly the small intestine. Distribution in the blood, bound to plasma proteins. Metabolism in the liver, to make it water-soluble. Elimination, mostly by the kidneys. First-pass: the liver breaks down an oral drug first. Half-life: time for the level to halve.
+
+# Pharmacodynamics and drug effects
+@ why: Module 5 on her exam list. Every formative asks it in multi-choice: agonist (mini-exam 1), antagonist (mini-exam 2), maximal efficacy (mini-exam 1), potency, loading dose and receptor down-regulation (mini-exam 3), ADR (mini-exam 1).
+@ ask: Define an agonist and an antagonist, with an example of each. (2 marks) || Agonist: binds a receptor and causes a response, e.g. salbutamol, morphine | Antagonist: binds a receptor and causes no response, blocking it, e.g. a beta blocker (metoprolol), naloxone
+@ ask: Define a side effect and an adverse drug reaction, with an example. (2 marks) || Side effect: an unintended but predictable secondary effect, e.g. headache with GTN | Adverse drug reaction (ADR): an undesirable, unexpected harmful response that must be reported, e.g. anaphylaxis to penicillin
+@ say: Pharmacodynamics
+
+Q: Two marks. Define an agonist and an antagonist, with an example of each.
+
+Pharmacodynamics is what the drug does to the body. An agonist binds to a receptor and causes a response. Salbutamol, or morphine. An antagonist binds to a receptor and causes no response: it sits there and blocks it. A beta blocker, like metoprolol, or naloxone. Joan's point on formative two: antagonist is the name of the whole group, which is why it's the best answer.
+
+Q: Two marks. Define a side effect and an adverse drug reaction, with an example.
+
+A side effect is an unintended but predictable secondary effect, like a headache with G T N. An adverse drug reaction, or A D R, is an undesirable, unexpected, harmful response to a drug, and it must be reported. Like anaphylaxis to penicillin.
+
+The rest of the vocabulary, for the multi-choice. Potency: a highly potent drug needs a lower dose for its effect. Efficacy: maximal efficacy is the maximum response a drug can produce, its ceiling. A loading dose is a bigger first dose to reach therapeutic levels quickly. Therapeutic index: the gap between the helpful dose and the toxic dose. Tolerance: a decreasing response to repeated doses. Receptor down-regulation: with long-term use, cells reduce the number of receptors on their surface. A toxic effect: too much drug, like respiratory depression with morphine. An idiosyncratic reaction: an unpredictable, genetically abnormal response. Teratogenic: harms the unborn baby. Synergistic: two drugs together have a bigger effect than separately. And prophylaxis: prevention of a disease before it happens, like the flu vaccine.
+
+{recap} Pharmacodynamics, what the drug does to the body. Agonist: binds and causes a response, like salbutamol. Antagonist: binds and blocks, like a beta blocker or naloxone. Side effect: predictable and unintended. Adverse drug reaction: unexpected, harmful, report it. Potency: high potency, lower dose. Efficacy: the maximum response. Tolerance: decreasing response. Prophylaxis: prevention before disease.
+
+# Drug names, the law and who's who
+@ why: Module 2 on her exam list. Formative 1 asks which drug name a nurse uses and why (2 marks) and who monitors medicine safety (Medsafe); formative 3 asks one legal classification (2 marks). Joan on 20 Oct: drug names are "still relevant right to the future today".
+@ ask: Medicines have a chemical, a generic and a brand name. Which is most important for the RN to use, and why? (2 marks) || Generic name | Internationally approved, used by prescribers and administrators; reduces medication errors (double-dosing under two brands); lets pharmacists dispense the most cost-effective option
+@ ask: Choose one legal classification of medicines and describe how a patient gets it. (2 marks) || Prescription: only with a prescription from an authorised prescriber (doctor, NP, midwife) | Restricted (pharmacist only): only from a pharmacist, after advice; a record is kept | Pharmacy only: only in a pharmacy | General sale: any shop, e.g. paracetamol | Controlled drugs (Misuse of Drugs Act 1975): Class A never prescribed (heroin, methamphetamine); B morphine; C codeine, diazepam
+@ say: Drug names and the law
+
+Q: Two marks. Medicines have a chemical name, a generic name and a brand name. Which is most important for the R N to use, and why?
+
+The generic name. Her model answer: generic names are internationally approved and used by both prescribers and the people giving the medicine. They reduce the risk of medication errors, and they let pharmacists dispense the most cost-effective option for families. Her example of the danger: Panadol and Panadeine both contain paracetamol, so someone who knows only brand names can double-dose.
+
+Q: Two marks. Choose one legal classification of medicines, and describe how a patient gets it.
+
+Any one, from the Medicines Act 1981. Prescription medicine: only with a prescription from an authorised prescriber, like a doctor, a nurse practitioner or a midwife. Restricted, or pharmacist-only: only from a pharmacist, after their advice, and a record is kept. Pharmacy-only: only in a pharmacy. General sale: any shop, like paracetamol in the supermarket.
+
+Controlled drugs are separate, under the Misuse of Drugs Act 1975. Class A is the highest risk and is never prescribed, like heroin or methamphetamine. Class B is high risk but some are prescribed, like morphine. Class C is lower risk, like codeine and diazepam. And who's who: Medsafe assesses and monitors the quality and safety of medicines. Pharmac decides which medicines are funded.
+
+{recap} Use the generic name: internationally approved, prevents errors like double-dosing, and allows the cheapest option. Legal classes: prescription, restricted or pharmacist-only, pharmacy-only, general sale. Controlled drugs: Class A never prescribed, B like morphine, C like codeine. Medsafe checks safety. Pharmac funds.
+
+# Giving medicines safely
+@ why: Module 6 on her exam list. Formative 2 asks why the rights matter, the patient who can't swallow the big tablet, and the "leave it on my table" reply; formative 3 asks one right applied to aged care (2 marks) and the inappropriate action after an error.
+@ ask: Identify one of the rights of medication administration and give an example of how it is applied in aged care. (2 marks) || The 8 rights: patient, medication, dose, time, route, right to refuse, indication, documentation; plus 2 checks: expiry and allergies | Right person: identity checked with a photo | Right dose: start low, go slow | Right route: trouble swallowing, so check with the prescriber | Refusal: involve whānau or the EPA
+@ say: Giving medicines safely
+
+Q: Two marks. Identify one of the rights of medication administration, and give an example of how it's applied in aged care.
+
+The course's eight rights: right patient, right medication, right dose, right time, right route, the right to refuse, right indication, and right documentation. Plus two checks: the expiry date, and allergies. Why do they matter? Her formative answer, which she said should be very simple: they decrease the risk of a medication error.
+
+Now one applied to aged care, from her own answer. Right person: identity checked with a photo, because a resident with dementia may not answer to their name. Or right dose: some normal ranges don't apply to the elderly, so start low and go slow. Or right route: if they struggle to swallow, check with them and talk to the prescriber. Or refusal: involve whānau and the enduring power of attorney.
+
+Her best-response answers, for the multi-choice. Can't swallow the large tablet? Give a liquid formulation if one's available, same drug, same dose, and check with the prescriber. Patient says leave my pills on the table while I shower? The answer starts with no: take it while I'm here, or I'll bring it back. Made an error? Tell the prescriber, document it, and complete an incident report. Don't ring the Poisons Centre. And if you can't read an order, call the prescriber to clarify. Never guess.
+
+{recap} Eight rights: patient, medication, dose, time, route, refuse, indication, documentation; plus two checks, expiry and allergies. They decrease medication errors. Aged care: photo identity, start low and go slow, liquid if they can't swallow, whānau and E P A for refusal. Never leave meds at the bedside. An error: tell the prescriber, document, incident report.
+
+# Abbreviations
+@ why: Joan, 27 Oct: about twenty abbreviations are worth maybe five marks, and expect a prescription to interpret. 20 Oct: her "must, must, must" list. Every formative has one (TDS, diclofenac QID PR, BD PRN).
+@ ask: Interpret the abbreviations on a medication chart. (about 5 marks across the paper) || OD once a day; BD twice; TDS three times; QID four times | Q4H every 4 hours; Q6H every 6 hours (not the same as QID) | PRN as required; stat at once | mane morning; nocte night | AC before meals; PC after meals | PO by mouth; SL under the tongue; PR rectal; IM, IV, SC (subcut); topical on a body surface | EC enteric-coated; SR, CR slow or controlled release | 24-hour clock | Only the prescriber can change the route
+@ say: Abbreviations
+
+Joan calls these simple marks: about twenty abbreviations, worth maybe five marks. She'll give you a prescription and ask what it means. Say each one before I do.
+
+Q: O D? B D? T D S? Q I D?
+
+Once a day. Twice a day. Three times a day. Four times a day.
+
+Q: Q four H? Q six H?
+
+Every four hours. Every six hours. And Q six H is not the same as Q I D: four times a day fits waking hours, every six hours runs round the clock.
+
+Q: P R N? Stat?
+
+As required. Immediately, at once.
+
+Q: Mane? Nocte?
+
+In the morning. At night.
+
+Q: And A C? P C?
+
+Before meals, ante cibum. After meals, post cibum: post means after.
+
+Q: P O? S L? P R?
+
+By mouth. Sublingual, under the tongue, like G T N. Rectal.
+
+Q: I M, I V, S C?
+
+Intramuscular, intravenous, subcutaneous.
+
+Q: Topical?
+
+Applied directly to a body surface: skin creams, eye drops, ear drops.
+
+Q: E C? S R or C R?
+
+Enteric-coated: it resists the stomach's acid. Slow release, or controlled release. Never crush these.
+
+Q: Diclofenac sixty micrograms Q I D P R?
+
+Sixty micrograms, four times a day, rectally. Her point: it's not about diclofenac at all. You just read the prescription.
+
+And two rules. Times are in the twenty-four-hour clock, so eighteen hundred is six p m. Only the prescriber can change the route.
+
+{recap} Abbreviations: O D once, B D twice, T D S three times, Q I D four times a day. Q four H every four hours. P R N as required. Stat at once. Mane morning, nocte night, A C before meals, P C after. P O by mouth, S L under the tongue, P R rectal. E C enteric-coated; S R and C R slow release, never crush. Only the prescriber changes the route.
+
+# Calculations
+@ why: Module 3 on her exam list. Joan, 20 Oct and 27 Oct: "a few easy calculations" as multi-choice, no working shown, bring a calculator, convert units first. Every formative has one; these are hers.
+@ ask: Her formative calculations (1 mark each) || Formula: what you want ÷ what you've got × volume | Convert to the same unit first | Cilazapril 500 mg, tablets 0.25 g: 0.25 g = 250 mg, 2 tablets | Adrenaline 0.3 mg IM, ampoule 1 mg/1 mL: 0.3 mL | Penicillin 20 mg/kg × 11 kg = 220 mg | Carbamazepine 4 mg/kg × 11 kg = 44 mg; 44 ÷ 100 × 5 mL = 2.2 mL
+@ say: Calculations
+
+The formula, before you walk in: what you want, divided by what you've got, times the volume. And convert to the same unit first. These are her own formative calculations. Try each one.
+
+Q: Cilazapril five hundred milligrams is prescribed. You have tablets of nought point two five grams. How many tablets?
+
+Convert first: nought point two five grams is two hundred and fifty milligrams. Five hundred divided by two hundred and fifty is two tablets.
+
+Q: Adrenaline nought point three milligrams I M stat. The ampoule is one in a thousand, one milligram in one mil. What volume?
+
+Nought point three divided by one, times one mil: nought point three mils.
+
+Q: A baby weighs eleven kilograms and is prescribed penicillin twenty milligrams per kilogram. What's a single dose?
+
+Twenty times eleven: two hundred and twenty milligrams.
+
+Q: Cherry weighs eleven kilograms and is prescribed carbamazepine four milligrams per kilogram. It comes as a hundred milligrams in five mils. How many mils?
+
+Four times eleven is forty-four milligrams. Forty-four divided by a hundred, times five mils, is two point two mils.
+
+Two traps from her overview deck: never write a trailing zero, because one point nought milligrams can be misread as ten. And always write a leading zero: nought point two five, never point two five.
+
+{recap} Calculations: what you want over what you've got, times the volume; convert units first. Five hundred milligrams from nought point two five gram tablets: two tablets. Adrenaline nought point three milligrams from one milligram per mil: nought point three mils. Weight-based: dose per kilogram times weight.
+
+# Medicines across the lifespan
+@ why: Module 7 on her exam list. Formative 2 builds a whole scenario on pregnancy (the placental barrier, teratogenic effect); formative 2 asks why children get lower doses and which ageing change alters a dose; formative 3 asks a toddler who refuses her medicine.
+@ ask: Describe the function of the placental barrier and define a teratogenic effect. (2 marks) || Placental barrier: separates maternal blood from foetal blood; a non-selective barrier many nutrients and drugs can cross | Teratogenic: a substance (medicine, alcohol, virus) alters the development of the foetus, e.g. growth of the brain; first trimester is the riskiest | Breastfeeding: drugs pass into breastmilk; weigh risk and benefit | Children: immature liver and kidneys; weight-based doses; offer simple choices | Older adults: decreased renal function; polypharmacy; start low, go slow
+@ say: The lifespan
+
+Q: Two marks. Describe the function of the placental barrier, and define a teratogenic effect.
+
+Her formative two answers. The placental barrier separates the mother's blood from the foetus's blood. It's a non-selective barrier: many nutrients and molecules, including drugs, can cross it. A teratogenic effect is the effect of a substance, like a medicine, alcohol or a virus, that alters the development of the foetus during pregnancy, for example the growth and development of the brain, leading to abnormalities. The first trimester is the time of greatest danger. Her deck's historic example is thalidomide.
+
+The rest of the lifespan in a line each. Breastfeeding: drugs pass into breastmilk, so weigh risk against benefit. Children: their liver and kidneys are immature, so doses are worked out by weight. And to get a toddler to take a medicine, offer simple choices, like the syringe or the cup. Never hide it in food or call it a lolly. Older adults: decreased renal function and slower liver metabolism, so drugs build up. They're often on many medicines, which is polypharmacy, so start low and go slow, and use blister packs.
+
+{recap} Placental barrier: separates maternal and foetal blood, non-selective, drugs cross. Teratogenic: alters foetal development, worst in the first trimester. Children: immature liver and kidneys, weight-based doses, offer simple choices. Older adults: decreased renal function, polypharmacy, start low and go slow.
+
+# Allergy, anaphylaxis and vaccines
+@ why: Module 9 on her exam list (vaccines, immunology and recognising allergy). Formative 2 asks two signs of anaphylaxis and the adrenaline volume; formative 3 asks herd immunity; formative 1 asks what an allergic reaction is. On 20 Oct she listed "the signs of drug allergy".
+@ ask: Identify two symptoms of anaphylaxis the nurse monitors for after a vaccination, and describe the first-line treatment. (3 marks) || Noisy or difficult breathing: stridor, wheeze, swelling of the tongue or throat | Persistent dizziness or collapse (low BP) | Adrenaline IM (0.3 mg = 0.3 mL of 1:1000) | Mild allergy: rash, hives, itch | Herd immunity: most of the community is vaccinated, so infection can't spread, protecting those who can't be vaccinated | Live vaccines (MMR) not for pregnant or immunosuppressed people
+@ say: Allergy and vaccines
+
+Q: Three marks. Identify two symptoms of anaphylaxis the nurse monitors for after a vaccination, and describe the first-line treatment.
+
+Her formative two answers. One: noisy or difficult breathing, like stridor or wheeze, or swelling of the tongue or throat. Two: persistent dizziness or collapse, from low blood pressure. Breathing is the key one, she said: a rash or itch can be a mild allergy, but anaphylaxis is the extreme end, and it's what people die of. The treatment is adrenaline, intramuscular. In her scenario, nought point three milligrams, which is nought point three mils of the one in a thousand ampoule.
+
+The vaccine words. Herd immunity: when most of a community is vaccinated, the infection can't spread, so the whole community is protected, including people who can't be vaccinated, like babies. That's her formative three key. Vaccination is the act of giving the antigen. Immunisation is the memory the body builds. Active immunity is made by your own immune system: naturally after an infection, or artificially after a vaccine. Passive immunity is borrowed antibodies: naturally through the placenta or breastmilk. Live vaccines, like M M R, aren't given in pregnancy or to people who are immunosuppressed. And common reactions, like a sore arm or mild fever, appear within a day and settle in one to three.
+
+{recap} Anaphylaxis: noisy or difficult breathing, stridor, wheeze, swollen tongue; dizziness or collapse. Treat with I M adrenaline, nought point three milligrams. Mild allergy is rash and itch. Herd immunity: most people vaccinated, so everyone is protected. Live vaccines like M M R: not in pregnancy or immunosuppression.
+
+# Licit and illicit drugs, dependence and addiction
+@ why: Module 10 on her exam list. Her week-11 announcement: "Note key words and definitions e.g. addiction, dependence, as the L/O for this session will be tested in the Exam." She corrected formative 1 Q4 in class on 20 Oct, and formative 3 asks addiction.
+@ ask: Define drug dependence and drug addiction, and explain the difference, with an example. (3 marks) || Dependence: withdrawal symptoms when a drug is stopped abruptly (physical); e.g. a long-term opioid | Addiction: a behavioural pattern of overwhelming involvement in getting and using the drug, with craving, loss of control, use despite harm, relapse | Tolerance: decreasing effect, so a higher dose is needed | Licit: legal (alcohol, prescribed medicines); illicit: illegal (every Class A drug) | Pusheen slides: concept only, no statistics
+@ say: Dependence and addiction
+
+Q: Three marks. Define drug dependence and drug addiction, and explain the difference, with an example.
+
+Joan corrected this one in class, so use her version. Dependence is experiencing withdrawal symptoms when a drug is stopped abruptly. It can happen with a prescribed medicine taken exactly as charted, like a long-term opioid. Addiction is a behavioural pattern: an overwhelming involvement in getting the drug and using it, with craving, loss of control, use despite harm, and a high chance of relapse.
+
+The difference: dependence is the body's adaptation, and it can be entirely medical. Addiction is the behaviour. Her formative example: Sione won't take his analgesic because he's afraid of becoming dependent. You explain that dependence means withdrawal if it's stopped suddenly, which is why it's reduced slowly, and it doesn't mean he'll become addicted.
+
+The other terms. Tolerance: repeated doses have less effect, so a bigger dose is needed for the same effect. Licit means legal, like alcohol or a medicine taken as prescribed. Illicit means illegal, like every Class A drug. The antidotes: naloxone for opioids, N A C for paracetamol. The National Poisons Centre is free, every hour of the day, on oh eight hundred, Poison. And her rule for that deck: a slide with Pusheen the cat is tested on the concept, never its statistics.
+
+{recap} Dependence: withdrawal symptoms when a drug is stopped abruptly; can be purely medical. Addiction: a behaviour; overwhelming involvement in getting and using, craving, use despite harm, relapse. Tolerance: less effect from the same dose. Licit is legal, illicit is illegal. Naloxone for opioids; N A C for paracetamol.
+
+# Adherence and the cost of medicines
+@ why: Module 12 on her exam list. Formative 1 asks adherence as two short answers (define it, 1 mark; four barriers, 4 marks); she taught the self-directed package on 27 Oct, including what to do when a patient can't afford their medicine.
+@ ask: Define medication adherence and list four barriers that may stop a patient achieving it. (5 marks over two questions) || Adherence: taking the medicine as agreed with the prescriber (dose, route, frequency) | Not "compliance": outdated, paternalistic | Barriers: can't get to the pharmacy (no transport); cost; doesn't understand why; physical impairment (can't open the packet); busy lifestyle, forgets | Response to "I can't afford it": refer to the social worker, check every subsidy
+@ say: Adherence
+
+Q: One mark, then four marks. Define medication adherence. Then list four barriers that may stop a patient achieving it.
+
+Adherence is when a patient takes their prescribed medicine according to the plan they agreed with their prescriber, including the dose, route and frequency. The key word is agreed. Compliance is the outdated word: it means doing as you're told, which is paternalistic, so don't call anyone non-compliant.
+
+Four barriers, one mark each. Her own list. One: they can't get to their medicine, for example no transport to the pharmacy. Two: they don't understand why they need to take it. Three: a physical impairment, like arthritis, stops them opening the packaging. Four: a very busy life, so they forget doses. Cost is another, and it's one of the main determinants of health: prescription fees, G P fees that differ by area, and getting there.
+
+And her best response when a patient says I can't afford it: you don't lend money or drive them yourself. Refer them to the social worker, or cultural support, and make sure they get every subsidy they're entitled to.
+
+{recap} Adherence: taking the medicine as agreed with the prescriber. Compliance is outdated. Barriers: no transport to the pharmacy, cost, not understanding why, can't open the packaging, a busy life. "I can't afford it": social worker and every subsidy.
+
+# Complementary medicine and rongoā Māori
+@ why: Module 12 on her exam list. Formative 1 asks alternative therapy, formative 2 complementary (the osteopath); Joan on 27 Oct: you don't need specific therapies, but you must define the terms, and a likely best-response question is the patient who stops treatment for an alternative.
+@ ask: Define complementary and alternative medicine, with an example of each, and describe the nurse's response when a patient plans to stop their treatment for an alternative. (3 marks) || Complementary: used alongside conventional medicine (an osteopath alongside medication) | Alternative: used instead of it (herbs and diet instead of chemotherapy) | Response: explore their reasons, give accurate information, involve the team and doctor, document it | Rongoā Māori: traditional Māori healing; mirimiri, karakia and rongoā rākau; the practitioner is responsible; check interactions
+@ say: Complementary medicine
+
+Q: Three marks. Define complementary and alternative medicine, with an example of each, and describe the nurse's response when a patient plans to stop their treatment for an alternative.
+
+Complementary means used alongside conventional medicine, in addition to it. Her formative example: an osteopath alongside medication. Alternative means used instead of conventional medicine, like herbs and diet instead of chemotherapy for cancer.
+
+The response, her likely best-response question. Don't dismiss them. Talk with them and explore their reasons, because online misinformation is common. Give accurate information so their choice is informed, involve the healthcare team and the doctor, and document it. It's still their choice.
+
+Rongoā Māori is Aotearoa's own traditional healing, with a strong spiritual element. It has three parts: mirimiri, which is massage; karakia, which is prayer; and rongoā rākau, the plant remedies. The tohunga or rongoā practitioner is responsible for it, not the nurse. If a patient wants to use it alongside their medicines, the nurse supports a discussion with everyone involved and checks for interactions.
+
+{recap} Complementary: alongside conventional medicine, like an osteopath with medication. Alternative: instead of it. If someone plans to stop treatment, explore why, inform, involve the team, document, respect the choice. Rongoā Māori: mirimiri, karakia and rongoā rākau; the practitioner is responsible.
+
+# Drug development and research ethics
+@ why: Module 11 on her exam list; Joan, 27 Oct: "not many questions, but it is a course topic", and she taught the phases, bioequivalence and advertising that day. Formative 2 asks an ethical consideration of a clinical trial (2 marks).
+@ ask: Identify and describe one ethical consideration of a patient taking part in a clinical trial. (2 marks) || Informed consent: she must know the purpose, benefits and risks (to her and the foetus) before agreeing | She can withdraw consent at any time without consequences | Phases: preclinical (lab, animals); 1 healthy volunteers, safety and dose; 2 people with the condition, does it work; 3 large groups, better than current treatment; 4 post-marketing surveillance | Bioequivalent: same rate and extent of absorption (generic matches brand) | NZ allows direct-to-consumer advertising
+@ say: Drug development
+
+Q: Two marks. Identify and describe one ethical consideration of a patient taking part in a clinical trial.
+
+Identify and describe, so name it, then describe it. Her answer: informed consent. The patient must know the trial's purpose, its potential benefits and its potential risks, in her scenario to the mother and the unborn baby, before agreeing to take part. Or: she can withdraw her consent at any time, even after agreeing at the start, with no consequences.
+
+The phases, for the multi-choice. Preclinical: no humans, the lab and then animals. Phase one: a small group of healthy volunteers. Is it safe, and what dose? Phase two: people with the condition. Does it work, and what are the side effects? Often double-blind. Phase three: large groups, often international. Is it better than current treatment? Phase four: post-marketing surveillance, watching everyone who's prescribed it for problems the trials missed. A drug can be withdrawn at any phase.
+
+Three more. Bioequivalent: two drugs or brands with the same rate and extent of absorption, which is how a generic matches the brand. New Zealand is one of the few countries that allow medicines to be advertised directly to the public, so people ask for brands by name: an ethical issue. And the evidence pyramid has systematic reviews at the top.
+
+{recap} Clinical trial ethics: informed consent, purpose, benefits and risks before agreeing; and the right to withdraw at any time. Phases: preclinical in the lab; one, healthy volunteers, safety; two, patients, does it work; three, large groups, better than current; four, post-marketing surveillance. Bioequivalent: same rate and extent of absorption.

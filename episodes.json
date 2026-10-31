@@ -16,12 +16,12 @@
     "whole": {
      "file": "INP-Final-Forecast-Whole-episode.zip",
      "url": "https://github.com/jeremyspm/inp-pharm-podcast/releases/download/downloads/INP-Final-Forecast-Whole-episode.zip",
-     "bytes": 102384031
+     "bytes": 102383026
     },
     "each": {
      "file": "INP-Final-Forecast-Each-question.zip",
      "url": "https://github.com/jeremyspm/inp-pharm-podcast/releases/download/downloads/INP-Final-Forecast-Each-question.zip",
-     "bytes": 105806972
+     "bytes": 105805947
     }
    },
    "chapters": [
@@ -316,8 +316,8 @@
      "n": 10,
      "title": "Standards of competence, scope and roles of nurses",
      "file": "audio/inp/10.mp3",
-     "dur": 140.4,
-     "bytes": 1174469,
+     "dur": 140.5,
+     "bytes": 1174661,
      "rapid": false,
      "scen": "",
      "why": "\"Standards of Competence and BN2 student nurse scope of practice\", \"Roles of nurses\", \"Nursing informatics\" and \"Continuum of care\" are four Exam Content themes. Lisa listed competencies and roles on 27 Oct, and the lecturers' Practice Quizzes ask scope twice: both answers are decline.",
@@ -341,9 +341,9 @@
       }
      ],
      "marks": 4,
-     "ver": "d427811bef",
+     "ver": "b8a353f7e1",
      "vtt": "audio/inp/10.vtt",
-     "vver": "5d7c22ed78"
+     "vver": "8f7eaa3497"
     },
     {
      "n": 11,
@@ -964,6 +964,982 @@
      "ver": "48c700d509",
      "vtt": "audio/inp/28.vtt",
      "vver": "ee4f476b1a"
+    }
+   ]
+  },
+  {
+   "id": "pharm",
+   "title": "Pharm Final — The forecast",
+   "short": "Pharm",
+   "kicker": "Introduction to Pharmacology · 722.544",
+   "blurb": "Joan’s 11 short answers sit under three clinical scenarios, so this episode opens with three forecast scenarios built the way her formative mini-exams are, using the drugs she named: paracetamol and salbutamol (her exam-prep slides: “medications with specific questions”), the anticoagulants, GTN, beta blockers, the penicillins and morphine. Then a track for each of those drugs, every module on her exam list, and her own formative keys. Every answer is a definition plus an example, about two lines a mark, the way she asked.",
+   "when": "The final: Thu 5 Nov · 30 multi-choice + 11 short answers (1–4 marks, under 3 scenarios) · 80 min · 50%",
+   "zip": "Pharm-Final-Forecast",
+   "dur": 3241,
+   "cover": "audio/cover-pharm.png",
+   "feed": "feed-pharm.xml",
+   "dl": {
+    "whole": {
+     "file": "Pharm-Final-Forecast-Whole-episode.zip",
+     "url": "https://github.com/jeremyspm/inp-pharm-podcast/releases/download/downloads/Pharm-Final-Forecast-Whole-episode.zip",
+     "bytes": 72205981
+    },
+    "each": {
+     "file": "Pharm-Final-Forecast-Each-question.zip",
+     "url": "https://github.com/jeremyspm/inp-pharm-podcast/releases/download/downloads/Pharm-Final-Forecast-Each-question.zip",
+     "bytes": 75390616
+    }
+   },
+   "chapters": [
+    {
+     "n": 1,
+     "title": "How this forecast works",
+     "file": "audio/pharm/01.mp3",
+     "dur": 146.0,
+     "bytes": 1230423,
+     "rapid": false,
+     "scen": "",
+     "why": "Joan has published three formative mini-exams but not the real paper. This track sets out what she said the paper is, and how the rest of the episode was chosen from it.",
+     "show": [],
+     "marks": null,
+     "ver": "6e648a45dc",
+     "vtt": "audio/pharm/01.vtt",
+     "vver": "e0c7d83d3f"
+    },
+    {
+     "n": 2,
+     "title": "Scenario 1: Mrs Harris, asthma and atrial fibrillation",
+     "file": "audio/pharm/02.mp3",
+     "dur": 169.9,
+     "bytes": 1421909,
+     "rapid": false,
+     "scen": "Mrs Harris is 81 and lives in aged residential care. She has asthma, atrial fibrillation and osteoarthritis. She is prescribed salbutamol 100 microgram inhaler, 2 puffs PRN; warfarin 3 mg PO nocte; metoprolol 47.5 mg PO mane; and paracetamol 1 g PO QID. She takes nine medicines in all.",
+     "why": "Her short answers sit under three clinical scenarios. This one puts together the two drugs on her exam-prep slide (salbutamol, and paracetamol in the next scenario) with warfarin and a beta blocker from her 20 Oct list, and an older adult, which her formative 2 and 3 both used.",
+     "show": [
+      {
+       "ask": "What drug class is salbutamol, and how does it work?",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Bronchodilator; a beta-2 agonist",
+          "Binds beta-2 receptors in the airway smooth muscle and relaxes it, so the airways open; quick relief of wheeze"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Identify two assessments the nurse makes before and after Mrs Harris uses her salbutamol.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Respiratory rate, work of breathing and wheeze",
+          "SpO2; heart rate (salbutamol can cause tachycardia and tremor)"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Warfarin is an anticoagulant. Identify one test used to monitor it and one sign of bleeding to teach her to report.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "INR (blood test)",
+          "Unusual bruising, bleeding gums, blood in urine or black stools, nosebleeds"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Define polypharmacy and give one strategy to support Mrs Harris with her medicines.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Taking many medicines at once (often five or more), raising the risk of interactions and errors",
+          "Blister packs or pill organisers; a medication review; visual aids"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Identify one age-related change that may mean Mrs Harris needs a lower dose.",
+       "marks": 1,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Decreased renal function, so drugs are excreted more slowly and accumulate (also slower liver metabolism)"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 9,
+     "ver": "382eb7e442",
+     "vtt": "audio/pharm/02.vtt",
+     "vver": "349d0ae1b6"
+    },
+    {
+     "n": 3,
+     "title": "Scenario 2: Leo, four, with an ear infection",
+     "file": "audio/pharm/03.mp3",
+     "dur": 149.1,
+     "bytes": 1255425,
+     "rapid": false,
+     "scen": "Leo is 4 and weighs 18 kg. He has a fever and an ear infection. His GP prescribes amoxicillin oral suspension and paracetamol 15 mg/kg PO every 4 to 6 hours PRN, no more than 4 doses in 24 hours. His mum, Ana, says she thinks he might be \"a bit allergic\" to antibiotics.",
+     "why": "Paracetamol is one of the two medicines her exam-prep slide names for specific questions. Children's doses, the penicillins, allergy and her amoxicillin advice are all on her formatives (mini-exam 1 Q19, mini-exam 2 Q9, mini-exam 1 Q3 and Q13).",
+     "show": [
+      {
+       "ask": "Calculate Leo's single dose of paracetamol.",
+       "marks": 1,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "15 mg × 18 kg = 270 mg"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Identify two reasons Leo is given paracetamol.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Analgesic: relieves mild to moderate pain (his ear)",
+          "Antipyretic: reduces his fever"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Why are children prescribed lower doses than adults?",
+       "marks": 1,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Immature liver and kidneys: slower metabolism and excretion"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Ana says Leo might be \"a bit allergic\" to antibiotics. What should the nurse do, and what is an allergic reaction?",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "An allergic reaction: the body sees the drug as an antigen and mounts an immune response against it",
+          "Ask exactly what happened; document it; tell the prescriber before any penicillin is given"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Give one piece of safe advice for Ana about storing and giving amoxicillin suspension.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Store it in the fridge, out of reach of children",
+          "Finish the whole course; measure with a medicine syringe or cup, not a teaspoon"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 8,
+     "ver": "520b42d6d6",
+     "vtt": "audio/pharm/03.vtt",
+     "vver": "e11265e0e6"
+    },
+    {
+     "n": 4,
+     "title": "Scenario 3: Mr Tane, after surgery, with angina",
+     "file": "audio/pharm/04.mp3",
+     "dur": 142.2,
+     "bytes": 1200519,
+     "rapid": false,
+     "scen": "Mr Tane is 64 and is on the surgical ward after a bowel resection. He has angina and uses a GTN spray. He is prescribed morphine 2.5 mg IV PRN for severe pain, and his own GTN 400 microgram spray, 1 spray SL PRN for chest pain.",
+     "why": "Morphine, GTN and the controlled drugs are on her 20 Oct list; she said on 27 Oct she would go over controlled drugs again on the 28th, and formative 2 asks what a controlled drug is. Medication errors and refusal are on formatives 1 and 3.",
+     "show": [
+      {
+       "ask": "Morphine is a controlled drug. What is a controlled drug, and give one way it is handled differently on the ward?",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "A medicine under special legal controls (Misuse of Drugs Act 1975) to reduce misuse and abuse",
+          "Stored in a double-locked safe; recorded in a controlled drug register; checked and signed by two nurses"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Identify two things the nurse monitors after giving Mr Tane morphine.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Respiratory rate and sedation level (respiratory depression is the toxic effect)",
+          "Pain score; blood pressure; nausea and constipation"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Why is GTN given sublingually, and what is one side effect?",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Under the tongue: absorbed straight into the blood, fast, bypasses first-pass metabolism in the liver",
+          "Headache, dizziness, low blood pressure (sit down first)"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Mr Tane says he doesn't want his next dose. What should the nurse do?",
+       "marks": 1,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Respect it (a person can legally refuse), explore why, document it and tell the RN or prescriber"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 7,
+     "ver": "25df859e12",
+     "vtt": "audio/pharm/04.vtt",
+     "vver": "b6d06cf49a"
+    },
+    {
+     "n": 5,
+     "title": "Paracetamol",
+     "file": "audio/pharm/05.mp3",
+     "dur": 87.6,
+     "bytes": 763455,
+     "rapid": false,
+     "scen": "",
+     "why": "One of the only two medicines her exam-prep slide names under \"medications with specific questions\". She also used it on 20 Oct for maximal efficacy, and for generic versus brand names (Panadol and Panadeine both contain it).",
+     "show": [
+      {
+       "ask": "Describe paracetamol: its class, what it is used for, and one important nursing consideration.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Class: analgesic and antipyretic; general sale medicine",
+          "Use: mild to moderate pain; fever",
+          "Adult dose up to 1 g, 4 to 6 hourly, max 4 g in 24 h; children 15 mg/kg a dose",
+          "Overdose damages the liver; antidote N-acetylcysteine",
+          "Check other products for hidden paracetamol (Panadol, Panadeine); teach the generic name",
+          "Has a ceiling: maximal efficacy, so more won't work faster"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "e6015a2de3",
+     "vtt": "audio/pharm/05.vtt",
+     "vver": "2c4bde9b9e"
+    },
+    {
+     "n": 6,
+     "title": "Salbutamol",
+     "file": "audio/pharm/06.mp3",
+     "dur": 89.5,
+     "bytes": 778813,
+     "rapid": false,
+     "scen": "",
+     "why": "The other medicine her exam-prep slide names for specific questions. On 20 Oct she asked the class its category (bronchodilator), and on 27 Oct she listed bronchodilator among the class definitions to know both ways.",
+     "show": [
+      {
+       "ask": "Describe salbutamol: its class, how it works, and what the nurse teaches about using it.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Class: bronchodilator; short-acting beta-2 agonist; the reliever",
+          "Action: binds beta-2 receptors, relaxes airway smooth muscle, opens the airways, in minutes",
+          "Use: asthma and COPD, wheeze and breathlessness",
+          "Side effects: tremor, fast heart rate, palpitations, headache",
+          "Teach: spacer technique; carry it; needing it more often means see the doctor",
+          "Assess RR, work of breathing, wheeze, SpO2, HR before and after"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "35a7de1356",
+     "vtt": "audio/pharm/06.vtt",
+     "vver": "40eb921c8b"
+    },
+    {
+     "n": 7,
+     "title": "Aspirin, warfarin and heparin",
+     "file": "audio/pharm/07.mp3",
+     "dur": 111.0,
+     "bytes": 950499,
+     "rapid": false,
+     "scen": "",
+     "why": "Named on 20 Oct: aspirin (\"more antiplatelet\"), then \"the whole class of the anticoagulants … warfarin and heparin, it's good to know a little bit about those\". Her overview deck uses aspirin as the drug in more than one class, and warfarin with amiodarone as its drug-interaction example.",
+     "show": [
+      {
+       "ask": "Compare an antiplatelet with an anticoagulant, giving an example of each, and identify one nursing consideration for warfarin.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Antiplatelet: stops platelets sticking together; aspirin (low dose, to prevent heart attack and stroke)",
+          "Anticoagulant: interferes with the clotting process; warfarin (oral, monitored by INR, antidote vitamin K), heparin (injection, SC or IV, antidote protamine)",
+          "Both raise bleeding risk: watch for bruising, bleeding gums, blood in urine or stools",
+          "Warfarin: interactions (aspirin, amiodarone, alcohol, herbal), consistent diet, highly protein-bound",
+          "Aspirin is also analgesic, antipyretic, anti-inflammatory; not for children"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "34237fa9c7",
+     "vtt": "audio/pharm/07.vtt",
+     "vver": "f8fe389c71"
+    },
+    {
+     "n": 8,
+     "title": "Beta blockers and GTN",
+     "file": "audio/pharm/08.mp3",
+     "dur": 116.7,
+     "bytes": 995987,
+     "rapid": false,
+     "scen": "",
+     "why": "Named together on 20 Oct as the cardiac drugs: \"a beta blocker\", then GTN, \"a vasodilator … anti-angina\". She warned there might be only one question on GTN. Formative 2 keys an antagonist with \"a beta blocker is an example\".",
+     "show": [
+      {
+       "ask": "Explain how a beta blocker works, and identify what the nurse checks before giving one.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Antagonist at beta-1 receptors in the heart: blocks adrenaline, slows the heart rate and lowers BP; names end in -olol (metoprolol)",
+          "Check apical or radial pulse and BP first; withhold and report if the pulse is slow or BP low",
+          "Don't stop suddenly: rebound hypertension",
+          "Caution in asthma"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Describe GTN: its class, why it is sublingual, and what to teach.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Nitrate vasodilator; anti-anginal; widens the coronary arteries",
+          "Sublingual: fast, straight into the blood, avoids first-pass",
+          "Sit down before using it; side effects headache, flushing, dizziness, low BP; call 111 if the pain doesn't settle"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 4,
+     "ver": "49d2fcdd4b",
+     "vtt": "audio/pharm/08.vtt",
+     "vver": "48cc5c4662"
+    },
+    {
+     "n": 9,
+     "title": "The penicillins and antimicrobials",
+     "file": "audio/pharm/09.mp3",
+     "dur": 82.1,
+     "bytes": 719149,
+     "rapid": false,
+     "scen": "",
+     "why": "\"Another big group … all the antimicrobials, you must know that group\" (20 Oct), with the penicillin family named. Two formative questions sit on it: the allergic-to-penicillin patient (mini-exam 1 Q3) and the amoxicillin suspension advice (mini-exam 1 Q19).",
+     "show": [
+      {
+       "ask": "Why does Joan call them antimicrobials rather than antibiotics? Give one nursing consideration before giving a penicillin.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Antimicrobials act on microbes: antibiotics (bacteria), antifungals, antivirals, antiparasitics; antibiotics are one sub-family",
+          "Penicillins (names end in -cillin, like amoxicillin) kill bacteria by damaging the cell wall",
+          "Before: ask about allergy; antibiotics cause the most drug allergies",
+          "After: watch for rash, hives, anaphylaxis; teach to finish the course (resistance)"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 2,
+     "ver": "e00cffb963",
+     "vtt": "audio/pharm/09.vtt",
+     "vver": "12722febb1"
+    },
+    {
+     "n": 10,
+     "title": "Morphine and the opioids",
+     "file": "audio/pharm/10.mp3",
+     "dur": 83.2,
+     "bytes": 727962,
+     "rapid": false,
+     "scen": "",
+     "why": "Morphine is on her 20 Oct list, it is her overview deck's toxic-effect example (respiratory depression on a PCA) and its slowest-route example, and Module 9's tolerance example. It is also the example of a controlled drug that is prescribed (Class B).",
+     "show": [
+      {
+       "ask": "Describe morphine's class and identify two adverse effects the nurse monitors for.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Opioid analgesic for severe pain; an agonist at opioid receptors; Class B controlled drug",
+          "Respiratory depression (the toxic effect): monitor respiratory rate and sedation",
+          "Nausea, constipation, hypotension, drowsiness, itch",
+          "Antidote naloxone, an opioid antagonist",
+          "Tolerance with regular use; dependence"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "f7d90dc2b6",
+     "vtt": "audio/pharm/10.vtt",
+     "vver": "b653d0e26d"
+    },
+    {
+     "n": 11,
+     "title": "Pharmacokinetics",
+     "file": "audio/pharm/11.mp3",
+     "dur": 97.6,
+     "bytes": 843338,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 4 on her exam list. Her formative 3 asks it as a four-mark short answer (name the four processes for Angie's anti-inflammatory), the biggest single short answer she has set; formative 1 and 2 ask first-pass and the kidney.",
+     "show": [
+      {
+       "ask": "Name and describe the four processes of pharmacokinetics that an oral medicine goes through.",
+       "marks": 4,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Absorption: into the bloodstream, mostly in the small intestine",
+          "Distribution: around the body in the blood, bound to plasma proteins",
+          "Metabolism: in the liver, by enzymes, to make it water-soluble and less toxic",
+          "Elimination (excretion): mostly in the urine, by the kidneys",
+          "First-pass: an oral drug is metabolised by the liver before reaching the circulation",
+          "Half-life: time for the drug level to halve"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 4,
+     "ver": "4e8694922f",
+     "vtt": "audio/pharm/11.vtt",
+     "vver": "ee16944c14"
+    },
+    {
+     "n": 12,
+     "title": "Pharmacodynamics and drug effects",
+     "file": "audio/pharm/12.mp3",
+     "dur": 143.6,
+     "bytes": 1211436,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 5 on her exam list. Every formative asks it in multi-choice: agonist (mini-exam 1), antagonist (mini-exam 2), maximal efficacy (mini-exam 1), potency, loading dose and receptor down-regulation (mini-exam 3), ADR (mini-exam 1).",
+     "show": [
+      {
+       "ask": "Define an agonist and an antagonist, with an example of each.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Agonist: binds a receptor and causes a response, e.g. salbutamol, morphine",
+          "Antagonist: binds a receptor and causes no response, blocking it, e.g. a beta blocker (metoprolol), naloxone"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Define a side effect and an adverse drug reaction, with an example.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Side effect: an unintended but predictable secondary effect, e.g. headache with GTN",
+          "Adverse drug reaction (ADR): an undesirable, unexpected harmful response that must be reported, e.g. anaphylaxis to penicillin"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 4,
+     "ver": "4b7f777c6d",
+     "vtt": "audio/pharm/12.vtt",
+     "vver": "a057a584da"
+    },
+    {
+     "n": 13,
+     "title": "Drug names, the law and who's who",
+     "file": "audio/pharm/13.mp3",
+     "dur": 117.2,
+     "bytes": 1000236,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 2 on her exam list. Formative 1 asks which drug name a nurse uses and why (2 marks) and who monitors medicine safety (Medsafe); formative 3 asks one legal classification (2 marks). Joan on 20 Oct: drug names are \"still relevant right to the future today\".",
+     "show": [
+      {
+       "ask": "Medicines have a chemical, a generic and a brand name. Which is most important for the RN to use, and why?",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Generic name",
+          "Internationally approved, used by prescribers and administrators; reduces medication errors (double-dosing under two brands); lets pharmacists dispense the most cost-effective option"
+         ]
+        }
+       ]
+      },
+      {
+       "ask": "Choose one legal classification of medicines and describe how a patient gets it.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Prescription: only with a prescription from an authorised prescriber (doctor, NP, midwife)",
+          "Restricted (pharmacist only): only from a pharmacist, after advice; a record is kept",
+          "Pharmacy only: only in a pharmacy",
+          "General sale: any shop, e.g. paracetamol",
+          "Controlled drugs (Misuse of Drugs Act 1975): Class A never prescribed (heroin, methamphetamine); B morphine; C codeine, diazepam"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 4,
+     "ver": "ca275a6cb3",
+     "vtt": "audio/pharm/13.vtt",
+     "vver": "995f665937"
+    },
+    {
+     "n": 14,
+     "title": "Giving medicines safely",
+     "file": "audio/pharm/14.mp3",
+     "dur": 112.9,
+     "bytes": 966232,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 6 on her exam list. Formative 2 asks why the rights matter, the patient who can't swallow the big tablet, and the \"leave it on my table\" reply; formative 3 asks one right applied to aged care (2 marks) and the inappropriate action after an error.",
+     "show": [
+      {
+       "ask": "Identify one of the rights of medication administration and give an example of how it is applied in aged care.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "The 8 rights: patient, medication, dose, time, route, right to refuse, indication, documentation; plus 2 checks: expiry and allergies",
+          "Right person: identity checked with a photo",
+          "Right dose: start low, go slow",
+          "Right route: trouble swallowing, so check with the prescriber",
+          "Refusal: involve whānau or the EPA"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 2,
+     "ver": "6eaa6e0555",
+     "vtt": "audio/pharm/14.vtt",
+     "vver": "33f5a3fa92"
+    },
+    {
+     "n": 15,
+     "title": "Abbreviations",
+     "file": "audio/pharm/15.mp3",
+     "dur": 123.3,
+     "bytes": 1048772,
+     "rapid": false,
+     "scen": "",
+     "why": "Joan, 27 Oct: about twenty abbreviations are worth maybe five marks, and expect a prescription to interpret. 20 Oct: her \"must, must, must\" list. Every formative has one (TDS, diclofenac QID PR, BD PRN).",
+     "show": [
+      {
+       "ask": "Interpret the abbreviations on a medication chart. (about 5 marks across the paper)",
+       "marks": null,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "OD once a day; BD twice; TDS three times; QID four times",
+          "Q4H every 4 hours; Q6H every 6 hours (not the same as QID)",
+          "PRN as required; stat at once",
+          "mane morning; nocte night",
+          "AC before meals; PC after meals",
+          "PO by mouth; SL under the tongue; PR rectal; IM, IV, SC (subcut); topical on a body surface",
+          "EC enteric-coated; SR, CR slow or controlled release",
+          "24-hour clock",
+          "Only the prescriber can change the route"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": null,
+     "ver": "5f1e3d8a1b",
+     "vtt": "audio/pharm/15.vtt",
+     "vver": "e154aa572a"
+    },
+    {
+     "n": 16,
+     "title": "Calculations",
+     "file": "audio/pharm/16.mp3",
+     "dur": 108.7,
+     "bytes": 932034,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 3 on her exam list. Joan, 20 Oct and 27 Oct: \"a few easy calculations\" as multi-choice, no working shown, bring a calculator, convert units first. Every formative has one; these are hers.",
+     "show": [
+      {
+       "ask": "Her formative calculations (1 mark each)",
+       "marks": null,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Formula: what you want ÷ what you've got × volume",
+          "Convert to the same unit first",
+          "Cilazapril 500 mg, tablets 0.25 g: 0.25 g = 250 mg, 2 tablets",
+          "Adrenaline 0.3 mg IM, ampoule 1 mg/1 mL: 0.3 mL",
+          "Penicillin 20 mg/kg × 11 kg = 220 mg",
+          "Carbamazepine 4 mg/kg × 11 kg = 44 mg; 44 ÷ 100 × 5 mL = 2.2 mL"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": null,
+     "ver": "3901f09723",
+     "vtt": "audio/pharm/16.vtt",
+     "vver": "ba22cdcb52"
+    },
+    {
+     "n": 17,
+     "title": "Medicines across the lifespan",
+     "file": "audio/pharm/17.mp3",
+     "dur": 97.2,
+     "bytes": 840484,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 7 on her exam list. Formative 2 builds a whole scenario on pregnancy (the placental barrier, teratogenic effect); formative 2 asks why children get lower doses and which ageing change alters a dose; formative 3 asks a toddler who refuses her medicine.",
+     "show": [
+      {
+       "ask": "Describe the function of the placental barrier and define a teratogenic effect.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Placental barrier: separates maternal blood from foetal blood; a non-selective barrier many nutrients and drugs can cross",
+          "Teratogenic: a substance (medicine, alcohol, virus) alters the development of the foetus, e.g. growth of the brain; first trimester is the riskiest",
+          "Breastfeeding: drugs pass into breastmilk; weigh risk and benefit",
+          "Children: immature liver and kidneys; weight-based doses; offer simple choices",
+          "Older adults: decreased renal function; polypharmacy; start low, go slow"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 2,
+     "ver": "f7825be7fd",
+     "vtt": "audio/pharm/17.vtt",
+     "vver": "ab52f2b236"
+    },
+    {
+     "n": 18,
+     "title": "Allergy, anaphylaxis and vaccines",
+     "file": "audio/pharm/18.mp3",
+     "dur": 111.2,
+     "bytes": 952044,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 9 on her exam list (vaccines, immunology and recognising allergy). Formative 2 asks two signs of anaphylaxis and the adrenaline volume; formative 3 asks herd immunity; formative 1 asks what an allergic reaction is. On 20 Oct she listed \"the signs of drug allergy\".",
+     "show": [
+      {
+       "ask": "Identify two symptoms of anaphylaxis the nurse monitors for after a vaccination, and describe the first-line treatment.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Noisy or difficult breathing: stridor, wheeze, swelling of the tongue or throat",
+          "Persistent dizziness or collapse (low BP)",
+          "Adrenaline IM (0.3 mg = 0.3 mL of 1:1000)",
+          "Mild allergy: rash, hives, itch",
+          "Herd immunity: most of the community is vaccinated, so infection can't spread, protecting those who can't be vaccinated",
+          "Live vaccines (MMR) not for pregnant or immunosuppressed people"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "10f5edc035",
+     "vtt": "audio/pharm/18.vtt",
+     "vver": "48762d17eb"
+    },
+    {
+     "n": 19,
+     "title": "Licit and illicit drugs, dependence and addiction",
+     "file": "audio/pharm/19.mp3",
+     "dur": 112.4,
+     "bytes": 961868,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 10 on her exam list. Her week-11 announcement: \"Note key words and definitions e.g. addiction, dependence, as the L/O for this session will be tested in the Exam.\" She corrected formative 1 Q4 in class on 20 Oct, and formative 3 asks addiction.",
+     "show": [
+      {
+       "ask": "Define drug dependence and drug addiction, and explain the difference, with an example.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Dependence: withdrawal symptoms when a drug is stopped abruptly (physical); e.g. a long-term opioid",
+          "Addiction: a behavioural pattern of overwhelming involvement in getting and using the drug, with craving, loss of control, use despite harm, relapse",
+          "Tolerance: decreasing effect, so a higher dose is needed",
+          "Licit: legal (alcohol, prescribed medicines); illicit: illegal (every Class A drug)",
+          "Pusheen slides: concept only, no statistics"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "43cb243ca2",
+     "vtt": "audio/pharm/19.vtt",
+     "vver": "33ad276cb0"
+    },
+    {
+     "n": 20,
+     "title": "Adherence and the cost of medicines",
+     "file": "audio/pharm/20.mp3",
+     "dur": 87.8,
+     "bytes": 764656,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 12 on her exam list. Formative 1 asks adherence as two short answers (define it, 1 mark; four barriers, 4 marks); she taught the self-directed package on 27 Oct, including what to do when a patient can't afford their medicine.",
+     "show": [
+      {
+       "ask": "Define medication adherence and list four barriers that may stop a patient achieving it. (5 marks over two questions)",
+       "marks": null,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Adherence: taking the medicine as agreed with the prescriber (dose, route, frequency)",
+          "Not \"compliance\": outdated, paternalistic",
+          "Barriers: can't get to the pharmacy (no transport); cost; doesn't understand why; physical impairment (can't open the packet); busy lifestyle, forgets",
+          "Response to \"I can't afford it\": refer to the social worker, check every subsidy"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": null,
+     "ver": "e95e264d8a",
+     "vtt": "audio/pharm/20.vtt",
+     "vver": "9dc53e00aa"
+    },
+    {
+     "n": 21,
+     "title": "Complementary medicine and rongoā Māori",
+     "file": "audio/pharm/21.mp3",
+     "dur": 97.0,
+     "bytes": 838584,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 12 on her exam list. Formative 1 asks alternative therapy, formative 2 complementary (the osteopath); Joan on 27 Oct: you don't need specific therapies, but you must define the terms, and a likely best-response question is the patient who stops treatment for an alternative.",
+     "show": [
+      {
+       "ask": "Define complementary and alternative medicine, with an example of each, and describe the nurse's response when a patient plans to stop their treatment for an alternative.",
+       "marks": 3,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Complementary: used alongside conventional medicine (an osteopath alongside medication)",
+          "Alternative: used instead of it (herbs and diet instead of chemotherapy)",
+          "Response: explore their reasons, give accurate information, involve the team and doctor, document it",
+          "Rongoā Māori: traditional Māori healing; mirimiri, karakia and rongoā rākau; the practitioner is responsible; check interactions"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 3,
+     "ver": "82631ee837",
+     "vtt": "audio/pharm/21.vtt",
+     "vver": "50a261cf5b"
+    },
+    {
+     "n": 22,
+     "title": "Drug development and research ethics",
+     "file": "audio/pharm/22.mp3",
+     "dur": 109.4,
+     "bytes": 937842,
+     "rapid": false,
+     "scen": "",
+     "why": "Module 11 on her exam list; Joan, 27 Oct: \"not many questions, but it is a course topic\", and she taught the phases, bioequivalence and advertising that day. Formative 2 asks an ethical consideration of a clinical trial (2 marks).",
+     "show": [
+      {
+       "ask": "Identify and describe one ethical consideration of a patient taking part in a clinical trial.",
+       "marks": 2,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Informed consent: she must know the purpose, benefits and risks (to her and the foetus) before agreeing",
+          "She can withdraw consent at any time without consequences",
+          "Phases: preclinical (lab, animals); 1 healthy volunteers, safety and dose; 2 people with the condition, does it work; 3 large groups, better than current treatment; 4 post-marketing surveillance",
+          "Bioequivalent: same rate and extent of absorption (generic matches brand)",
+          "NZ allows direct-to-consumer advertising"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": 2,
+     "ver": "4903897fc5",
+     "vtt": "audio/pharm/22.vtt",
+     "vver": "51c2f01ad3"
+    },
+    {
+     "n": 23,
+     "title": "The multi-choice: her keys and the classes both ways",
+     "file": "audio/pharm/23.mp3",
+     "dur": 160.7,
+     "bytes": 1348178,
+     "rapid": false,
+     "scen": "",
+     "why": "Thirty marks are multi-choice. On 27 Oct Joan gave her technique and said drug-class definitions are asked both ways (the word, pick the definition; the definition, pick the word). These are her own formative keys that no other track says.",
+     "show": [
+      {
+       "ask": "Her formative keys and class definitions (1 mark each)",
+       "marks": null,
+       "hook": "",
+       "groups": [
+        {
+         "h": "",
+         "t": [
+          "Anti-emetic: prevents nausea and vomiting",
+          "Antihistamine: blocks histamine (allergy)",
+          "Bronchodilator: opens the airways",
+          "Diuretic: increases urine output",
+          "Analgesic: relieves pain; antipyretic: reduces fever",
+          "Contraindication: a reason not to give a drug",
+          "Enteric coating resists the stomach's digestion",
+          "Most drugs are excreted by the kidney",
+          "Controlled drugs: special legal controls to reduce misuse and abuse",
+          "Medsafe: medicine safety",
+          "Topical: directly on a body surface",
+          "Codeine elixir is oral",
+          "\"Always\" and \"never\" are usually wrong"
+         ]
+        }
+       ]
+      }
+     ],
+     "marks": null,
+     "ver": "a72047c081",
+     "vtt": "audio/pharm/23.vtt",
+     "vver": "307123f79f"
+    },
+    {
+     "n": 24,
+     "title": "Rapid-fire: every answer, back to back",
+     "file": "audio/pharm/24.mp3",
+     "dur": 584.3,
+     "bytes": 4737142,
+     "rapid": true,
+     "scen": "",
+     "why": "",
+     "show": [],
+     "marks": null,
+     "ver": "f2b6658f61",
+     "vtt": "audio/pharm/24.vtt",
+     "vver": "42e234ebfc"
     }
    ]
   }

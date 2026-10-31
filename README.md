@@ -8,7 +8,19 @@ presented as the lecturers'.
 | Episode | Tracks | What is in it |
 |---|---|---|
 | **INP Final — The forecast** (`#inp`) | 28 | Mon 2 Nov · 40 multi-choice + 15 short answers at 4 marks. 25 short-answer tracks, one per Exam Content theme (29 themes, grouped), Lisa's half then Janine's, each from their revision decks (Lisa's 102 slides, Janine's 111) and the 27 Oct session; answers built on Lisa's marking guide (her falls question, slide 101: 1 mark identify, 1 describe, 2 explain). Then two closed-question tracks: every key of the lecturers' 19 Canvas quizzes that no short-answer track says. Rapid-fire last. |
-| **Pharm Final** (`#pharm`) | — | Next: Thu 5 Nov. |
+| **Pharm Final — The forecast** (`#pharm`) | 24 | Thu 5 Nov · 30 multi-choice + 11 short answers (1–4 marks, 20 marks) under three clinical scenarios, 80 min. Three forecast scenarios built like Joan's formative mini-exams (a named patient, four or five short questions, her answer length), using the drugs she named. A track for each of those drugs: paracetamol and salbutamol first (her exam-prep slide: "medications with specific questions"), then aspirin, warfarin and heparin; beta blockers and GTN; the penicillins; morphine (20 Oct). A track per module on her exam list (slide 9), each built on her formative model answers. Then her formative keys and the drug classes "both ways" (27 Oct). Rapid-fire last. |
+
+## Where the Pharm forecast comes from
+
+- **Her exam-prep slides** (`pharm-final/slides/pharm/Exam Preparation_Semester 1 2026 v2.pptx`, the Semester 1 deck; the
+  shape matches what she said for Semester 2): the paper's shape, the modules, and the two named medicines.
+- **Her 20 Oct and 27 Oct sessions** (`pharm-final/transcripts/`): the drug classes, "definition plus an example", applied
+  and nurse-focused, two lines a mark ("no, not 150"), abbreviations worth about five marks, easy calculations.
+- **Her three formative mini-exams** (`pharm-final/content/formatives/`, verbatim): the scenario shape, and her model
+  answers wherever a track's question matches one.
+- **Her 158-slide overview deck** for definitions. Drug facts beyond her slides (doses, antidotes, monitoring) are standard
+  nursing pharmacology kept at her "simple understanding" depth.
+- Not available: her 28 Oct session (controlled drugs), which was not recorded.
 
 ## Where the INP forecast comes from
 

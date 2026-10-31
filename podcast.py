@@ -73,6 +73,21 @@ EPISODES = {
         rapid_intro='This is the rapid-fire track: every answer in this episode, back to back, one breath each. No teaching, '
                     'just the points in the order you would write them. It is made for the night before, and for the bus on the '
                     'way in. If one of these sounds unfamiliar, go back to its own track.'),
+    'pharm': dict(
+        title='Pharm Final — The forecast', short='Pharm', zip='Pharm-Final-Forecast',
+        kicker='Introduction to Pharmacology · 722.544',
+        course='Introduction to Pharmacology, 722.544',
+        cover=('INTRODUCTION TO PHARMACOLOGY', 'PHARM', 'THE FORECAST'),
+        blurb='Joan’s 11 short answers sit under three clinical scenarios, so this episode opens with three forecast scenarios '
+              'built the way her formative mini-exams are, using the drugs she named: paracetamol and salbutamol (her exam-prep '
+              'slides: “medications with specific questions”), the anticoagulants, GTN, beta blockers, the penicillins and '
+              'morphine. Then a track for each of those drugs, every module on her exam list, and her own formative keys. '
+              'Every answer is a definition plus an example, about two lines a mark, the way she asked.',
+        when='The final: Thu 5 Nov · 30 multi-choice + 11 short answers (1–4 marks, under 3 scenarios) · 80 min · 50%',
+        rapid='Rapid-fire: every answer, back to back',
+        rapid_intro='This is the rapid-fire track: every answer in this episode, back to back, one breath each. Definition, '
+                    'example, done. It is made for Wednesday night and Thursday morning. If one of these sounds unfamiliar, '
+                    'go back to its own track.'),
 }
 
 # ── pronunciation: whole words → phonemes (Kokoro's symbols; checked 2026-10-16 against what espeak said instead) ─────
@@ -109,6 +124,11 @@ IPA = {
     # INP clinical words espeak got wrong ("uh-PNEE-uh", "NOSS-eye-sptive", a wound's slough as "slow")
     'apnoea': 'æpnˈiːə', 'dyspnoea': 'dɪspnˈiːə', 'tachypnoea': 'tˌækɪpnˈiːə', 'bradypnoea': 'bɹˌædɪpnˈiːə',
     'nociceptive': 'nˌoʊsɪsˈɛptɪv', 'slough': 'slˈʌf', 'wong': 'wˈɑːŋ', 'korotkoff': 'kəɹˈɑːtkɔf',
+    # Pharm (31 Oct): drug names as said here (espeak: "PARR-a-SET-a-mol", "MET-oh-PROL-ol"), and the rongoā words
+    'paracetamol': 'pˌæɹəsˈiːtəmɑːl', 'metoprolol': 'mɛtˈoʊpɹəlɑːl', 'cilazapril': 'sɪlˈæzəpɹɪl',
+    'diclofenac': 'daɪklˈoʊfənæk', 'carbamazepine': 'kˌɑːɹbəmˈæzɪpiːn', 'acetylcysteine': 'ɐsˌiːtaɪlsˈɪstiːn',
+    'amiodarone': 'ˌæmiˈoʊdəɹoʊn', 'diuretic': 'dˌaɪjʊɹˈɛɾɪk', 'osteopath': 'ˈɑːstiəpæθ',
+    'rongoā': 'ɹˈɔːŋɔːɑː', 'karakia': 'kˈɐɾɐkiɐ', 'tohunga': 'tˈɔːhʊŋɐ', 'rākau': 'ɹˈɑːkaʊ', 'tane': 'tˈɑːnɛ',
     'manaia': 'mɑːnˈaɪɑː', 'ane': 'ˈɑːnɛ', 'paraone': 'pˌɑːɹɑːˈoʊnɛ', 'aleki': 'ɑːlˈɛki',
     # other words espeak gets wrong
     'tear': 'tˈɛɹ',                            # only ever "wear and tear" here

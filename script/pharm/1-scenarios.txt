@@ -1,0 +1,102 @@
+% Three forecast scenarios in the shape of her formative mini-exams (a named patient, 4-5 short questions, 1-4 marks each).
+% The patients are the podcast's; each question is built from something she named or asked on a formative. Model answers
+% follow her answer documents' length: one fact a line, about two lines a mark.
+
+# Scenario 1: Mrs Harris, asthma and atrial fibrillation
+@ why: Her short answers sit under three clinical scenarios. This one puts together the two drugs on her exam-prep slide (salbutamol, and paracetamol in the next scenario) with warfarin and a beta blocker from her 20 Oct list, and an older adult, which her formative 2 and 3 both used.
+@ scen: Mrs Harris is 81 and lives in aged residential care. She has asthma, atrial fibrillation and osteoarthritis. She is prescribed salbutamol 100 microgram inhaler, 2 puffs PRN; warfarin 3 mg PO nocte; metoprolol 47.5 mg PO mane; and paracetamol 1 g PO QID. She takes nine medicines in all.
+@ ask: What drug class is salbutamol, and how does it work? (2 marks) || Bronchodilator; a beta-2 agonist | Binds beta-2 receptors in the airway smooth muscle and relaxes it, so the airways open; quick relief of wheeze
+@ ask: Identify two assessments the nurse makes before and after Mrs Harris uses her salbutamol. (2 marks) || Respiratory rate, work of breathing and wheeze | SpO2; heart rate (salbutamol can cause tachycardia and tremor)
+@ ask: Warfarin is an anticoagulant. Identify one test used to monitor it and one sign of bleeding to teach her to report. (2 marks) || INR (blood test) | Unusual bruising, bleeding gums, blood in urine or black stools, nosebleeds
+@ ask: Define polypharmacy and give one strategy to support Mrs Harris with her medicines. (2 marks) || Taking many medicines at once (often five or more), raising the risk of interactions and errors | Blister packs or pill organisers; a medication review; visual aids
+@ ask: Identify one age-related change that may mean Mrs Harris needs a lower dose. (1 mark) || Decreased renal function, so drugs are excreted more slowly and accumulate (also slower liver metabolism)
+@ say: Scenario 1, Mrs Harris
+
+Q: Scenario one. Mrs Harris is eighty-one and lives in aged residential care. She has asthma, atrial fibrillation and osteoarthritis. She's prescribed a salbutamol inhaler, a hundred micrograms, two puffs P R N; warfarin three milligrams P O nocte; metoprolol forty-seven point five milligrams P O mane; and paracetamol one gram P O Q I D. She takes nine medicines in all.
+
+Before the questions, read the chart like Joan wants. P R N, as required. P O, by mouth. Nocte, at night. Mane, in the morning. Q I D, four times a day.
+
+Q: Two marks. What drug class is salbutamol, and how does it work?
+
+Salbutamol is a bronchodilator. It's a beta-2 agonist: it binds to the beta-2 receptors in the smooth muscle of the airways and relaxes it, so the airways open and the wheeze eases. Two marks, two lines.
+
+Q: Two marks. Identify two assessments the nurse makes before and after Mrs Harris uses her salbutamol.
+
+Her respiratory rate, her work of breathing and her wheeze. And her oxygen saturation, or her heart rate, because salbutamol can cause a fast heart rate and a tremor. Before tells you why she needs it. After tells you if it worked.
+
+Q: Two marks. Warfarin is an anticoagulant. Identify one test used to monitor it, and one sign of bleeding you'd teach her to report.
+
+The test is the I N R, a blood test of how long the blood takes to clot. Signs of bleeding: unusual bruising, bleeding gums, blood in her urine, or black stools.
+
+Q: Two marks. Define polypharmacy, and give one strategy to support Mrs Harris with her medicines.
+
+Polypharmacy is taking many medicines at once, often five or more, which raises the risk of interactions, side effects and errors. A strategy: blister packs or a pill organiser with visual aids. That was the answer on her formative two. Or ask for a medication review.
+
+Q: One mark. Identify one age-related change that may mean Mrs Harris needs a lower dose.
+
+Decreased renal function. Her kidneys excrete drugs more slowly, so they build up. That's her formative two, question one, word for word.
+
+{recap} Scenario one, Mrs Harris. Salbutamol: a bronchodilator, a beta-2 agonist that relaxes airway smooth muscle. Assess respiratory rate, wheeze, saturations and heart rate, before and after. Warfarin: monitor the I N R; report bruising, bleeding gums, blood in urine, black stools. Polypharmacy: many medicines at once; blister packs and visual aids. Older adults: decreased renal function.
+
+# Scenario 2: Leo, four, with an ear infection
+@ why: Paracetamol is one of the two medicines her exam-prep slide names for specific questions. Children's doses, the penicillins, allergy and her amoxicillin advice are all on her formatives (mini-exam 1 Q19, mini-exam 2 Q9, mini-exam 1 Q3 and Q13).
+@ scen: Leo is 4 and weighs 18 kg. He has a fever and an ear infection. His GP prescribes amoxicillin oral suspension and paracetamol 15 mg/kg PO every 4 to 6 hours PRN, no more than 4 doses in 24 hours. His mum, Ana, says she thinks he might be "a bit allergic" to antibiotics.
+@ ask: Calculate Leo's single dose of paracetamol. (1 mark) || 15 mg × 18 kg = 270 mg
+@ ask: Identify two reasons Leo is given paracetamol. (2 marks) || Analgesic: relieves mild to moderate pain (his ear) | Antipyretic: reduces his fever
+@ ask: Why are children prescribed lower doses than adults? (1 mark) || Immature liver and kidneys: slower metabolism and excretion
+@ ask: Ana says Leo might be "a bit allergic" to antibiotics. What should the nurse do, and what is an allergic reaction? (2 marks) || An allergic reaction: the body sees the drug as an antigen and mounts an immune response against it | Ask exactly what happened; document it; tell the prescriber before any penicillin is given
+@ ask: Give one piece of safe advice for Ana about storing and giving amoxicillin suspension. (2 marks) || Store it in the fridge, out of reach of children | Finish the whole course; measure with a medicine syringe or cup, not a teaspoon
+@ say: Scenario 2, Leo
+
+Q: Scenario two. Leo is four and weighs eighteen kilograms. He has a fever and an ear infection. His G P prescribes amoxicillin oral suspension, and paracetamol fifteen milligrams per kilogram, by mouth, every four to six hours as required, no more than four doses in twenty-four hours. His mum, Ana, says she thinks he might be a bit allergic to antibiotics.
+
+Q: One mark. Calculate Leo's single dose of paracetamol.
+
+Fifteen milligrams times eighteen kilograms is two hundred and seventy milligrams. No working needed, just the answer.
+
+Q: Two marks. Identify two reasons Leo is given paracetamol.
+
+It's an analgesic: it relieves mild to moderate pain, here his sore ear. And it's an antipyretic: it brings his fever down.
+
+Q: One mark. Why are children prescribed lower doses than adults?
+
+Their liver and kidneys are immature, so they metabolise and excrete drugs more slowly. Liver, metabolism. Kidneys, excretion. Joan said this comes up in State Finals too.
+
+Q: Two marks. Ana says Leo might be a bit allergic to antibiotics. What is an allergic reaction, and what should the nurse do?
+
+An allergic reaction is when the body sees the medication as an antigen and mounts an immune response against it. That's her formative one key. The nurse asks exactly what happened last time, documents it, and tells the prescriber before any penicillin is given. Antibiotics cause the most allergic reactions of any drug class.
+
+Q: Two marks. Give one piece of safe advice for Ana about storing and giving amoxicillin suspension.
+
+This is her formative one, question nineteen, and any one answer earns the marks. Store it in the fridge, out of Leo's reach. Or: finish the whole course, even when he seems better, to fully treat the infection. Or: measure it with a medicine syringe or cup, not a kitchen teaspoon.
+
+{recap} Scenario two, Leo. Paracetamol fifteen milligrams per kilogram times eighteen is two hundred and seventy milligrams. Paracetamol is an analgesic and an antipyretic. Children get lower doses because of an immature liver and kidneys. An allergy is the body treating the drug as an antigen; ask, document, tell the prescriber. Amoxicillin: fridge, out of reach, finish the course, use a syringe.
+
+# Scenario 3: Mr Tane, after surgery, with angina
+@ why: Morphine, GTN and the controlled drugs are on her 20 Oct list; she said on 27 Oct she would go over controlled drugs again on the 28th, and formative 2 asks what a controlled drug is. Medication errors and refusal are on formatives 1 and 3.
+@ scen: Mr Tane is 64 and is on the surgical ward after a bowel resection. He has angina and uses a GTN spray. He is prescribed morphine 2.5 mg IV PRN for severe pain, and his own GTN 400 microgram spray, 1 spray SL PRN for chest pain.
+@ ask: Morphine is a controlled drug. What is a controlled drug, and give one way it is handled differently on the ward? (2 marks) || A medicine under special legal controls (Misuse of Drugs Act 1975) to reduce misuse and abuse | Stored in a double-locked safe; recorded in a controlled drug register; checked and signed by two nurses
+@ ask: Identify two things the nurse monitors after giving Mr Tane morphine. (2 marks) || Respiratory rate and sedation level (respiratory depression is the toxic effect) | Pain score; blood pressure; nausea and constipation
+@ ask: Why is GTN given sublingually, and what is one side effect? (2 marks) || Under the tongue: absorbed straight into the blood, fast, bypasses first-pass metabolism in the liver | Headache, dizziness, low blood pressure (sit down first)
+@ ask: Mr Tane says he doesn't want his next dose. What should the nurse do? (1 mark) || Respect it (a person can legally refuse), explore why, document it and tell the RN or prescriber
+@ say: Scenario 3, Mr Tane
+
+Q: Scenario three. Mr Tane is sixty-four, on the surgical ward after a bowel resection. He has angina and uses a G T N spray. He's prescribed morphine two point five milligrams I V P R N for severe pain, and his own G T N spray, four hundred micrograms, one spray S L, sublingual, P R N for chest pain.
+
+Q: Two marks. Morphine is a controlled drug. What is a controlled drug, and give one way it's handled differently on the ward.
+
+A controlled drug is a medicine under special legal controls, under the Misuse of Drugs Act 1975, to reduce misuse and abuse. That's her formative two key. On the ward it's kept in a double-locked safe, recorded in the controlled drug register, and checked and signed by two nurses. Remember: every controlled drug is prescribed, but not every prescribed drug is controlled.
+
+Q: Two marks. Identify two things the nurse monitors after giving Mr Tane morphine.
+
+His respiratory rate and his level of sedation, because respiratory depression is morphine's toxic effect. And his pain score, to see if it worked. You could also say blood pressure, nausea, or constipation.
+
+Q: Two marks. Why is G T N given sublingually, and what's one side effect?
+
+Under the tongue, it's absorbed straight into the bloodstream, so it works very fast and it skips the first-pass metabolism in the liver. Angina is dangerous: the heart muscle is short of oxygen, so speed matters. A side effect: headache, dizziness, or low blood pressure, which is why he sits down before he uses it.
+
+Q: One mark. Mr Tane says he doesn't want his next dose. What should the nurse do?
+
+Respect it: a person can legally refuse a medicine. Find out why, document the refusal, and tell the R N or the prescriber. True, and document it, was her formative one answer.
+
+{recap} Scenario three, Mr Tane. Controlled drug: under special legal controls to reduce misuse and abuse; double-locked safe, register, two nurses. After morphine, monitor respiratory rate, sedation and pain. G T N is sublingual for speed and to skip first-pass; headache and low blood pressure, so sit down. A refusal: respect it, ask why, document, report.

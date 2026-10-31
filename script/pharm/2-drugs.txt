@@ -1,0 +1,98 @@
+% The drugs she named. Exam-prep slide 10: "Medications with specific questions … a simple understanding of these two
+% medications: paracetamol, salbutamol." 20 Oct [0:19:07-0:25:25]: aspirin (antiplatelet), warfarin and heparin, beta
+% blockers, GTN (anti-anginal, a nitrate vasodilator), the penicillins (antimicrobials), and "what do you assess before you
+% give the drug, what sort of monitoring". Facts from her overview deck and the sim's decks where they say it; the rest is
+% standard nursing pharmacology, kept at her "simple understanding" depth.
+
+# Paracetamol
+@ why: One of the only two medicines her exam-prep slide names under "medications with specific questions". She also used it on 20 Oct for maximal efficacy, and for generic versus brand names (Panadol and Panadeine both contain it).
+@ ask: Describe paracetamol: its class, what it is used for, and one important nursing consideration. (3 marks) || Class: analgesic and antipyretic; general sale medicine | Use: mild to moderate pain; fever | Adult dose up to 1 g, 4 to 6 hourly, max 4 g in 24 h; children 15 mg/kg a dose | Overdose damages the liver; antidote N-acetylcysteine | Check other products for hidden paracetamol (Panadol, Panadeine); teach the generic name | Has a ceiling: maximal efficacy, so more won't work faster
+@ say: Paracetamol
+
+Q: Three marks. Describe paracetamol: its drug class, what it's used for, and one important nursing consideration.
+
+Class: paracetamol is an analgesic and an antipyretic. It's a general sale medicine, so people can buy it at the supermarket.
+
+Use: mild to moderate pain, and fever. Not severe pain. Joan's example for maximal efficacy: paracetamol reaches its ceiling, and more of it won't give more relief. After that you move to another drug class.
+
+The nursing considerations, any one for the mark. The dose: for an adult, up to one gram every four to six hours, no more than four grams in twenty-four hours. For a child, fifteen milligrams per kilogram a dose. In overdose it damages the liver, and the antidote is N-acetylcysteine, often called N A C. And the one Joan teaches: check for hidden paracetamol. Panadol and Panadeine both contain it, so a patient who thinks they're two different drugs can double-dose. That's why you teach the generic name.
+
+{recap} Paracetamol: analgesic and antipyretic, general sale. Mild to moderate pain and fever. Adults up to one gram four- to six-hourly, max four grams a day; children fifteen milligrams per kilogram. Overdose harms the liver; the antidote is N A C. Watch for hidden paracetamol in other products.
+
+# Salbutamol
+@ why: The other medicine her exam-prep slide names for specific questions. On 20 Oct she asked the class its category (bronchodilator), and on 27 Oct she listed bronchodilator among the class definitions to know both ways.
+@ ask: Describe salbutamol: its class, how it works, and what the nurse teaches about using it. (3 marks) || Class: bronchodilator; short-acting beta-2 agonist; the reliever | Action: binds beta-2 receptors, relaxes airway smooth muscle, opens the airways, in minutes | Use: asthma and COPD, wheeze and breathlessness | Side effects: tremor, fast heart rate, palpitations, headache | Teach: spacer technique; carry it; needing it more often means see the doctor | Assess RR, work of breathing, wheeze, SpO2, HR before and after
+@ say: Salbutamol
+
+Q: Three marks. Describe salbutamol: its class, how it works, and what the nurse teaches about using it.
+
+Class: salbutamol is a bronchodilator. It opens the airways. More exactly, it's a short-acting beta-2 agonist, the reliever inhaler.
+
+How it works: it binds to beta-2 receptors in the smooth muscle of the airways, which relaxes the muscle and opens the airways within minutes. That makes it the textbook agonist: it binds and causes a response. The opposite is a beta blocker like metoprolol, an antagonist, which binds and blocks.
+
+Use: asthma and C O P D, for wheeze and breathlessness. Side effects: tremor, a fast heart rate, palpitations and headache.
+
+What the nurse teaches: how to use the inhaler with a spacer; to carry it at all times; and that needing it more and more often means their asthma isn't controlled, so see the doctor. And what the nurse assesses before and after: respiratory rate, work of breathing, wheeze, oxygen saturation and heart rate.
+
+{recap} Salbutamol: a bronchodilator, a short-acting beta-2 agonist, the reliever. Binds beta-2 receptors, relaxes airway smooth muscle, works in minutes. Asthma and C O P D. Side effects: tremor, fast heart rate. Teach the spacer; needing it more often means see the doctor. Assess breathing, saturations and heart rate before and after.
+
+# Aspirin, warfarin and heparin
+@ why: Named on 20 Oct: aspirin ("more antiplatelet"), then "the whole class of the anticoagulants … warfarin and heparin, it's good to know a little bit about those". Her overview deck uses aspirin as the drug in more than one class, and warfarin with amiodarone as its drug-interaction example.
+@ ask: Compare an antiplatelet with an anticoagulant, giving an example of each, and identify one nursing consideration for warfarin. (3 marks) || Antiplatelet: stops platelets sticking together; aspirin (low dose, to prevent heart attack and stroke) | Anticoagulant: interferes with the clotting process; warfarin (oral, monitored by INR, antidote vitamin K), heparin (injection, SC or IV, antidote protamine) | Both raise bleeding risk: watch for bruising, bleeding gums, blood in urine or stools | Warfarin: interactions (aspirin, amiodarone, alcohol, herbal), consistent diet, highly protein-bound | Aspirin is also analgesic, antipyretic, anti-inflammatory; not for children
+@ say: Aspirin, warfarin, heparin
+
+Q: Three marks. Compare an antiplatelet with an anticoagulant, giving an example of each, and identify one nursing consideration for warfarin.
+
+An antiplatelet stops platelets sticking together. The example is aspirin, which in a low daily dose is given as prophylaxis, to prevent a heart attack or a stroke. Aspirin is also Joan's example of one drug in several classes: an analgesic, an antipyretic, an anti-inflammatory and an antiplatelet.
+
+An anticoagulant interferes with the clotting process itself. Warfarin is taken by mouth, and it's monitored with the I N R blood test; its antidote is vitamin K. Heparin is given by injection, subcutaneously, usually into the abdomen, or I V; it works fast, and its antidote is protamine. They relate because both stop clots forming, so both raise the risk of bleeding.
+
+A nursing consideration for warfarin, any one. Teach the signs of bleeding: bruising, bleeding gums, blood in the urine, or black stools. Check for interactions: aspirin together with warfarin increases bleeding, and the deck's example is warfarin with amiodarone. Alcohol and herbal remedies interact too. And warfarin is about ninety-nine per cent protein-bound, so very little free drug is around, and anything that displaces it changes its effect.
+
+{recap} Antiplatelet: stops platelets sticking, like low-dose aspirin. Anticoagulant: interferes with clotting. Warfarin by mouth, monitored by I N R, antidote vitamin K. Heparin by injection, antidote protamine. Both raise bleeding risk: teach bruising, bleeding gums, blood in urine or stools. Warfarin interacts with aspirin and amiodarone.
+
+# Beta blockers and GTN
+@ why: Named together on 20 Oct as the cardiac drugs: "a beta blocker", then GTN, "a vasodilator … anti-angina". She warned there might be only one question on GTN. Formative 2 keys an antagonist with "a beta blocker is an example".
+@ ask: Explain how a beta blocker works, and identify what the nurse checks before giving one. (2 marks) || Antagonist at beta-1 receptors in the heart: blocks adrenaline, slows the heart rate and lowers BP; names end in -olol (metoprolol) | Check apical or radial pulse and BP first; withhold and report if the pulse is slow or BP low | Don't stop suddenly: rebound hypertension | Caution in asthma
+@ ask: Describe GTN: its class, why it is sublingual, and what to teach. (2 marks) || Nitrate vasodilator; anti-anginal; widens the coronary arteries | Sublingual: fast, straight into the blood, avoids first-pass | Sit down before using it; side effects headache, flushing, dizziness, low BP; call 111 if the pain doesn't settle
+@ say: Beta blockers and GTN
+
+Q: Two marks. Explain how a beta blocker works, and identify what the nurse checks before giving one.
+
+A beta blocker is an antagonist. It binds to the beta-1 receptors in the heart and blocks the body's own adrenaline from binding, so the heart rate slows and the blood pressure drops. They're used for high blood pressure, angina and atrial fibrillation. You can spot them by name: they end in olol, like metoprolol.
+
+Before giving it, check the pulse, apical or radial, and the blood pressure. If the pulse is slow or the blood pressure is low, withhold it and tell the R N or prescriber. Two more facts: don't stop a beta blocker suddenly, because that causes rebound hypertension; and use it with caution in asthma, because blocking beta receptors can tighten the airways, the opposite of salbutamol.
+
+Q: Two marks. Describe G T N: its class, why it's sublingual, and what you teach.
+
+G T N, glyceryl trinitrate, is a nitrate vasodilator, an anti-anginal. It widens the coronary arteries so more oxygen reaches the heart muscle. It's given sublingually, under the tongue, as a spray or a tablet, because that route is fast and goes straight into the blood, avoiding first-pass metabolism. What to teach: sit down before you use it, because it can make you dizzy; it commonly causes a headache, flushing and low blood pressure; and if the chest pain doesn't settle as the plan says, call one one one.
+
+{recap} Beta blockers end in olol, like metoprolol: antagonists at beta-1, slow the heart, lower blood pressure. Check pulse and blood pressure first; withhold if low. Don't stop suddenly. G T N: nitrate vasodilator, anti-anginal; sublingual for speed and to avoid first-pass; sit down, expect a headache; call one one one if pain persists.
+
+# The penicillins and antimicrobials
+@ why: "Another big group … all the antimicrobials, you must know that group" (20 Oct), with the penicillin family named. Two formative questions sit on it: the allergic-to-penicillin patient (mini-exam 1 Q3) and the amoxicillin suspension advice (mini-exam 1 Q19).
+@ ask: Why does Joan call them antimicrobials rather than antibiotics? Give one nursing consideration before giving a penicillin. (2 marks) || Antimicrobials act on microbes: antibiotics (bacteria), antifungals, antivirals, antiparasitics; antibiotics are one sub-family | Penicillins (names end in -cillin, like amoxicillin) kill bacteria by damaging the cell wall | Before: ask about allergy; antibiotics cause the most drug allergies | After: watch for rash, hives, anaphylaxis; teach to finish the course (resistance)
+@ say: The penicillins
+
+Q: Two marks. Why does Joan call them antimicrobials rather than antibiotics? And give one nursing consideration before giving a penicillin.
+
+Antimicrobial is the big family: anything that acts on microbes. Antibiotics act on bacteria, but the family also includes antifungals, antivirals and antiparasitics. So antibiotics are just one sub-family. The penicillins are antibiotics: their names end in cillin, like amoxicillin and flucloxacillin, and they kill bacteria by damaging the bacterial cell wall.
+
+Before giving one: ask about allergy, every time. Of all the drug classes, antibiotics cause the most allergic reactions, and penicillin allergy can mean anaphylaxis. After giving it, especially a first dose, watch for rash, hives, swelling or breathing trouble. And teach the patient to finish the whole course, because stopping early helps bacteria become resistant.
+
+{recap} Antimicrobials are the whole family: antibiotics, antifungals, antivirals, antiparasitics. Penicillins end in cillin, like amoxicillin, and damage the bacterial cell wall. Ask about allergy before every first dose; antibiotics cause the most drug allergies. Watch for anaphylaxis. Finish the course.
+
+# Morphine and the opioids
+@ why: Morphine is on her 20 Oct list, it is her overview deck's toxic-effect example (respiratory depression on a PCA) and its slowest-route example, and Module 9's tolerance example. It is also the example of a controlled drug that is prescribed (Class B).
+@ ask: Describe morphine's class and identify two adverse effects the nurse monitors for. (3 marks) || Opioid analgesic for severe pain; an agonist at opioid receptors; Class B controlled drug | Respiratory depression (the toxic effect): monitor respiratory rate and sedation | Nausea, constipation, hypotension, drowsiness, itch | Antidote naloxone, an opioid antagonist | Tolerance with regular use; dependence
+@ say: Morphine
+
+Q: Three marks. Describe morphine's class, and identify two adverse effects the nurse monitors for.
+
+Morphine is an opioid analgesic, for severe pain. It's an agonist at the opioid receptors. Legally, it's a Class B controlled drug: prescribed, but double-locked and checked by two nurses.
+
+Adverse effects. The big one is respiratory depression. In her overview deck, a patient on a morphine P C A whose breathing slows is her example of a toxic effect. So you monitor the respiratory rate and the level of sedation. The others: nausea, constipation, low blood pressure, drowsiness and itch.
+
+Two more facts that turn up in the multi-choice. The antidote is naloxone, an opioid antagonist that reverses an overdose. And morphine users develop tolerance quickly: the same dose stops controlling the pain, so they need more for the same effect. Of morphine's routes, by mouth gives the slowest relief, and I V the fastest.
+
+{recap} Morphine: an opioid analgesic for severe pain, an agonist, Class B controlled. Toxic effect: respiratory depression, so monitor respiratory rate and sedation. Also nausea, constipation, low blood pressure. Antidote: naloxone, an antagonist. Tolerance develops quickly.
