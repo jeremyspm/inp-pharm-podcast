@@ -1,0 +1,162 @@
+% The multi-choice half: 40 marks. One-line facts from the lecturers' own quiz keys (inp-final/bank, 191 questions from 19
+% Canvas quizzes), only those no short-answer track above already says. Each key is the lecturers', in their words.
+
+# The multi-choice: clinical facts
+@ why: Forty marks are multi-choice, and the lecturers' own Canvas quizzes are the only questions of theirs that exist. These are the keys from those quizzes that no short-answer track says, clinical side first. Lisa on 27 Oct: think of the answer before you read the options.
+@ ask: The lecturers' quiz keys, clinical side (1 mark each) || RR 32 = tachypnoea; HR 48 = bradycardia; over 100 = tachycardia | Below 35 °C = hypothermia; fever = pyrexia (39.6 °C is pyrexic) | Apnoea = no breathing; dyspnoea = short of breath | Respirations are the vital sign most under conscious control | Sphygmomanometer measures BP | EWS: recognise and respond to deterioration | Pain charted PRN 4-hourly: first assess | Donning: hand hygiene, gown, mask, goggles, gloves | Standard precautions: any time you are exposed to body fluids | Documentation: black pen; error = line, initial, "error"; no gaps so nothing can be added | Independent nursing intervention: vital signs | Short-term goal: walk 100 m unaided within a week | Care plan needs revising: frequent hypos; working: pain 2 out of 10 | Fractured ribs = acute pain; immobile = risk for impaired skin integrity | NANDA before 2002: North American Nursing Diagnosis Association | Gillick competence: true | Consent: obtained by whoever does the procedure
+@ say: Clinical facts
+
+The multi-choice is forty marks. Lisa's method: read the stem to the end, think of the answer in your head, then find it. There's always one obviously wrong option, one right one, and one almost right. And watch for all of these: the lecturers use it a lot, and it's often the key.
+
+These are their own quiz keys. Answer each one before I do.
+
+Q: A regular respiratory rate of thirty-two is called?
+
+Tachypnoea.
+
+Q: A heart rate of forty-eight?
+
+Bradycardia. Over a hundred is tachycardia.
+
+Q: A temperature below thirty-five degrees? And the medical word for fever?
+
+Hypothermia. Fever is pyrexia, and thirty-nine point six is pyrexic.
+
+Q: No breathing at all? Short of breath?
+
+Apnoea. Dyspnoea.
+
+Q: Which vital sign is most under conscious control?
+
+Respirations. That's why you count them while you seem to take the pulse.
+
+Q: What's the early warning score for?
+
+Recognising clinical deterioration, and responding to it.
+
+Q: Pain relief is charted P R N, four-hourly. The patient complains of pain. What's your first step?
+
+Assessment. Always assess before you act.
+
+Q: The order for putting on P P E?
+
+Hand hygiene, gown, mask, goggles, gloves.
+
+Q: When do you use standard precautions?
+
+Any time you're exposed to body fluids.
+
+Q: What colour pen? And a mistake in the notes?
+
+Black, in the lecturers' key. Janine's slide says blue or black, permanent. A mistake: one line through it, initial it, and write error. You leave no gaps so that nothing new can be added.
+
+Q: An independent nursing intervention?
+
+Taking vital signs. The nurse can do it without an order.
+
+Q: Which is a short-term goal?
+
+The patient will walk a hundred metres without assistance within one week.
+
+Q: Which outcome shows a diabetes care plan needs revising? And which shows a pain plan is working?
+
+Frequent hypos means revise it. Pain two out of ten means it's working.
+
+Q: Fractured ribs: the prioritised nursing diagnosis? And an immobile patient?
+
+Acute pain. Risk for impaired skin integrity.
+
+Q: Before 2002, N A N D A stood for?
+
+North American Nursing Diagnosis Association.
+
+Q: Gillick competence tests whether a child can consent, by their maturity and understanding. True or false?
+
+True. It's the one quiz fact that isn't on a slide.
+
+{recap} Clinical keys: thirty-two breaths is tachypnoea; forty-eight beats is bradycardia; under thirty-five is hypothermia; fever is pyrexia. P R N pain: assess first. Donning: hand hygiene, gown, mask, goggles, gloves. Black pen; an error gets one line, initials, error. Frequent hypos means revise the plan. Gillick competence: true.
+
+# The multi-choice: population and professional facts
+@ why: The rest of the lecturers' quiz keys that no short-answer track says, from Lisa's side and the professional topics: public health, the Code of Conduct, advocacy and the Practice Quizzes captured on 27 Oct.
+@ ask: The lecturers' quiz keys, population and professional side (1 mark each) || Whooping cough = pertussis | Smokefree: protect non-smokers, encourage quitting | Water quality: hydration, preventing waterborne disease | Key epidemiology term: incidence rate | Experimental study: actively changes a disease's progress | Equity: tailoring services to each patient's needs | Low education: limited health literacy | Code of Conduct: principle 1 dignity and individuality; principle 8 public trust and confidence | Family and patient disagree: the nurse advocates | Telemedicine helps people far from care | Long-term conditions were called chronic conditions | Hypertension plus diabetes plus asthma = multimorbidity | COPD: smoking cessation | Interdependence: the person in their wider social context | Holistic: physical, psychological, social, spiritual | Family member reports mother's pain = secondary source | Auscultating heart sounds is objective, not subjective | Hand hygiene: most effective infection control | EBP: Cochrane; clinical expertise = skills from experience
+@ say: Population and professional facts
+
+Now the other side of the course.
+
+Q: Whooping cough is also known as?
+
+Pertussis.
+
+Q: The main objective of smokefree environments?
+
+Protecting non-smokers from second-hand smoke, and encouraging people to quit.
+
+Q: Why does water quality matter to public health?
+
+Hydration, and preventing waterborne disease.
+
+Q: A key term in epidemiology?
+
+Incidence rate.
+
+Q: What does an experimental study involve?
+
+An active attempt to change the progress of a disease, through treatment.
+
+Q: Which best shows equity in healthcare?
+
+Tailoring services to meet the specific needs of each patient.
+
+Q: Patients with a low level of education may struggle because of?
+
+Limited health literacy.
+
+Q: Respect the dignity and individuality of health consumers: which principle of the Code of Conduct? And maintain public trust and confidence in the profession?
+
+Principle one. Principle eight.
+
+Q: A patient with end-stage lung disease wants to go home on oxygen and be comfortable. The family wants everything done. What's the nurse's role?
+
+Advocate.
+
+Q: Telemedicine helps most whom?
+
+People who struggle to reach healthcare because of where they live.
+
+Q: Long-term conditions used to be called?
+
+Chronic conditions.
+
+Q: A sixty-five-year-old with hypertension, type 2 diabetes and asthma?
+
+Multimorbidity.
+
+Q: The lifestyle change usually recommended for C O P D?
+
+Stopping smoking.
+
+Q: What does interdependence mean, for long-term conditions?
+
+Engaging with the person within their wider social context.
+
+Q: What does a holistic assessment include?
+
+Physical, psychological, social and spiritual aspects. Two physical assessments in it: vital signs, and falls risk.
+
+Q: A family member tells you their mother is in pain. What source is that?
+
+Secondary. The patient is the primary source.
+
+Q: Which is not subjective data: the patient's nausea, their pain, or auscultating their heart sounds?
+
+Auscultating heart sounds. That's objective.
+
+Q: The most effective way to stop infections spreading?
+
+Hand hygiene.
+
+Q: Which database for evidence? And what's clinical expertise?
+
+The Cochrane Library. Clinical expertise is the skills and knowledge gained through clinical experience.
+
+{recap} Population and professional keys: whooping cough is pertussis; incidence rate; equity is tailoring to need; Code of Conduct principle one is dignity, principle eight is public trust; family disagrees, the nurse advocates; three conditions at once is multimorbidity; a relative's report is a secondary source; heart sounds are objective; hand hygiene is the most effective.

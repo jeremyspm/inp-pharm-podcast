@@ -1,0 +1,213 @@
+% Janine's half: her "Revision Semester 2 2026" deck (111 slides, not talked through in a recorded session), its source
+% lectures (02 Lecture slides.md) where the revision deck is thin, the CLS "Inpatient Prep – Injections" page via
+% inp-final/content/authored/injections.js, and the lecturers' quiz keys in inp-final's bank.
+
+# The nursing process and care planning
+@ why: "Nursing process: Nursing care planning" is an Exam Content theme and opens Janine's revision deck (slides 3 to 10). Learning outcome 1 is apply the nursing process, and it returns in holistic assessment and discharge planning. The quiz only asks you to recognise a good diagnosis or goal; writing one is the short-answer risk.
+@ ask: Describe the five steps of the nursing process and compare a medical diagnosis with a nursing diagnosis. (4 marks) || ADPIE: assessment, diagnosis, planning, implementation, evaluation | Assessment: observation, interview, examination; objective (signs) and subjective (symptoms); primary, secondary, tertiary sources | Diagnosis: actual or potential problems nursing can prevent, reduce or resolve; NANDA-I; prioritised | Planning: SMART short- and long-term goals; restate the diagnosis as improvement | Implementation: evidence-based, safe, within scope, compatible with medical orders | Evaluation: goal met, partly met, not met; timed, dated, signed; ongoing | Medical diagnosis names the disease; nursing diagnosis names the response the nurse can manage (Risk for infection)
+@ say: The nursing process
+
+Q: Four marks. Describe the five steps of the nursing process, and compare a medical diagnosis with a nursing diagnosis.
+
+The nursing process is an organised sequence of problem-solving steps used to identify and manage a patient's actual and potential health problems. It needs critical thinking, and it's at the core of holistic, patient-focused care. Five steps: A D P I E.
+
+Assessment. Observation, interview and examination. Objective data are observable and measurable facts: signs. Subjective data are what only the patient can feel and describe: symptoms. Sources: primary is the patient. Secondary is the family, records, test results and other staff. Tertiary is textbooks, journals and policies.
+
+Diagnosis. Identifying actual or potential problems that nursing can prevent, reduce or resolve on its own, written as N A N D A International statements, and prioritised: life-threatening first, then safety, then what the patient says matters.
+
+Planning. Prioritised short- and long-term goals with outcome criteria. The goal restates the diagnosis as improvement, control or absence of the problem, and it should be SMART: specific, measurable, achievable, realistic and timely. For example, walks fifty metres with assistance within forty-eight hours.
+
+Implementation. Interventions that are evidence-based, safe, within the legal scope of nursing, and compatible with medical orders.
+
+Evaluation. Has the goal been met, partly met or not met? Each one is timed, dated and signed, and evaluation is ongoing.
+
+The comparison. A medical diagnosis names the patient's disease or condition, like pneumonia. A nursing diagnosis names the patient's actual or potential response to that condition, which the nurse can manage, like risk for infection, or acute pain. So the nursing diagnosis explains the effect of the medical one.
+
+{recap} Nursing process, A D P I E: assessment, with objective signs and subjective symptoms; diagnosis, N A N D A, prioritised; planning, SMART goals; implementation, evidence-based, safe, in scope; evaluation, met, partly met or not met, timed, dated, signed. Medical diagnosis names the disease; nursing diagnosis names the response the nurse can manage.
+
+# Holistic assessment, falls and wounds
+@ why: The Exam Content line "emergency, holistic, pain, wound and fall risk assessment" names five assessments. Lisa's one marked practice question on 27 Oct was falls prevention, with her marking guide on slide 101. Janine's deck gives the Morse Fall Scale and the wound TIME mnemonic, which no lecturer quiz asks.
+@ ask: An older patient has become unsteady when mobilising to the bathroom. Identify and describe five nursing strategies used to prevent falls, and explain how they reduce harm and improve patient outcomes. (4 marks) || Lisa's marking guide: 1 mark identify five, 1 mark describe five, 2 marks explain | Assess falls risk (Morse Fall Scale) | Keep the environment free of hazards: clear path to the bathroom | Call bell within reach, and teach how and when to use it | Appropriate mobility aids: physio referral | Assist with mobilising; non-slip socks | Reduce injury, maintain independence, improve safety, prevent fractures, longer stays and loss of confidence | Morse: history of falling, secondary diagnosis, ambulatory aid, IV or heparin lock, gait, mental status; 0 none, under 25 low, 25 to 45 moderate, over 45 high | Wound TIME: tissue, inflammation or infection, moisture, edges
+@ say: Falls and wounds
+
+Q: Four marks. An older patient has become unsteady when mobilising to the bathroom. Identify and describe five nursing strategies used to prevent falls. Then explain how these strategies reduce harm and improve patient outcomes.
+
+This is Lisa's practice question with her marking guide, so you know the split: one mark for identifying five strategies, one for describing them, two for the explain part.
+
+Part one, five strategies, each described.
+Assess falls risk with the Morse Fall Scale. The score sets the level of care and shapes the care plan.
+Keep the environment free of hazards: a clear path from bed to bathroom, no trip hazards, good lighting.
+Call bell within reach, and teach the patient how and when to use it, so they can call for help instead of walking alone.
+Appropriate mobility aids: refer to the physio to review whether a walking frame is needed.
+Help with mobilising when needed, and non-slip socks, which grip better than slippers.
+
+Part two, explain. These strategies reduce the risk of injury, maintain the patient's independence and improve their safety. They prevent complications like fractures and head injuries, longer hospital stays, and the loss of confidence that keeps people from moving, which then makes them weaker. Falls are a leading cause of death in older adults, which is why it matters.
+
+The Morse Fall Scale, for the multi-choice. Six items: history of falling, secondary diagnosis, ambulatory aid, I V or heparin lock, gait, and mental status. Scores run from zero to a hundred and twenty-five. Zero is no risk, under twenty-five is low, twenty-five to forty-five is moderate, over forty-five is high.
+
+And if the question is wound assessment, use TIME. T, tissue: granulation, slough, necrotic or epithelial. I, inflammation or infection: pain, redness, swelling, and the look and smell of the exudate. M, moisture balance: dry, moist, wet, saturated or leaking. E, epidermal edges: is it closing, and its measurements. A holistic assessment covers physical, psychological, social and spiritual health, and the spiritual part includes values, meaning, concerns about death, and resuscitation status.
+
+{recap} Falls, Lisa's marking: one mark identify five, one describe, two explain. Assess with Morse; clear the environment; call bell in reach and teach it; mobility aids with physio; help to mobilise, non-slip socks. They reduce injury, keep independence, prevent fractures and longer stays. Morse over forty-five is high risk. Wounds: TIME, tissue, inflammation or infection, moisture, edges.
+
+# Informed consent
+@ why: "Informed consent" is an Exam Content theme with nine slides in Janine's revision deck (21 to 28). The lecturers' quiz asks it as short scenarios: an interpreter, a change of mind, a patient with dementia, and the age of 16.
+@ ask: Define informed consent and discuss the nurse's role in the consent process, including who can give consent. (4 marks) || Definition: telling the patient the benefits, risks and alternatives so they can decide; every procedure; written or verbal | Code of Rights Right 7; NZ Bill of Rights Act s11, right to refuse | 16 and over consent for themselves; guardian or enduring power of attorney if incompetent; parent or guardian under 16; court order | Mental Health Act 1992: can't consent but has the right to be informed and to an interpreter | Nurse as advocate: interpreter, whānau support, call the team back if information is missing, check understanding and questions; may witness the signature | Can withdraw at any time: stop and notify
+@ say: Informed consent
+
+Q: Four marks. Define informed consent, and discuss the nurse's role in the consent process, including who can give consent.
+
+Informed consent is the process of telling a patient the benefits, risks and alternatives of a procedure or treatment, so they can make an informed decision to accept it or not. It's needed for every healthcare procedure, and it can be written or verbal. The law behind it: Right seven of the Code of Health and Disability Services Consumers' Rights, the right to make an informed choice and give informed consent; and section eleven of the New Zealand Bill of Rights Act, the right to refuse treatment.
+
+Who can consent. Anyone sixteen or over can consent to, or refuse, their own treatment. If someone over sixteen isn't competent, a legal guardian or someone with a current enduring power of attorney decides. For under-sixteens, a parent or guardian. Or a court order. A patient committed under the Mental Health Act 1992 can't consent, but they still have the right to be told about their treatment in a way they understand, and the right to an interpreter.
+
+Now discuss the nurse's role. The nurse is the patient's advocate. Arrange an interpreter if one's needed, a professional one, not family. Make sure whānau support is there if appropriate. Check the medical team has given all the information in a way the patient understands, and if not, call them back. Make sure the patient has had a chance to ask questions, and check they understand. Know enough about the procedure yourself. And sometimes the nurse witnesses the signature, confirming the person signed in their presence and is of legal age and competent.
+
+Two scenarios the quiz uses. A patient changes their mind halfway through a blood transfusion: consent can be withdrawn at any time, so stop and notify. And consent is obtained by the person doing the procedure.
+
+{recap} Informed consent: benefits, risks and alternatives, so the patient can decide; every procedure, written or verbal. Right seven of the Code; Bill of Rights section eleven, the right to refuse. Sixteen and over consent for themselves. Nurse is the advocate: professional interpreter, whānau, call the team back, check understanding. Withdrawn mid-procedure: stop and notify.
+
+# Health literacy and patient education
+@ why: "Health Literacy" and "Patient education" are two Exam Content themes and twelve slides of Janine's revision deck. Half the lecturers' quiz is scenarios with the same answer in different clothes: plain language, show me, teach-back.
+@ ask: Define health literacy and describe strategies a nurse can use to educate a patient with low health literacy, including the teach-back method. (4 marks) || Personal health literacy: the ability to find, understand and use information and services for health decisions | Organisational: how equitably an organisation enables that | Not determined by intelligence or income | Poor health literacy: less screening, poorer LTC management, more admissions and ED visits | Ask, Build, Check (teach-back, the gold standard): "tell and show me what you understand" | Interpreter, multilingual resources, plain language, 3 to 5 key points, be specific, demonstrate and draw, be positive
+@ say: Health literacy
+
+Q: Four marks. Define health literacy, and describe strategies a nurse can use to educate a patient with low health literacy, including the teach-back method.
+
+Personal health literacy is a person's ability to find, understand and use information and services to make health decisions for themselves and others: to navigate the system, understand their condition, manage long-term conditions, use medicines safely and give informed consent. Organisational health literacy is how equitably an organisation makes that possible. And the line from Janine's slide: health literacy is not determined by intelligence or income.
+
+Why it matters. People with poor health literacy are less likely to use screening, less likely to manage a long-term condition, and more likely to be admitted to hospital and to use emergency services. New Zealand is the only country with a framework that makes health literacy core business across the health system.
+
+Now the strategies. The gold standard is teach-back, in three steps: Ask, Build, Check. Ask what they already know, for example, what do you already know about your diabetes? Build on it with the new information. Then Check they actually understood, not by asking do you understand, but by saying, tell me and show me what you understand.
+
+Alongside it: arrange a professional interpreter, and use multilingual resources. Use plain language, or explain medical terms. Limit it to three to five key points, and be specific, not general. Demonstrate, draw pictures, use models or videos. Be positive, hopeful and empowering. And set up the learning environment: quiet, private, comfortable. For a child, play therapy works, like a six-year-old with an I V line.
+
+{recap} Health literacy: the ability to find, understand and use health information and services; not about intelligence or income. Low literacy means less screening, more admissions. Teach-back is the gold standard: Ask, Build, Check, "tell and show me what you understand". Interpreter, plain language, three to five key points, demonstrate, be positive.
+
+# Vital signs, the primary survey, glucose and injections
+@ why: "Vital signs, injections, blood glucose monitoring" and "emergency assessment" are on the Exam Content page, with sixteen slides in Janine's revision deck. The lecturers' quiz asks terms and ranges; injections are named on the themes list but taught only on the Clinical Learning Suite page.
+@ ask: Describe the primary survey (A to E) and give the normal adult range for each vital sign it includes. (4 marks) || Airway: talking, coughing, blocked, drooling | Breathing: RR 12 to 20, depth, sounds, work of breathing; SpO2 95 to 100% | Circulation: BP systolic 110 to 140, diastolic 60 to 90; pulse 60 to 100, rate, rhythm, strength, equality | Disability: AVPU; GCS 3 to 15 (eye, verbal, motor) | Exposure: temperature 36.5 to 37.5 °C | Blood glucose 4 to 7.5 mmol/L; hypo under 4 | Injections: IM 90°, subcut 45° (90° if 5 cm can be grasped), intradermal 15°; ventrogluteal max 4 mL, deltoid 2 mL or less, vastus lateralis 5 mL
+@ say: Vital signs
+
+Q: Four marks. Describe the primary survey, A to E, and give the normal adult range for each vital sign it includes.
+
+The primary survey gives the most important information first, in order of clinical importance.
+
+Airway. Can the patient talk normally? Can they cough? Can you see anything blocking it? Are they anxious, or drooling? An airway obstruction can kill within minutes.
+
+Breathing. Respiratory rate, normal twelve to twenty breaths a minute. Count it while you appear to take the pulse, so the patient doesn't change their breathing: thirty seconds times two, or a full minute if it's irregular. Under twelve is bradypnoea, over twenty is tachypnoea. Check depth, sounds like stridor or wheeze, and the work of breathing: nasal flaring, indrawing, tracheal tug, cyanosis. Oxygen saturation, normal ninety-five to one hundred per cent.
+
+Circulation. Blood pressure: systolic one-ten to one-forty, diastolic sixty to ninety. The first Korotkoff sound is the systolic. Pain, anxiety, exertion, white coat syndrome, age, medicines and blood loss all change it. Pulse: sixty to a hundred beats a minute, checking rate, rhythm, strength and equality. If it's irregular, count a full minute. Never check both carotids at once.
+
+Disability: level of consciousness. AVPU is Alert, Voice, Pain, Unresponsive. The Glasgow Coma Scale scores eye opening, verbal and motor response, from three to fifteen.
+
+Exposure: temperature, normal thirty-six point five to thirty-seven point five degrees.
+
+Two more number sets the themes list names. Blood glucose: normal four to seven point five millimoles per litre, and under four is a hypo. Injections: intramuscular at ninety degrees, subcutaneous at forty-five, or ninety if you can grasp five centimetres of tissue, and intradermal at fifteen. The ventrogluteal site is safe for all patients, up to four mils. The deltoid takes two mils or less. The abdomen is the usual site for insulin and heparin.
+
+{recap} Primary survey: airway; breathing, twelve to twenty, saturations ninety-five to one hundred; circulation, B P one-ten to one-forty over sixty to ninety, pulse sixty to a hundred; disability, AVPU and G C S three to fifteen; exposure, thirty-six point five to thirty-seven point five. Glucose four to seven point five. Injections: I M ninety degrees, subcut forty-five, intradermal fifteen.
+
+# Documentation and ISBAR
+@ why: "Documentation, Communication (ISBAR(R)/SOAPIER)" is an Exam Content theme with eleven slides in Janine's revision deck. The lecturers' quiz asks rule recall and one applied ISBAR item.
+@ ask: Explain why clinical documentation is a legal and professional requirement and describe the ISBAR framework for handing over a deteriorating patient. (4 marks) || Legal: HPCA Act 2003, the Code (HDC Act 1994, Right 1 privacy), Privacy Act 2020 | Professional: Code of Conduct, pou 3 (legible, accurate, timely) | Not documented = not done; the organisation owns the notes | Label on every page, 24-hour time, sign and designation, blue or black ink, no gaps, one line through errors, no white-out | ISBAR(R): identify, situation, background, assessment, recommendation, review | SOAPIER: subjective, objective, assessment, plan, intervention, evaluation, revision
+@ say: Documentation and ISBAR
+
+Q: Four marks. Explain why clinical documentation is a legal and professional requirement, and describe the ISBAR framework for handing over a deteriorating patient.
+
+Documentation is three things: a legal requirement, a professional responsibility, and a communication tool.
+
+Legal: the Health Practitioners Competence Assurance Act 2003, which exists to protect the public by making sure practitioners are competent; the Code of Rights under the Health and Disability Commissioner Act 1994, where Right one includes having your privacy respected; and the Privacy Act 2020. Professional: the Nursing Council Code of Conduct, and pou three of the standards, which says documentation must be legible, relevant, accurate, professional and timely. And the rule that ties it together: if care isn't recorded, it's assumed it wasn't given. The healthcare organisation owns the notes.
+
+How to document, for the multi-choice. A patient label on every page. Date and time in twenty-four-hour time. Your name, signature and designation at the end. Permanent blue or black ink. No gaps: strike through to the end of the line. A mistake gets one line through it so the original can still be read, then sign it and note it's an error. Never white-out. No generalisations like condition unchanged, no judgemental language, and use correct terms: write cyanosis, not blue lips.
+
+Now ISBAR, with its extra R. I, identify: yourself, your role, and the patient. S, situation: what's happening right now. B, background: why they came in and the relevant history. Letter A, assessment: vital signs, anything outside normal, and your clinical impression. For example, temperature thirty-nine point three and she's confused. R, recommendation: what you need done, and how urgently. And R, review: what happened after the action.
+
+The other framework is SOAP, or SOAPIER: subjective, objective, assessment, plan, intervention, evaluation and revision.
+
+{recap} Documentation is legal, the H P C A Act, the Code and the Privacy Act; professional, the Code of Conduct and pou three; and communication. Not documented means not done. Blue or black ink, no gaps, one line through errors. ISBAR: identify, situation, background, assessment, recommendation, review. SOAPIER: subjective, objective, assessment, plan, intervention, evaluation, revision.
+
+# Infection prevention and control
+@ why: "Infection prevention and control" is an Exam Content theme and nine slides of Janine's revision deck. The lecturers' quiz asks match-the-precaution vignettes, hand hygiene as the most effective method, and the donning order.
+@ ask: Describe the chain of infection and explain how standard and transmission-based precautions break it, with an example of each type of transmission-based precaution. (4 marks) || Chain: infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host | Standard precautions: minimum for every patient, because you can't tell who is infectious; hand hygiene (most effective), PPE, cough etiquette, sharps, linen and waste, aseptic technique, cleaning | Contact: gown and gloves; MRSA, ESBL, gastro | Droplet: medical mask, eye protection, gown, gloves; influenza, mumps, meningitis | Airborne: N95 respirator, negative-pressure room; measles, chickenpox, TB, COVID-19 | HAIs: the most frequently reported adverse event
+@ say: Infection control
+
+Q: Four marks. Describe the chain of infection, and explain how standard and transmission-based precautions break it, with an example of each type of transmission-based precaution.
+
+The chain of infection has six links. The infectious agent: bacteria, viruses, fungi. The reservoir, where it survives: people, water, food, soil, animals, surfaces. The portal of exit, how it leaves: the respiratory tract, blood, skin, the gut. The mode of transmission: contact, droplet, airborne, ingestion. The portal of entry: broken skin, mucous membranes, the respiratory tract. And the susceptible host: babies, older people, pregnant women, the immunocompromised, patients in hospital, the unvaccinated. Break any one link and the infection stops.
+
+Standard precautions are the minimum for every patient, whatever their known status, whenever you might touch blood or body fluids, because you can't tell by looking who is infectious. They are hand hygiene, which is the most effective single method; P P E; respiratory hygiene and cough etiquette; safe sharps, never recap; linen and waste management; aseptic technique; and cleaning. They break the chain at transmission and entry.
+
+Transmission-based precautions are added on top, depending on how the organism spreads. Contact precautions: gown and gloves for every encounter, for M R S A, E S B L and gastro bugs, like a patient with diarrhoea. Droplet precautions: a medical mask, eye protection, gown and gloves, for influenza, mumps and meningitis. Airborne precautions: an N ninety-five respirator, eye protection, gown and gloves, and a negative-pressure room, for measles, chickenpox, T B and COVID. So a child with blisters and suspected chickenpox goes on airborne.
+
+Healthcare-associated infections are the most frequently reported adverse event in healthcare, which is why this matters.
+
+{recap} Chain of infection: agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host. Standard precautions for everyone: hand hygiene first, P P E, cough etiquette, sharps, waste, aseptic technique. Contact: gown and gloves, M R S A and gastro. Droplet: mask, influenza. Airborne: N ninety-five and a negative-pressure room, measles, chickenpox, T B.
+
+# Evidence-based practice
+@ why: "Evidence-based practice" is an Exam Content theme, seven slides of Janine's deck, and learning outcome 3 opens with discuss evidence-based practice. The lecturers' quiz asks its goal, its first step and the top of the evidence pyramid.
+@ ask: Define evidence-based practice and discuss why it is a professional requirement for nurses, including the levels of evidence. (4 marks) || EBP: best research, clinical expertise and patient values, to improve patient outcomes | A shift from opinion and past practice to research and evidence | Pou 4, pūkengatanga and evidence-informed practice; Code of Conduct principle 4 (keep knowledge up to date, reflect) | First step: formulate a clinical question | Levels: expert opinion, qualitative, quantitative, non-randomised trials, RCTs, systematic reviews (strongest) | Databases: CINAHL, Cochrane, JBI, PubMed
+@ say: Evidence-based practice
+
+Q: Four marks. Define evidence-based practice, and discuss why it's a professional requirement for nurses, including the levels of evidence.
+
+Evidence-based practice combines three things: the best research evidence, clinical expertise, and the patient's values, to improve patient outcomes. It's a shift in healthcare culture away from basing decisions on opinion and past practice, toward research and evidence.
+
+Why it's required. Pou four of the Registered Nurse Standards, pūkengatanga and evidence-informed nursing practice, requires nurses to use clinical skills and critical thinking informed by high-quality, current evidence, to give safe, quality care. And principle four of the Code of Conduct says keep your knowledge and skills up to date, and reflect on your practice with colleagues. Discuss means link it: evidence protects patients from outdated habits, and it's how practice keeps improving.
+
+The levels of evidence, weakest to strongest. Expert opinion. Qualitative studies. Quantitative studies. Non-randomised controlled trials. Randomised controlled trials. And at the top, systematic reviews. So the highest level is a systematic review.
+
+How to do it: the first step is to formulate a clinical question, then search the databases, like C I N A H L, the Cochrane Library, Joanna Briggs and PubMed. The primary goal of evidence-based practice is to improve patient outcomes.
+
+{recap} Evidence-based practice: best research, clinical expertise and patient values, to improve outcomes. Required by pou four and the Code of Conduct. Evidence from weakest to strongest: expert opinion, qualitative, quantitative, non-randomised trials, randomised controlled trials, systematic reviews at the top. First step: formulate a clinical question.
+
+# Self-care, burnout and compassion fatigue
+@ why: "Self-care in nursing" is an Exam Content theme and nine slides of Janine's revision deck. The lecturers' quiz can be passed on general knowledge, but the burnout versus compassion fatigue distinction needs the deck, and compare is one of Lisa's command words.
+@ ask: Compare burnout and compassion fatigue and describe self-care strategies that build a nurse's resilience. (4 marks) || Burnout: an occupational phenomenon from long-term unmanaged workplace stress; exhaustion, mental distance or cynicism, reduced professional efficacy; still feel compassion; builds over time | Compassion fatigue: from caring for people who suffer, absorbing their trauma as secondary trauma; loss of empathy; can follow one event; can affect life outside work | Self-care: deliberate, enjoyable, not selfish, needs boundaries | Strategies: realistic goals, let go of some control, change negative thinking, communicate, humour, exercise, 7 to 9 hours' sleep | Resilience: adapting positively to stress; protects against both
+@ say: Self-care
+
+Q: Four marks. Compare burnout and compassion fatigue, and describe self-care strategies that build a nurse's resilience.
+
+Compare means define both, then say how they relate.
+
+Burnout is an occupational phenomenon, not a medical condition. It comes from long-term, unmanaged workplace stress, and it has three features: exhaustion, mental distance or cynicism about the job, and reduced professional efficacy. A nurse with burnout still feels compassion. It builds up over time, it's caused by a stressful, negative work environment, and it may not affect relationships outside work.
+
+Compassion fatigue comes from the emotional demands of caring for people who are suffering: absorbing their suffering as secondary trauma. It leads to physical, psychological and spiritual exhaustion, and a loss of empathy. Its symptoms include irritability, anger, depression and less pleasure in life. It can happen right after one traumatic experience, or over time, and it can interfere with relationships outside work.
+
+So the key difference: burnout comes from the work environment, and compassion survives it. Compassion fatigue comes from caring itself, and compassion is what it takes.
+
+Self-care is deliberate action to look after every part of your health and wellbeing. It's enjoyable, it re-energises you, it is not selfish, and it needs boundaries. Numbing activities don't count. Strategies from the deck: set realistic goals, let go of some control, change negative thinking, communicate, use humour, plus regular exercise, journalling and seven to nine hours' sleep. Self-care builds resilience: the ability to adapt positively to stress and recover quickly, which protects nurses against both burnout and compassion fatigue.
+
+{recap} Burnout: from long-term workplace stress; exhaustion, cynicism, reduced efficacy; compassion survives; builds over time. Compassion fatigue: from absorbing patients' suffering as secondary trauma; loss of empathy; can follow one event. Self-care is deliberate, enjoyable, not selfish, needs boundaries; it builds resilience against both.
+
+# Long-term conditions and self-management
+@ why: "Long term conditions and self-management" is an Exam Content theme and eleven slides of Janine's deck. The lecturers' Long-Term Health Conditions quiz (captured 27 Oct) asks what self-management support must do and the nurse's role: empowering.
+@ ask: Define self-management of a long-term condition and describe the nurse's role in self-management support. (4 marks) || LTCs: ongoing or recurring; diabetes, cancer, CVD, respiratory, mental illness, chronic pain, CKD, dementia; multimorbidity | Self-management: how a person manages their condition themselves; ongoing; they spend only a few hours a year with services | Support: help to manage day to day, a collaborative partnership | Nurse: information for informed decisions and goals; acknowledge they are experts in their own lives; groups (attend, advocate for); culturally appropriate; follow up; refer | Programmes: health literacy, cultural relevance, behaviour change, the health professional's role
+@ say: Long-term conditions
+
+Q: Four marks. Define self-management of a long-term condition, and describe the nurse's role in self-management support.
+
+Long-term conditions are ongoing or recurring conditions that significantly affect people's lives: diabetes, cancers, cardiovascular and respiratory disease, mental illness, chronic pain, chronic kidney disease and dementia. They're rising in New Zealand, and many people have several at once, which is multimorbidity.
+
+Self-management is any way a person with a long-term condition manages it themselves. It's an ongoing process, not a one-off. People with these conditions spend only a few hours a year with health services; the rest of the time they're self-managing. A good self-manager knows their condition, follows a plan agreed with their health professionals, shares in decisions, monitors their symptoms, and adopts a healthy lifestyle.
+
+Self-management support is the help given so they can manage day to day, as a collaborative partnership. The nurse's role, from Janine's slides. Give information that helps people make informed decisions and set their own goals. Encourage them to take an active part, acknowledging that they are experts in their own lives. Support them to join self-management groups, and advocate for groups where none exist. Make sure it's culturally appropriate. Follow up after education programmes, with regular updates. And refer to support agencies when needed. The quiz word for the nurse's role is empowering.
+
+Good programmes have four components: health literacy, cultural relevance, behaviour change, and the health professional's role in supporting self-management. Equity matters here too: care shouldn't vary in quality because of gender, ethnicity, where you live, or income.
+
+{recap} Long-term conditions: ongoing or recurring, often several at once, multimorbidity. Self-management: the person manages it themselves, every day, ongoing. Nurse's role: information for informed decisions and goals, treat them as experts in their own lives, groups, cultural fit, follow-up, referral. The word is empowering.
+
+# Diabetes and rheumatic fever
+@ why: "Diabetes, Rheumatic fever" is one line of the Exam Content page, and both close Janine's revision deck. Diabetes is the only disease-specific lecture with a lecturer quiz; rheumatic fever ties straight back to the social determinants.
+@ ask: Describe the difference between type 1 and type 2 diabetes and explain how rheumatic fever develops, who it affects and why. (4 marks) || Diabetes: the body can't control blood sugar; not enough insulin, or cells resistant to it | Type 1: autoimmune, usually children; polyuria, polydipsia, polyphagia, weight loss, blurry vision, tiredness | Type 2: insulin resistance, genetic and lifestyle; plus recurrent infections, slow-healing sores | Glucose 4 to 7.5; hypo under 4; hyper over 7.5 fasting or 11.1 two hours after meals | Rheumatic fever: autoimmune, after an untreated strep throat; fever, aching joints, jerky movements, heart problems, up to 5 weeks later | Mostly Māori and Pacific children and teenagers; crowded housing | Penicillin injections every 28 days; rheumatic heart disease
+@ say: Diabetes and rheumatic fever
+
+Q: Four marks. Describe the difference between type 1 and type 2 diabetes. Then explain how rheumatic fever develops, who it affects, and why.
+
+Diabetes is a long-term condition where the body can't control its blood sugar, either because it doesn't make enough insulin, or any, or because the cells have become resistant to insulin.
+
+Type 1 is autoimmune: the body destroys its own insulin-making cells, and it's the type usually seen in children. The classic symptoms: frequent urination, polyuria; increased thirst, polydipsia; extreme hunger, polyphagia; plus unintended weight loss, blurry vision and tiredness. Type 2 is insulin resistance, from genetic and lifestyle factors. It can have the same symptoms, plus recurrent infections and sores that are slow to heal. The numbers: normal blood glucose is four to seven point five. A hypo is under four. Hyperglycaemia is over seven point five fasting, or over eleven point one two hours after a meal. A person with glucose of thirty, ketones and vomiting has D K A.
+
+Rheumatic fever is a serious autoimmune disease that can follow a strep throat that wasn't treated, or wasn't treated properly. Up to five weeks later, symptoms appear: fever, aching joints, tiredness, jerky movements, and heart problems. Its dangerous complication is rheumatic heart disease, which can be life-threatening.
+
+Who and why. It mostly affects children and teenagers, with much higher rates in Māori and Pacific young people. The why is the social determinants: crowded living conditions and large group settings like schools spread strep throat, and the barriers to seeing a doctor mean sore throats go untreated. Treatment is bed rest, pain relief and penicillin, then penicillin injections every twenty-eight days, with extra antibiotic cover for dental visits and procedures.
+
+{recap} Type 1 diabetes: autoimmune, children, no insulin; polyuria, polydipsia, polyphagia, weight loss. Type 2: insulin resistance, lifestyle and genes, plus infections and slow healing. Glucose four to seven point five; hypo under four. Rheumatic fever: autoimmune, after untreated strep throat; Māori and Pacific children, crowded housing; penicillin every twenty-eight days; can damage the heart.

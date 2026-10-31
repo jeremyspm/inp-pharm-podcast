@@ -1,0 +1,902 @@
+"""BN2 Exam Podcast: INP and Pharm, the finals with no case booklet. Each episode is a forecast: the questions the
+lecturers' own revision sessions, exam-themes list and formatives point at, each answered in the shape they asked for.
+Kokoro (local, CPU) reads them; every chapter is its own MP3, so any phone plays, skips and loops them.
+Ported from hs2-podcast's podcast.py (21 Oct 2026); the voice, cache, subtitles, videos, PDFs and zips are that pipeline's.
+
+    python podcast.py                  # voice whatever is not cached yet, then build everything
+    python podcast.py inp              # one episode (inp | pharm); add chapter numbers to voice just those: inp 4 5
+    python podcast.py --no-build       # voice only (run two or three at once; a .lock per chapter shares the work)
+    python podcast.py --build          # MP3s, the player page, the feeds and the two download zips, from the cache only
+    python podcast.py --release        # upload the download zips to the repo's "downloads" release (after --build)
+    python podcast.py --dry            # words, minutes and every gate; voices nothing
+    python podcast.py --audit          # every long or technical word with the phonemes Kokoro will say
+    python podcast.py --say "text"     # voice one line to D:/hs2-audio/exam-podcast/say.wav (check a pronunciation)
+
+Script: script/<episode>/*.txt, read in file order. "# Title" starts a chapter. In a chapter:
+    @ ask: Question (N marks) || line | line    a question the player shows, with its answer lines (hidden until tapped)
+    @ why: ...           why this track is in the forecast: who pointed at it, where (the player shows it; every chapter has one)
+    @ scen: ...          a scenario the player shows above the questions
+    @ say: ...           the short name the Rapid-fire track announces
+    % ...                a note, never spoken
+    Q: ...               a paragraph read by the second voice (the examiner): the question, the "once more" prompt
+    {recap} ...          a paragraph in the chapter AND in the episode's last chapter, Rapid-fire, built from every recap
+    [pause] / [pause N]  silence (2 s / N s)
+Everything else is spoken by the main voice. Audio is cached per paragraph (sha1 of voice + speed + the PHONEMES spoken), so an
+edit, or a pronunciation fix, re-voices only the paragraphs it changes.
+
+Pronunciation: IPA below replaces espeak's guess for a word with phonemes written by hand (Kokoro's own symbol set), because
+respelling ("hoh-moh-zy-gus") is fragile. Each was checked against tokenizer.phonemize on 2026-10-16. The text clean-up
+between the PORT markers is scripts/hs2-podcast/podcast.py's (estate branch claude/hs2-test3-podcast-509210), so this says
+letters, symbols and acronyms the way the Test 2, Module 1 and first Test 3 courses did; the one change is the plural of a
+spelled acronym ("STIs" was read "S T is").
+"""
+import glob, hashlib, json, os, re, shutil, subprocess, sys, time, zipfile
+from email.utils import formatdate
+from xml.sax.saxutils import escape
+import numpy as np
+import soundfile as sf
+
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')   # the Windows console is cp1252
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ESTATE = os.path.dirname(HERE)
+WORK = "D:/hs2-audio/exam-podcast"                 # cache, zips and the named copies: never in the repo
+CACHE = os.path.join(WORK, 'cache')
+MODEL_DIR = "D:/hs2-audio/model"
+FFMPEG = "C:/Users/USER/AppData/Roaming/GameSentenceMiner/ffmpeg/ffmpeg.exe"
+BASE_URL = "https://jeremyspm.github.io/inp-pharm-podcast/"
+RELEASE = "https://github.com/jeremyspm/inp-pharm-podcast/releases/download/downloads/"   # the download zips (see build())
+SR = 24000
+SPEED = 1.0
+VOICES = {'main': 'af_heart',                 # the voice of every HS2 audio course so far
+          'q': 'am_puck'}                     # the examiner (picked by ear from 14 samples, 16 Oct): a second voice marks each question
+GAP = 0.45                                    # after every spoken paragraph
+LEAD, TAIL = 0.4, 1.4
+BATCH = 400                                   # phonemes per Kokoro call, cut at full stops (see batches())
+SEAM = 0.35                                   # between two calls in one paragraph: about Kokoro's own sentence break
+BITRATE = '64k'                               # mono speech at 24 kHz: about 29 MB an hour
+os.makedirs(CACHE, exist_ok=True)
+PODCAST = 'BN2 Exam Podcast'
+
+EPISODES = {
+    'inp': dict(
+        title='INP Final — The forecast', short='INP', zip='INP-Final-Forecast',
+        kicker='Introduction to Nursing Practice · 722.556',
+        course='Introduction to Nursing Practice, 722.556',
+        cover=('INTRO TO NURSING PRACTICE', 'INP', 'THE FORECAST'),
+        blurb='There is no case booklet and no posted short-answer question, so this episode is a forecast. Every track is a '
+              'question the lecturers pointed at: their Exam Content themes, the two revision decks (Lisa’s and Janine’s), the '
+              '27 Oct revision session, and their own Canvas quizzes. Each short answer is built the way Lisa taught on 27 Oct: '
+              'find the command word, use the question’s keywords, about 150 words. Every track says why it is in.',
+        when='The final: Mon 2 Nov · 40 multi-choice + 15 short answers (about 4 marks each) · 2 h 30 · 50%',
+        rapid='Rapid-fire: every answer, back to back',
+        rapid_intro='This is the rapid-fire track: every answer in this episode, back to back, one breath each. No teaching, '
+                    'just the points in the order you would write them. It is made for the night before, and for the bus on the '
+                    'way in. If one of these sounds unfamiliar, go back to its own track.'),
+}
+
+# ── pronunciation: whole words → phonemes (Kokoro's symbols; checked 2026-10-16 against what espeak said instead) ─────
+IPA = {
+    # genetics — espeak: "HAH-muh-ZIG-us", "het-er-uh-ZIG-us"
+    'homozygous': 'hˌoʊmoʊzˈaɪɡəs', 'heterozygous': 'hˌɛɾəɹoʊzˈaɪɡəs',
+    'homozygote': 'hˌoʊmoʊzˈaɪɡoʊt', 'heterozygote': 'hˌɛɾəɹoʊzˈaɪɡoʊt',
+    'homozygotes': 'hˌoʊmoʊzˈaɪɡoʊts', 'heterozygotes': 'hˌɛɾəɹoʊzˈaɪɡoʊts',
+    'aneuploidy': 'ˈænjuːplˌɔɪdi', 'karyotype': 'kˈæɹioʊtˌaɪp', 'karyotypes': 'kˈæɹioʊtˌaɪps',
+    'codominance': 'kˌoʊdˈɑːmɪnəns', 'codominant': 'kˌoʊdˈɑːmɪnənt',
+    # reproduction
+    'oocyte': 'ˈoʊəsˌaɪt', 'oocytes': 'ˈoʊəsˌaɪts', 'oogenesis': 'ˌoʊədʒˈɛnəsɪs', 'oogonia': 'ˌoʊəɡˈoʊniə',
+    'leydig': 'lˈaɪdɪɡ', 'sertoli': 'sɚtˈoʊli', 'prolactin': 'pɹoʊlˈæktɪn',
+    'myoepithelial': 'mˌaɪoʊˌɛpɪθˈiːliəl', 'alveoli': 'ælvˈiːəlˌaɪ', 'luteum': 'lˈuːɾiəm',
+    'functionalis': 'fˌʌŋkʃənˈælɪs', 'basalis': 'bəsˈælɪs', 'menarche': 'mɛnˈɑːɹki',
+    # the ear
+    'stapes': 'stˈeɪpiːz', 'incus': 'ˈɪŋkəs', 'cochlear': 'kˈɑːkliɚ', 'vestibulocochlear': 'vɛstˌɪbjʊloʊkˈɑːkliɚ',
+    'sensorineural': 'sˌɛnsəɹiːnˈʊɹəl', 'otosclerosis': 'ˌoʊɾoʊskləɹˈoʊsɪs', 'otoliths': 'ˈoʊɾəlˌɪθs',
+    'pharyngotympanic': 'fəɹˌɪŋɡoʊtɪmpˈænɪk', 'ototoxic': 'ˌoʊɾoʊtˈɑːksɪk',
+    # the eye
+    'sclera': 'sklˈɛɹə',
+    # taste and smell
+    'fungiform': 'fˈʌndʒɪfˌɔːɹm', 'umami': 'uːmˈɑːmi', 'glossopharyngeal': 'ɡlˌɑːsoʊfəɹˈɪndʒiəl',
+    'hyposmia': 'haɪpˈɑːzmiə', 'amygdala': 'ɐmˈɪɡdələ', 'orbitofrontal': 'ˌɔːɹbɪɾoʊfɹˈʌntəl',
+    # names in the cases (te reo Māori and the rest), said the way they are said here
+    'pania': 'pˈɑːniə', 'whānau': 'fˈɑːnoʊ', 'whanau': 'fˈɑːnoʊ', 'mirimiri': 'mˈiːɹimˌiːɹi',
+    # INP (31 Oct): te reo Māori in the Te Tiriti, pou and Health Strategy tracks — espeak said "tee", "pee", "kow-hy-ring-a"
+    'te': 'tˈɛ', 'pae': 'pˈaɪ', 'kia': 'kˈiːɐ', 'iwi': 'ˈiːwi', 'aotearoa': 'ˌaʊtɛɐɹˈoʊɐ', 'waitangi': 'wˌaɪtˈɑːŋi',
+    'taonga': 'tˈaʊŋɐ', 'tikanga': 'tˈiːkɐŋɐ', 'tiriti': 'tˈiɾiti', 'kaupapa': 'kˈaʊpɐpɐ', 'hauora': 'hˌaʊˈɔːɹɐ',
+    'kōwhiringa': 'kˈɔːfiɾiŋɐ', 'whakamarumarutia': 'fˌɐkɐmˌɐɾʊmˌɐɾʊtˈiːɐ', 'whakaruruhau': 'fˌɐkɐɾˌʊɾʊhˈaʊ',
+    'whanaungatanga': 'fˌɐnaʊŋɐtˈɐŋɐ', 'ōritetanga': 'ˌɔːɾitɛtˈɐŋɐ', 'taurite': 'tˈaʊɾitɛ', 'tūmatanui': 'tˌuːmɐtɐnˈuːi',
+    'pātuitanga': 'pˌɑːtuːitˈɐŋɐ', 'pūkengatanga': 'pˌuːkɛŋɐtˈɐŋɐ', 'rangatiratanga': 'ɹˌɐŋɐtˌiɾɐtˈɐŋɐ',
+    'manaakitanga': 'mˌɐnɑːkitˈɐŋɐ', 'kāwanatanga': 'kˌɑːwɐnɐtˈɐŋɐ', 'manukau': 'mˈɑːnʊkaʊ', 'hapū': 'hˈɑːpuː',
+    # INP clinical words espeak got wrong ("uh-PNEE-uh", "NOSS-eye-sptive", a wound's slough as "slow")
+    'apnoea': 'æpnˈiːə', 'dyspnoea': 'dɪspnˈiːə', 'tachypnoea': 'tˌækɪpnˈiːə', 'bradypnoea': 'bɹˌædɪpnˈiːə',
+    'nociceptive': 'nˌoʊsɪsˈɛptɪv', 'slough': 'slˈʌf', 'wong': 'wˈɑːŋ', 'korotkoff': 'kəɹˈɑːtkɔf',
+    'manaia': 'mɑːnˈaɪɑː', 'ane': 'ˈɑːnɛ', 'paraone': 'pˌɑːɹɑːˈoʊnɛ', 'aleki': 'ɑːlˈɛki',
+    # other words espeak gets wrong
+    'tear': 'tˈɛɹ',                            # only ever "wear and tear" here
+    'glut': 'ɡlˈuːt',                          # GLUT 4 is "gloot", not "glut"
+    'lives': 'lˈɪvz',                          # "Manaia lives with": espeak said "lyves"
+    'contract': 'kəntɹˈækt', 'contracts': 'kəntɹˈækts',      # muscles contract: the verb, not the noun
+    'insert': 'ɪnsˈɜːt', 'impacted': 'ɪmpˈæktᵻd',
+    # ── the 16 Oct audit (python podcast.py --audit): every word below was misstressed or missaid ─────────────────
+    # breathing, the lungs, the heart
+    'atelectasis': 'ˌæɾəlˈɛktəsɪs', 'baroreceptor': 'bˌæɹoʊɹɪsˈɛptɚ', 'baroreceptors': 'bˌæɹoʊɹɪsˈɛptɚz',
+    'bronchodilator': 'bɹˌɑːŋkoʊdaɪlˈeɪɾɚ', 'bronchodilators': 'bɹˌɑːŋkoʊdaɪlˈeɪɾɚz', 'columnar': 'kəlˈʌmnɚ',
+    'cuboidal': 'kjuːbˈɔɪdəl', 'epiglottis': 'ˌɛpɪɡlˈɑːɾɪs', 'intrapleural': 'ˌɪntɹəplˈʊɹəl',
+    'intrapulmonary': 'ˌɪntɹəpˈʊlmənˌɛɹi', 'pleural': 'plˈʊɹəl', 'pneumothorax': 'nˌuːmoʊθˈɔːɹæks',
+    'surfactant': 'sɚfˈæktənt', 'trachea': 'tɹˈeɪkiə', 'salbutamol': 'sælbjˈuːtəmɑːl', 'ketoacidosis': 'kˌiːɾoʊˌæsɪdˈoʊsɪs',
+    'sternocleidomastoid': 'stˌɜːnoʊklˌaɪdoʊmˈæstɔɪd', 'nasopharynx': 'nˌeɪzoʊfˈæɹɪŋks',
+    'vasodilation': 'vˌeɪzoʊdaɪlˈeɪʃən', 'vasomotor': 'vˌeɪzoʊmˈoʊɾɚ', 'medulla': 'mɪdˈʌlə',
+    # lymph, cancer, hormones, diabetes, joints
+    'lymphoedema': 'lˌɪmfᵻdˈiːmə', 'metastasis': 'mətˈæstəsɪs', 'macrophages': 'mˈækɹəfˌeɪdʒᵻz',
+    'langerhans': 'lˈɑːŋɚhɑːnz', 'mellitus': 'mɛlˈaɪɾəs', 'glycogenolysis': 'ɡlˌaɪkoʊdʒənˈɑːlᵻsɪs',
+    'lipolysis': 'lɪpˈɑːlᵻsɪs', 'glucocorticoid': 'ɡlˌuːkoʊkˈɔːɹɾɪkˌɔɪd', 'corticosteroid': 'kˌɔːɹɾɪkoʊstˈɛɹɔɪd',
+    'prednisone': 'pɹˈɛdnɪsˌoʊn', 'enthesis': 'ˈɛnθəsɪs', 'denature': 'diːnˈeɪtʃɚ', 'fascia': 'fˈæʃə',
+    # the brain and the senses
+    'callosum': 'kəlˈoʊsəm', 'occipital': 'ɑːksˈɪpɪɾəl', 'prefrontal': 'pɹiːfɹˈʌntəl', 'precentral': 'pɹiːsˈɛntɹəl',
+    'postcentral': 'poʊstsˈɛntɹəl', 'somatosensory': 'soʊmˌæɾoʊsˈɛnsɚɹi', 'wernicke': 'wˈɜːnɪki',
+    'presynaptic': 'pɹˌiːsɪnˈæptɪk', 'exocytosis': 'ˌɛksoʊsaɪtˈoʊsɪs', 'excitatory': 'ɪksˈaɪɾətˌɔːɹi',
+    'reuptake': 'ɹiːˈʌpteɪk', 'nigra': 'nˈaɪɡɹə', 'chemoreceptors': 'kˌiːmoʊɹɪsˈɛptɚz',
+    'mechanoreceptors': 'mˌɛkənoʊɹɪsˈɛptɚz', 'cerumen': 'səɹˈuːmən', 'stapedius': 'stəpˈiːdiəs', 'tympani': 'tˈɪmpəni',
+    'otolith': 'ˈoʊɾəlˌɪθ', 'papillae': 'pəpˈɪliː', 'rarefactions': 'ɹˌɛɹᵻfˈækʃənz',
+    'photopic': 'foʊtˈɑːpɪk', 'scotopic': 'skoʊtˈɑːpɪk',
+    # genetics and reproduction
+    'autosomes': 'ˈɔːɾoʊsˌoʊmz', 'chromosomal': 'kɹˌoʊməsˈoʊməl', 'metaphase': 'mˈɛɾəfˌeɪz',
+    'secretory': 'sᵻkɹˈiːɾɚɹi', 'uterine': 'jˈuːɾɚɹaɪn', 'luteinising': 'lˈuːtiənˌaɪzɪŋ', 'gonadotropin': 'ɡoʊnˌædəɾˈoʊpɪn',
+    'depo': 'dˈɛpoʊ', 'provera': 'pɹoʊvˈɛɹə', 'jadelle': 'dʒədˈɛl',
+    'kahoot': 'kəhˈuːt',
+    # ── 16 Oct, second audit: the words of the eight checklist tracks added that day ──────────────────────────────
+    'myometrium': 'mˌaɪoʊmˈiːtɹiəm', 'perimetrium': 'pˌɛɹɪmˈiːtɹiəm', 'endometrium': 'ˌɛndoʊmˈiːtɹiəm',
+    'epididymis': 'ˌɛpɪdˈɪdɪmɪs', 'bulbourethral': 'bˌʌlboʊjʊɹˈiːθɹəl', 'bulbospongiosus': 'bˌʌlboʊspˌʌndʒiˈoʊsəs',
+    'spongiosum': 'spˌʌndʒiˈoʊsəm', 'prepuce': 'pɹˈiːpjuːs', 'penile': 'pˈiːnaɪl', 'testis': 'tˈɛstɪs',
+    'cremaster': 'kɹᵻmˈæstɚ', 'dartos': 'dˈɑːɹtoʊs', 'fibrinolysin': 'fˌaɪbɹɪnˈɑːlɪsɪn',
+    'isthmus': 'ˈɪsməs', 'minora': 'mɪnˈɔːɹə', 'centralis': 'sɛntɹˈælɪs', 'peritoneal': 'pˌɛɹɪɾənˈiːəl', 'serous': 'sˈɪɹəs',
+    'amenorrhoea': 'eɪmˌɛnəɹˈiːə', 'dysmenorrhoea': 'dˌɪsmɛnəɹˈiːə',
+    'deoxyribonucleic': 'diːˌɑːksiɹˌaɪboʊnuːklˈeɪɪk', 'ribonucleic': 'ɹˌaɪboʊnuːklˈeɪɪk', 'ribose': 'ɹˈaɪboʊs',
+    'ribosomes': 'ɹˈaɪbəsˌoʊmz', 'nucleotide': 'nˈuːkliətˌaɪd', 'nucleotides': 'nˈuːkliətˌaɪdz',
+    'cytosine': 'sˈaɪɾəsˌiːn', 'thymine': 'θˈaɪmiːn', 'phenocopy': 'fˈiːnoʊkˌɑːpi',
+    'projects': 'pɹədʒˈɛkts',                  # "the cervix projects into the vagina": the verb
+    # ── 16 Oct, third audit: the closed-questions track (drug names and the egg's layers) ─────────────────────────
+    'chloramphenicol': 'klˌɔːɹæmfˈɛnɪkˌɑːl', 'furosemide': 'fjʊɹˈoʊsəmˌaɪd', 'gentamicin': 'dʒˌɛntəmˈaɪsɪn',
+    'aminoglycoside': 'ɐmˌiːnoʊɡlˈaɪkəsˌaɪd', 'pellucida': 'pəlˈuːsɪdə', 'diuretics': 'dˌaɪjʊɹˈɛɾɪks',
+    # ── 20 Oct, fourth audit: the five fine-print tracks (her quiz keys no written answer said) ──────────────────────
+    'extrachromosomal': 'ˌɛkstɹəkɹˌoʊməsˈoʊməl', 'meatus': 'miˈeɪɾəs', 'mechanoreception': 'mˌɛkənoʊɹɪsˈɛpʃən',
+    'pectoralis': 'pˌɛktəɹˈælɪs', 'spermatozoon': 'spˌɜːmɐɾəzˈoʊɑːn', 'thecal': 'θˈiːkəl',
+    'vasodilator': 'vˌeɪzoʊdaɪlˈeɪɾɚ', 'adipose': 'ˈædɪpˌoʊs',
+}
+
+# ── PORT: scripts/hs2-podcast/podcast.py (estate branch claude/hs2-test3-podcast-509210) ─────────────────────
+# The LETTER A is read as the article "uh" anywhere but the start of a chain ("A O" -> "uh oh"), so every 2-6 letter all-caps
+# word is spelled with A said "eigh"; "big A", "type A", "little a" and "an A" say "eigh"; and a capital A that does not start a
+# sentence is a letter, so it says "eigh" too (the scripts only use the article "A" at the start of a sentence).
+SAY_AS_WORD = {'GABA', 'RAAS', 'FAST', 'NAD', 'AIDS', 'HIV', 'COVID', 'MRI', 'GLUT',
+               'ISBAR', 'SOAP', 'TIME', 'SMART', 'OLD', 'CARTS', 'ECHO', 'PHARMAC'}   # INP and Pharm: said as words
+LETTER_A = [(r'\bGnRH\b', 'G N R H'), (r'\b(big|little|type|an) [Aa]\b', r'\1 eigh'),
+            (r"(?<![.!?]\s)(?<!^)\bA\b(?![-'])", 'eigh')]
+
+
+def spell(m):
+    w, s = m.group(1), m.group(2)
+    if w in SAY_AS_WORD:
+        return m.group(0)
+    return ' '.join('eigh' if c == 'A' else c for c in w) + ("'s" if s else '')    # "S T I's", not "S T is"
+
+
+SUBS = [
+    (r'\[\[IMG:[^\]]*\]\]', ' '),
+    (r'Ca(?:²⁺|2\+|\+\+)', 'calcium ions'), (r'Na(?:⁺|\+)', 'sodium ions'), (r'K(?:⁺|\+)', 'potassium ions'),
+    (r'H(?:⁺|\+)', 'hydrogen ions'), (r'HCO(?:₃|3)(?:⁻|-)', 'bicarbonate'), (r'H₂CO₃|H2CO3', 'carbonic acid'),
+    (r'CO(?:₂|2)\b', 'carbon dioxide'), (r'\bO(?:₂|2)\b', 'oxygen'), (r'H(?:₂|2)O\b', 'water'),
+    (r'\bpH\b', 'P H'),
+    (r'mmol/L', 'millimoles per litre'), (r'\bmV\b', 'millivolts'), (r'\bmL\b', 'millilitres'),
+    (r'°C', ' degrees Celsius'), (r'%', ' per cent'), (r'&', ' and '),
+    (r'→|⇒|->', ' leads to '), (r'↑', 'increased '), (r'↓', 'decreased '),
+    (r'\bvs\.?\b', 'versus'), (r'\be\.g\.', 'for example'), (r'\bi\.e\.', 'that is'),
+    (r'(?<=\d)\s*[–—-]\s*(?=\d)', ' to '), (r'\s\+\s', ' plus '),
+    (r'(?<=\s)−(?=\d)', 'minus '), (r'(?<=\s)-(?=\d)', 'minus '), (r'−', '-'), (r'[–—]', ', '),
+    (r'\bC(\d)\b', r'C \1'), (r'\bT(\d{1,2})\b', r'T \1'), (r'\bL(\d)\b', r'L \1'), (r'\bS(\d)\b', r'S \1'),
+    (r'[*_#`>]+', ''), (r'^\s*[-•]\s+', '', ),
+    (r'(\w)/(\w)', r'\1 or \2'),
+    (r'[ \t]+', ' '),
+]
+
+
+def respell(text):
+    text = re.sub(r'\b([A-Z]{2,6})(s?)\b', spell, text)
+    for pat, rep in LETTER_A:
+        text = re.sub(pat, rep, text)
+    return text
+
+
+def normalise(text):
+    out = []
+    for line in text.split('\n'):
+        for pat, rep in SUBS:
+            line = re.sub(pat, rep, line, flags=re.M)
+        out.append(line.strip())
+    return '\n'.join(out)
+# ── END PORT ──────────────────────────────────────────────────────────────────────────────────────────────
+
+
+def pieces(text):
+    """('pause', seconds) or ('say', text) for one paragraph, after the clean-up."""
+    for piece in re.split(r'(\[pause(?: \d+(?:\.\d+)?)?\])', normalise(respell(text))):
+        piece = piece.strip()
+        if not piece:
+            continue
+        m = re.fullmatch(r'\[pause(?: (\d+(?:\.\d+)?))?\]', piece)
+        if m:
+            yield 'pause', float(m.group(1)) if m.group(1) else 2.0
+        else:
+            yield 'say', re.sub(r'\s*\n\s*', ' ', piece)
+
+
+# ── the script ────────────────────────────────────────────────────────────────────────────────────────────
+def chapters(ep):
+    """[{n, title, meta, paras: [{who, text, recap}]}], the Rapid-fire chapter last."""
+    out = []
+    files = sorted(glob.glob(os.path.join(HERE, 'script', ep, '*.txt')))
+    if not files:
+        raise SystemExit(f"no script for {ep}: script/{ep}/*.txt")
+    for path in files:
+        text = open(path, encoding='utf-8').read().replace('\r\n', '\n')
+        for block in re.split(r'(?m)^(?=# )', text):
+            if not block.strip():
+                continue
+            if not block.startswith('# '):
+                if any(l.strip() and not l.startswith('%') for l in block.split('\n')):
+                    raise SystemExit(f"{os.path.basename(path)}: words before its first '# Title'")
+                continue
+            head, _, body = block.partition('\n')
+            meta, kept = {}, []
+            for line in body.split('\n'):
+                if line.startswith('%'):
+                    continue
+                m = re.match(r'@\s*(\w+)\s*:\s*(.*)$', line)
+                if m:
+                    meta.setdefault(m.group(1), []).append(m.group(2).strip())
+                else:
+                    kept.append(line)
+            paras = []
+            for para in re.split(r'\n\s*\n', '\n'.join(kept)):
+                para = para.strip()
+                if not para:
+                    continue
+                recap = para.startswith('{recap}')
+                if recap:
+                    para = para[len('{recap}'):].strip()
+                who = 'main'
+                if para.startswith('Q:'):
+                    who, para = 'q', para[2:].strip()
+                paras.append({'who': who, 'text': para, 'recap': recap})
+            out.append({'title': head[2:].strip(), 'meta': meta, 'paras': paras, 'file': os.path.basename(path)})
+    rapid = [{'who': 'main', 'text': EPISODES[ep]['rapid_intro'], 'recap': False}, {'who': 'main', 'text': '[pause 1]', 'recap': False}]
+    for ch in out:
+        rec = [p for p in ch['paras'] if p['recap']]
+        if rec:
+            rapid.append({'who': 'q', 'text': re.sub(r'[.:]?$', '.', ch['meta'].get('say', [ch['title']])[0]), 'recap': False})
+            rapid += [{'who': 'main', 'text': p['text'], 'recap': False} for p in rec]
+            rapid.append({'who': 'main', 'text': '[pause 0.8]', 'recap': False})
+    rapid.append({'who': 'main', 'text': "That's every answer. Go and get them.", 'recap': False})
+    out.append({'title': EPISODES[ep]['rapid'], 'meta': {'rapid': ['1']}, 'paras': rapid, 'file': '(built)'})
+    for i, ch in enumerate(out, 1):
+        ch['n'] = i
+    return out
+
+
+def segs(ch):
+    for p in ch['paras']:
+        for kind, val in pieces(p['text']):
+            yield (kind, p['who'], val)
+
+
+# ── phonemes, with the hand-written ones spliced in ─────────────────────────────────────────────────────────
+_kokoro = None
+def kokoro():
+    global _kokoro
+    if _kokoro is None:
+        from kokoro_onnx import Kokoro
+        _kokoro = Kokoro(os.path.join(MODEL_DIR, 'kokoro-v1.0.onnx'), os.path.join(MODEL_DIR, 'voices-v1.0.bin'))
+        bad = {w: ''.join(c for c in v if c not in _kokoro.tokenizer.vocab) for w, v in IPA.items()}
+        bad = {w: v for w, v in bad.items() if v}
+        if bad:
+            raise SystemExit(f"IPA entries with symbols Kokoro does not have: {bad}")
+    return _kokoro
+
+
+_backend = None
+def espeak(texts):
+    """Exactly what kokoro's tokenizer.phonemize() returns, for a list of texts, from ONE espeak backend (tokenizer.phonemize
+    builds a new backend on every call: about a second each, which made a render's phonemes take longer than its audio)."""
+    global _backend
+    vocab = kokoro().tokenizer.vocab                 # loading Kokoro also points phonemizer at its espeak library
+    if _backend is None:
+        from phonemizer.backend import EspeakBackend
+        _backend = EspeakBackend('en-us', preserve_punctuation=True, with_stress=True)
+    from phonemizer.separator import default_separator
+    out = _backend.phonemize([t.strip() for t in texts], separator=default_separator, strip=False)
+    return [''.join(c for c in p if c in vocab).strip() for p in out]
+
+
+_IPA_RE = re.compile(r"\b(" + '|'.join(sorted(map(re.escape, IPA), key=len, reverse=True)) + r")(['’]s)?\b", re.I)
+_PH = {}
+def phonemes(text):
+    if text in _PH:
+        return _PH[text]
+    out, pos = [], 0
+    def plain(chunk):
+        if re.search(r'\w', chunk):
+            out.append(espeak([chunk])[0])
+        else:                                        # a bare comma or full stop between two hand-written words
+            out.append(''.join(c for c in chunk if c in '.,!?;:'))
+    for m in _IPA_RE.finditer(text):
+        if m.start() > pos:
+            plain(text[pos:m.start()])
+        out.append(IPA[m.group(1).lower()] + ('z' if m.group(2) else ''))
+        pos = m.end()
+    if pos < len(text):
+        plain(text[pos:])
+    s = re.sub(r'\s+([.,!?;:])', r'\1', ' '.join(p for p in out if p))
+    _PH[text] = s = re.sub(r'\s+', ' ', s).strip()
+    return s
+
+
+def batches(ph):
+    """A paragraph's phonemes in pieces Kokoro voices whole: complete sentences, packed evenly up to BATCH; a sentence longer
+    than that alone is cut at its last ; : or , that fits. 20 Oct ("stutters at the end, less than a syllable"): past 510
+    phonemes kokoro_onnx split for us, at any comma, and a paragraph of 509 or 510 left its final full stop as a batch on its
+    own, voiced as a loud 0.14 s blip after the last word (Test 3 tracks 2, 23, 27, 41); its other cuts were mid-sentence,
+    joined with no pause, and sometimes left a few words to be voiced alone."""
+    if len(ph) <= BATCH:
+        return [ph]
+    units = []
+    for s in re.split(r'(?<=[.!?])\s+', ph):
+        while len(s) > BATCH:
+            cut = max((m.end() for m in re.finditer(r'[,;:]\s', s[:BATCH + 1])), default=0) or s.rfind(' ', 0, BATCH) + 1 or BATCH
+            units.append(s[:cut].strip()); s = s[cut:]
+        units.append(s.strip())
+    # as few pieces as fit, then the cut that makes the longest piece shortest (so a closing "True." never goes alone)
+    size = lambda i, j: sum(len(u) for u in units[i:j]) + j - i - 1
+    for k in range(-(-len(ph) // BATCH), len(units) + 1):
+        best = {0: (0, [])}                       # units used → (longest piece so far, cut points)
+        for _ in range(k):
+            nxt = {}
+            for i, (worst, cuts) in best.items():
+                for j in range(i + 1, len(units) + 1):
+                    if size(i, j) > BATCH:
+                        break
+                    cand = (max(worst, size(i, j)), cuts + [j])
+                    if j not in nxt or cand[0] < nxt[j][0]:
+                        nxt[j] = cand
+            best = nxt
+        if len(units) in best:
+            cuts = [0] + best[len(units)][1]
+            break
+    out = [' '.join(units[a:b]) for a, b in zip(cuts, cuts[1:])]
+    if any(not re.search(r'[^\s.,!?;:]', b) for b in out):
+        raise SystemExit(f"batches: a piece with nothing to say in: {ph[:80]}…")
+    return out
+
+
+def key(ph, who):
+    cut = '' if len(ph) <= BATCH else f"|split{BATCH}"   # a paragraph voiced in pieces since 20 Oct is a new recording
+    return hashlib.sha1(f"{VOICES[who]}|{SPEED}|{ph}{cut}".encode('utf-8')).hexdigest()[:16]
+
+
+def cached(text, who):
+    return os.path.exists(os.path.join(CACHE, key(phonemes(text), who) + '.wav'))
+
+
+def say(text, who):
+    ph = phonemes(text)
+    path = os.path.join(CACHE, key(ph, who) + '.wav')
+    if os.path.exists(path):
+        return sf.read(path, dtype='float32')[0]
+    parts = []
+    for b in batches(ph):
+        parts += [kokoro().create(b, voice=VOICES[who], speed=SPEED, is_phonemes=True)[0], silence(SEAM)]
+    samples = np.concatenate(parts[:-1]).astype(np.float32)
+    sf.write(path + '.part.wav', samples, SR, subtype='PCM_16')
+    os.replace(path + '.part.wav', path)
+    return samples
+
+
+def silence(sec):
+    return np.zeros(int(SR * sec), dtype=np.float32)
+
+
+def level(a, target_db=-20.0):
+    """Every paragraph to the same speech loudness, so the two voices sit at one level."""
+    loud = a[np.abs(a) > 0.02]
+    if len(loud) < SR // 10:
+        return a
+    g = 10 ** (target_db / 20) / float(np.sqrt(np.mean(loud ** 2)))
+    peak = float(np.max(np.abs(a))) * g
+    if peak > 0.97:
+        g *= 0.97 / peak
+    return (a * g).astype(np.float32)
+
+
+def chime():
+    """Two soft notes at the top of every chapter: you hear where a new question starts."""
+    out = []
+    for f in (659.25, 880.0):
+        t = np.arange(int(SR * 0.42)) / SR
+        out.append(0.11 * np.sin(2 * np.pi * f * t) * np.exp(-t * 7.5) * np.minimum(1, t / 0.006))
+    a = np.concatenate([out[0][:int(SR * 0.14)], out[1]])
+    return a.astype(np.float32)
+
+
+def check(chs, ep):
+    bad = []
+    for ch in chs:
+        for _ in shown(ch):        # the subtitles line up with the voice, paragraph by paragraph (stops on the first that doesn't)
+            pass
+        for p in ch['paras']:      # a LETTER A that starts a sentence is read as the article "uh": write "Letter A" or "Area A"
+            for m in re.finditer(r"(?:^|[.!?:]\s+)(A)(?=[,:]|\s+(?:is|shows|marks|and|to)\b)", p['text']):
+                bad.append(f"{ep} ch {ch['n']}: a sentence starts with the letter A: …{p['text'][max(0, m.start()-30):m.end()+30]}…")
+        for kind, _, val in segs(ch):
+            if kind == 'say':
+                for m in re.finditer(r'(?<![.!?]\s)(?<!^)\bA\b(?![-\'])', val):
+                    bad.append(f"{ep} ch {ch['n']}: …{val[max(0, m.start()-40):m.end()+30]}…")
+                for m in re.finditer(r'[^\w\s.,!?;:\'’"()\-]', val):
+                    bad.append(f"{ep} ch {ch['n']}: symbol {m.group()!r} would be dropped: …{val[max(0, m.start()-30):m.end()+20]}…")
+    if bad:
+        raise SystemExit("text the voice would say wrong:\n  " + '\n  '.join(bad))
+
+
+def voice_chapter(ep, ch):
+    todo = [(w, v) for k, w, v in segs(ch) if k == 'say' and not cached(v, w)]
+    if not todo:
+        return
+    lock = os.path.join(CACHE, f"{ep}-{ch['n']:02d}.lock")
+    if os.path.exists(lock) and time.time() - os.path.getmtime(lock) < 2 * 3600:
+        return                                            # another renderer has this chapter
+    open(lock, 'w').write(str(os.getpid()))
+    t0 = time.time()
+    print(f"[{ep} {ch['n']:02d}] {ch['title']}  ({len(todo)} paragraphs)", flush=True)
+    for i, (who, text) in enumerate(todo, 1):
+        say(text, who)
+        if i % 10 == 0:
+            print(f"      {i}/{len(todo)}, {time.time()-t0:.0f}s", flush=True)
+    os.remove(lock)
+    print(f"[{ep} {ch['n']:02d}] voiced in {(time.time()-t0)/60:.1f} min", flush=True)
+
+
+def shown(ch):
+    """segs(ch), each 'say' with the words as written in the script (what the subtitles show), not as respelled for the voice."""
+    for p in ch['paras']:
+        said = list(pieces(p['text']))
+        raw = [' '.join(r.split()) for r in re.split(r'\[pause(?: \d+(?:\.\d+)?)?\]', p['text']) if r.strip()]
+        if sum(k == 'say' for k, _ in said) != len(raw):
+            raise SystemExit(f"subtitles: ch {ch['n']} has a paragraph whose spoken and written pieces do not line up:\n  {p['text'][:120]}")
+        it = iter(raw)
+        for kind, val in said:
+            yield kind, p['who'], val, (next(it) if kind == 'say' else None)
+
+
+def lines(text, most=90):
+    """One paragraph cut into subtitle lines: by sentence, and a long sentence again at its commas, colons and semicolons."""
+    out = []
+    for s in re.split(r'(?<=[.!?])\s+', text):
+        while len(s) > most:
+            cut = max((m.end() for m in re.finditer(r'[,;:]\s', s[:most + 1])), default=0)
+            if cut < 25:
+                cut = s.rfind(' ', 0, most) + 1 or len(s)
+            out.append(s[:cut].strip()); s = s[cut:]
+        if s.strip():
+            out.append(s.strip())
+    return out
+
+
+def chapter_audio(ch):
+    """The chapter's samples, and its subtitles: [(start, end, who, line)]. Each paragraph's span is exact (the build places it);
+    the lines inside one paragraph share that span by their length in characters."""
+    parts, cues = [silence(LEAD), chime(), silence(0.45)], []
+    t = sum(len(p) for p in parts) / SR
+    for kind, who, val, text in shown(ch):
+        if kind == 'pause':
+            parts.append(silence(val)); t += len(parts[-1]) / SR
+            continue
+        clip = level(say(val, who))
+        parts += [clip, silence(GAP)]
+        ls, d = lines(text), len(clip) / SR
+        total, at = sum(len(l) for l in ls), t
+        for l in ls:
+            span = d * len(l) / total
+            cues.append((at, at + span, who, l)); at += span
+        t += d + len(parts[-1]) / SR
+    parts.append(silence(TAIL))
+    return np.concatenate(parts), cues
+
+
+def vtt(cues):
+    def ts(s):
+        ms = int(round(s * 1000))
+        return f'{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d}.{ms % 1000:03d}'
+    out = ['WEBVTT', '']
+    for i, (a, b, who, l) in enumerate(cues, 1):
+        l = l.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        out += [str(i), f'{ts(a)} --> {ts(b)}', f'<v Examiner>{l}' if who == 'q' else l, '']
+    return '\n'.join(out)
+
+
+# ── 21 Oct: the words as a video, and the script as a PDF. A classmate opened a .vtt from the zip ("text but no sound") and could
+# not find a subtitle button: no phone does anything useful with a .vtt. An MP4 with the words drawn on plays, with sound, in any
+# gallery or files app (but stops when the phone locks: the MP3 stays the one to listen to). The .vtt stays for the feeds and this
+# page's player, and leaves the zips.
+VDIR = os.path.join(WORK, 'video')                      # rendered MP4s by hash of their inputs: a build re-renders only what changed
+VIDEO = ['-c:v', 'libx264', '-preset', 'veryfast', '-tune', 'stillimage', '-crf', '30', '-pix_fmt', 'yuv420p',
+         '-c:a', 'aac', '-b:a', '64k', '-ac', '1', '-movflags', '+faststart']
+
+
+def ass(cues, title, foot, end):
+    """Portrait 720×1280: the title on top; the line being said big and bright (the examiner's in amber), two before it and one
+    after it dim. The line being said keeps its top edge still, so the eye stays in one place."""
+    def ts(s):
+        cs = int(round(s * 100))
+        return f'{cs // 360000}:{cs // 6000 % 60:02d}:{cs // 100 % 60:02d}.{cs % 100:02d}'
+    esc = lambda t: t.replace('\\', '\\\\').replace('{', '(').replace('}', ')')
+    def line(j, now):
+        if not 0 <= j < len(cues):
+            return ''
+        col = ('&H4FC8FF&' if cues[j][2] == 'q' else '&HFFFFFF&') if now else '&H8A8A8A&'   # BGR
+        return f'{{\\c{col}\\fs{54 if now else 40}}}{esc(cues[j][3])}'
+    ev = [f'Dialogue: 0,{ts(0)},{ts(end)},Title,,0,0,0,,{esc(title)}', f'Dialogue: 0,{ts(0)},{ts(end)},Foot,,0,0,0,,{esc(foot)}']
+    for i, (a, b, _, _) in enumerate(cues):
+        z = ts(cues[i + 1][0] if i + 1 < len(cues) else end)
+        before = '\\N\\N'.join(p for p in (line(i - 2, 0), line(i - 1, 0)) if p)
+        if before:
+            ev.append(f'Dialogue: 1,{ts(a)},{z},Body,,0,0,0,,{{\\an2\\pos(360,590)}}{before}')
+        ev.append(f'Dialogue: 1,{ts(a)},{z},Body,,0,0,0,,{{\\an8\\pos(360,630)}}' + '\\N\\N'.join(p for p in (line(i, 1), line(i + 1, 0)) if p))
+    return '\n'.join([
+        '[Script Info]', 'ScriptType: v4.00+', 'PlayResX: 720', 'PlayResY: 1280', 'WrapStyle: 0', '', '[V4+ Styles]',
+        'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, '
+        'ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding',
+        'Style: Title,Arial,34,&H00B0B0B0,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,50,50,70,1',
+        'Style: Foot,Arial,24,&H00707070,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,50,50,50,1',
+        'Style: Body,Arial,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,50,50,0,1',
+        '', '[Events]', 'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text'] + ev) + '\n'
+
+
+def video(cues, title, foot, mp3, dur, mp4):
+    a = ass(cues, title, foot, dur)
+    key = hashlib.sha1((a + json.dumps(VIDEO) + hashlib.sha1(open(mp3, 'rb').read()).hexdigest()).encode('utf-8')).hexdigest()[:16]
+    done = os.path.join(VDIR, key + '.mp4')
+    if not os.path.exists(done):
+        os.makedirs(VDIR, exist_ok=True)
+        open(os.path.join(VDIR, key + '.ass'), 'w', encoding='utf-8').write(a)
+        # cwd = VDIR so the ass filter gets a bare file name: a Windows path's "C:" breaks the filter's own syntax
+        subprocess.run([FFMPEG, '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'color=c=0x15171c:s=720x1280:r=4', '-i', mp3,
+                        '-map', '0:v', '-map', '1:a', '-t', f'{dur:.3f}', '-vf', f'ass={key}.ass', *VIDEO, key + '.part.mp4'],
+                       cwd=VDIR, check=True)
+        os.replace(os.path.join(VDIR, key + '.part.mp4'), done)
+        os.remove(os.path.join(VDIR, key + '.ass'))
+    shutil.copyfile(done, mp4)
+
+
+def script_pdf(chs, title, foot, pdf):
+    """The script as written, one paragraph per paragraph, the examiner's in bold. One chapter: that track's page(s). Several:
+    the whole episode, a contents page first and each track from a new page. Byte-identical between builds."""
+    from reportlab import rl_config
+    rl_config.invariant = 1
+    from reportlab.lib.colors import HexColor
+    from reportlab.lib.pagesizes import A4
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import mm
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate
+    if 'Arial' not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont('Arial', 'C:/Windows/Fonts/arial.ttf'))
+        pdfmetrics.registerFont(TTFont('Arial-Bold', 'C:/Windows/Fonts/arialbd.ttf'))
+    body = ParagraphStyle('b', fontName='Arial', fontSize=11.5, leading=16.5, spaceAfter=8, textColor=HexColor('#1d1f24'))
+    q = ParagraphStyle('q', parent=body, fontName='Arial-Bold', textColor=HexColor('#8a4b00'))
+    small = ParagraphStyle('n', parent=body, fontSize=9, textColor=HexColor('#777777'), spaceAfter=10)
+    head = ParagraphStyle('h', parent=body, fontName='Arial-Bold', fontSize=17, leading=21, spaceAfter=12)
+    esc = lambda t: t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    note = 'The words as the track says them. <font color="#8a4b00"><b>Bold brown</b></font> is the examiner.'
+    story = [Paragraph(esc(foot), ParagraphStyle('f', parent=small, spaceAfter=2)), Paragraph(esc(title), head), Paragraph(note, small)]
+    if len(chs) > 1:
+        story += [Paragraph(f'{ch["n"]:02d} · {esc(ch["title"])}', ParagraphStyle('c', parent=body, spaceAfter=3)) for ch in chs]
+    for ch in chs:
+        if len(chs) > 1:
+            story += [PageBreak(), Paragraph(f'{ch["n"]:02d} · {esc(ch["title"])}', head)]
+        for p in ch['paras']:
+            text = ' '.join(re.sub(r'\[pause(?: \d+(?:\.\d+)?)?\]', ' ', p['text']).split())
+            if text:
+                story.append(Paragraph(esc(text), q if p['who'] == 'q' else body))
+    SimpleDocTemplate(pdf + '.part', pagesize=A4, title=title, author=PODCAST, leftMargin=20 * mm,
+                      rightMargin=20 * mm, topMargin=18 * mm, bottomMargin=18 * mm).build(story)
+    os.replace(pdf + '.part', pdf)
+
+
+# ── what the player shows under each chapter: her question and the short answer, from the Paper Sims ──────────
+def plain(s):
+    return re.sub(r'\s+', ' ', s.replace('**', '')).strip()
+
+
+def show_item(ask, marks, short=None, lines=None):
+    groups = []
+    if short:
+        for g in short['groups']:
+            groups.append({'h': plain(g.get('q') or ''), 't': [plain(f['t']) for f in g['facts']]})
+    elif lines:
+        groups.append({'h': '', 't': lines})
+    return {'ask': plain(ask), 'marks': marks, 'hook': plain(short.get('hook', '')) if short else '', 'groups': groups}
+
+
+def asked(line):
+    """'@ ask: Question (N marks) || line | line' — a question the player shows that is not an SAQ Trainer item."""
+    ask, _, rest = line.partition('||')
+    ask = ask.strip()
+    m = re.search(r'\((\d+(?:\.\d+)?) marks?\)$', ask)
+    marks = float(m.group(1)) if m else None
+    return show_item(ask[:m.start()].strip() if m else ask, int(marks) if marks and marks.is_integer() else marks,
+                     lines=[l.strip() for l in rest.split('|') if l.strip()])
+
+
+def show_for(ep, ch):
+    items = [asked(a) for a in ch['meta'].get('ask', [])]
+    return items, ' '.join(ch['meta'].get('scen', [])), ' '.join(ch['meta'].get('why', []))
+
+
+def forecast(ep, chs):
+    """Every track says why it is in the forecast (@ why:), and every track but the intro shows a question (@ ask:)."""
+    bad = [f"ch {ch['n']} {ch['title']}: no @ why:" for ch in chs if not ch['meta'].get('rapid') and not ch['meta'].get('why')]
+    bad += [f"ch {ch['n']} {ch['title']}: no @ ask:" for ch in chs[1:] if not ch['meta'].get('rapid') and not ch['meta'].get('ask')]
+    if bad:
+        raise SystemExit(f"{ep}: forecast gate failed\n  " + '\n  '.join(bad))
+    return sum(len(ch['meta'].get('ask', [])) for ch in chs)
+
+
+# ── build: MP3s, the page, the feeds, the zips ───────────────────────────────────────────────────────────────
+def slug(s):
+    return re.sub(r'[^\w]+', ' ', s.replace('’', "'").replace("'", '')).strip()[:70]
+
+
+def cover(ep):
+    path = os.path.join(HERE, 'audio', f'cover-{ep}.png')
+    from PIL import Image, ImageDraw, ImageFont
+    S = 1400
+    img = Image.new('RGB', (S, S))
+    d = ImageDraw.Draw(img)
+    a, b = (13, 148, 136), (8, 47, 73)
+    for y in range(S):
+        t = y / S
+        d.line([(0, y), (S, y)], fill=tuple(int(a[i] * (1 - t) + b[i] * t) for i in range(3)))
+    bold = lambda n: ImageFont.truetype('C:/Windows/Fonts/seguibl.ttf', n)
+    reg = lambda n: ImageFont.truetype('C:/Windows/Fonts/segoeuib.ttf', n)
+    top, big, sub = EPISODES[ep]['cover']
+    d.text((110, 120), top, font=reg(64), fill=(220, 230, 255))
+    d.text((100, 330), big, font=bold(300), fill=(255, 255, 255))
+    d.text((110, 700), sub, font=bold(120), fill=(255, 255, 255))
+    d.text((110, 1150), 'the exam podcast', font=reg(70), fill=(200, 215, 250))
+    d.ellipse((1060, 1040, 1300, 1280), outline=(255, 255, 255), width=14)
+    d.polygon([(1150, 1100), (1150, 1220), (1250, 1160)], fill=(255, 255, 255))
+    img.save(path)
+    return path
+
+
+def encode(wav, mp3, tags, art):
+    cmd = [FFMPEG, '-y', '-loglevel', 'error', '-i', wav, '-i', art, '-map', '0:a', '-map', '1:v', '-c:v', 'copy',
+           '-disposition:v', 'attached_pic', '-metadata:s:v', 'title=Cover', '-metadata:s:v', 'comment=Cover (front)',
+           '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', '-ar', str(SR), '-ac', '1', '-c:a', 'libmp3lame', '-b:a', BITRATE,
+           '-id3v2_version', '3']
+    for k, v in tags.items():
+        cmd += ['-metadata', f'{k}={v}']
+    subprocess.run(cmd + [mp3 + '.part.mp3'], check=True)
+    os.replace(mp3 + '.part.mp3', mp3)
+
+
+def build(ep, chs):
+    E = EPISODES[ep]
+    outdir = os.path.join(HERE, 'audio', ep)
+    os.makedirs(outdir, exist_ok=True)
+    art = cover(ep)
+    # 21 Oct, "only two download buttons": the whole episode (one MP3, one video, one script) and each question (a folder per
+    # question, each with its MP3, video and script). Both are zips on the repo's "downloads" release, not on Pages: 240 MB a
+    # zip is too much to pack in a phone's browser, and the videos would take the site past GitHub Pages' 1 GB.
+    whole_dir, each_dir = os.path.join(WORK, 'dl', ep, 'whole', E['zip']), os.path.join(WORK, 'dl', ep, 'each', E['zip'])
+    for d in (whole_dir, each_dir):
+        shutil.rmtree(d, ignore_errors=True)
+        os.makedirs(d)
+    rows, total, mp4s = [], 0.0, []
+    for ch in chs:
+        a, cues = chapter_audio(ch)
+        dur = len(a) / SR
+        sub = vtt(cues)                      # 20 Oct: subtitles, timed by the build itself (no speech recognition)
+        open(os.path.join(outdir, f'{ch["n"]:02d}.vtt'), 'w', encoding='utf-8', newline='\n').write(sub)
+        wav = os.path.join(WORK, f'{ep}-{ch["n"]:02d}.wav')
+        sf.write(wav, a, SR, subtype='PCM_16')
+        mp3 = os.path.join(outdir, f'{ch["n"]:02d}.mp3')
+        title = f'{ch["n"]:02d} · {ch["title"]}'
+        encode(wav, mp3, {'title': title, 'album': E['title'], 'artist': PODCAST, 'album_artist': PODCAST,
+                          'track': f'{ch["n"]}/{len(chs)}', 'genre': 'Podcast', 'date': '2026',
+                          'comment': f"{E['course']}. Read by Kokoro."}, art)
+        os.remove(wav)
+        base = f'{ch["n"]:02d} {slug(ch["title"])}'
+        one = os.path.join(each_dir, base)
+        os.makedirs(one)
+        shutil.copyfile(mp3, os.path.join(one, base + '.mp3'))
+        video(cues, title, f'{E["title"]} · track {ch["n"]} of {len(chs)}', mp3, dur, os.path.join(one, base + '.mp4'))
+        script_pdf([ch], title, f'{E["title"]} · track {ch["n"]} of {len(chs)}', os.path.join(one, base + ' (script).pdf'))
+        mp4s.append(os.path.join(one, base + '.mp4'))
+        items, scen, why = show_for(ep, ch)
+        rows.append({'n': ch['n'], 'title': ch['title'], 'file': f'audio/{ep}/{ch["n"]:02d}.mp3', 'dur': round(dur, 1),
+                     'bytes': os.path.getsize(mp3), 'rapid': bool(ch['meta'].get('rapid')), 'scen': scen, 'why': why, 'show': items,
+                     'marks': sum(i['marks'] or 0 for i in items) or None, 'ver': hashlib.sha1(open(mp3, 'rb').read()).hexdigest()[:10],
+                     'vtt': f'audio/{ep}/{ch["n"]:02d}.vtt', 'vver': hashlib.sha1(sub.encode('utf-8')).hexdigest()[:10]})
+        total += dur
+        print(f"  {ep} {ch['n']:02d}  {int(dur//60):2d}:{int(dur%60):02d}  {ch['title']}", flush=True)
+    # the whole episode as ONE MP3 and ONE video (asked 16 Oct: "give them the option to download the mp3"; 21 Oct: the video
+    # and the script too). The chapter files are joined frame for frame (no second encode), with the chapters embedded.
+    ffm, t = [';FFMETADATA1', f'title={E["title"]}', f'album={E["title"]}', f'artist={PODCAST}', 'genre=Podcast'], 0.0
+    for r in rows:
+        ffm += ['[CHAPTER]', 'TIMEBASE=1/1000', f'START={int(t * 1000)}', f'END={int((t + r["dur"]) * 1000)}', f'title={r["n"]:02d} · {r["title"]}']
+        t += r['dur']
+    meta = os.path.join(WORK, f'{ep}-whole.ffmeta')
+    open(meta, 'w', encoding='utf-8').write('\n'.join(ffm) + '\n')
+    def join(files, out, extra):
+        lst = os.path.join(WORK, f'{ep}-concat.txt')
+        open(lst, 'w', encoding='utf-8').write(''.join(f"file '{f}'\n" for f in files))     # slug() leaves no quotes in a name
+        # 'fatal': the frame-for-frame joins log harmless dts warnings at each track boundary (it is silence there)
+        subprocess.run([FFMPEG, '-y', '-loglevel', 'fatal', '-f', 'concat', '-safe', '0', '-i', lst, '-i', meta, *extra,
+                        '-map_metadata', '1', '-map_chapters', '1', '-c', 'copy', out + '.part' + os.path.splitext(out)[1]], check=True)
+        os.replace(out + '.part' + os.path.splitext(out)[1], out)
+    whole = os.path.join(whole_dir, E['zip'] + '.mp3')
+    join([os.path.join(outdir, os.path.basename(r['file'])) for r in rows], whole,
+         ['-i', art, '-map', '0:a', '-map', '2:v', '-disposition:v', 'attached_pic', '-id3v2_version', '3'])
+    join(mp4s, os.path.join(whole_dir, E['zip'] + '.mp4'), ['-map', '0', '-movflags', '+faststart'])
+    script_pdf(chs, E['title'], f'{PODCAST} · {len(chs)} tracks · {round(total / 60)} min', os.path.join(whole_dir, E['zip'] + ' (script).pdf'))
+    dl = {}
+    for kind, d in (('whole', whole_dir), ('each', each_dir)):
+        name = E['zip'] + ('-Whole-episode.zip' if kind == 'whole' else '-Each-question.zip')
+        zpath = os.path.join(WORK, name)
+        with zipfile.ZipFile(zpath + '.part', 'w', zipfile.ZIP_STORED) as z:
+            for root, dirs, files in os.walk(d):
+                dirs.sort()
+                for f in sorted(files):
+                    z.write(os.path.join(root, f), os.path.relpath(os.path.join(root, f), os.path.dirname(d)).replace(os.sep, '/'))
+        os.replace(zpath + '.part', zpath)
+        dl[kind] = {'file': name, 'url': RELEASE + name, 'bytes': os.path.getsize(zpath)}
+    print(f"{ep}: {len(chs)} chapters, {total/60:.0f} min · {', '.join(f'{v['file']} {v['bytes']/1e6:.0f} MB' for v in dl.values())}", flush=True)
+    return {'id': ep, **{k: E[k] for k in ('title', 'short', 'kicker', 'blurb', 'when', 'zip')}, 'dur': round(total),
+            'cover': f'audio/cover-{ep}.png', 'feed': f'feed-{ep}.xml', 'dl': dl, 'chapters': rows}
+
+
+def feed(e):
+    """A podcast feed per episode: each chapter is one episode of a 'serial' show, so apps list them in order."""
+    t0 = 1793404800                         # 2026-10-31 00:00 UTC (a past date: some apps hide future ones): chapter n is dated n minutes later, so the order holds
+    items = []
+    for r in e['chapters']:
+        d = int(r['dur'])
+        desc = ' '.join(i['ask'] for i in r['show'])[:3900] or e['blurb']
+        items.append(f"""  <item>
+    <title>{escape(f"{r['n']:02d} · {r['title']}")}</title>
+    <itunes:episode>{r['n']}</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>{escape(desc)}</description>
+    <enclosure url="{BASE_URL}{r['file']}?v={r['ver']}" length="{r['bytes']}" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-{e['id']}-{r['n']:02d}-{r['ver']}</guid>
+    <pubDate>{formatdate(t0 + 60 * r['n'], usegmt=True)}</pubDate>
+    <itunes:duration>{d // 3600:d}:{d % 3600 // 60:02d}:{d % 60:02d}</itunes:duration>
+    <podcast:transcript url="{BASE_URL}{r['vtt']}?v={r['vver']}" type="text/vtt" language="en"/>
+  </item>""")
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+  <title>{escape(e['title'])}</title>
+  <link>{BASE_URL}</link>
+  <atom:link href="{BASE_URL}{e['feed']}" rel="self" type="application/rss+xml"/>
+  <language>en-nz</language>
+  <description>{escape(e['blurb'] + ' ' + e['when'] + '.')}</description>
+  <itunes:author>{PODCAST}</itunes:author>
+  <itunes:type>serial</itunes:type>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:block>Yes</itunes:block>
+  <itunes:image href="{BASE_URL}{e['cover']}"/>
+  <itunes:category text="Education"/>
+{chr(10).join(items)}
+</channel>
+</rss>
+"""
+    open(os.path.join(HERE, e['feed']), 'w', encoding='utf-8', newline='\n').write(xml)
+
+
+def page(eps):
+    tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
+    if tpl.count('/*@DATA@*/') != 1:
+        raise SystemExit("template.html needs exactly one /*@DATA@*/")
+    data = {'built': time.strftime('%Y-%m-%d'), 'episodes': eps}
+    out = tpl.replace('/*@DATA@*/', json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
+    open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n').write(out)
+    json.dump(data, open(os.path.join(HERE, 'episodes.json'), 'w', encoding='utf-8', newline='\n'), ensure_ascii=False, indent=1)
+    print(f"index.html + episodes.json: {sum(len(e['chapters']) for e in eps)} chapters", flush=True)
+
+
+# ── checks ────────────────────────────────────────────────────────────────────────────────────────────────
+def dry(ep, chs):
+    words = pause = 0
+    for ch in chs:
+        w = sum(len(v.split()) for k, _, v in segs(ch) if k == 'say')
+        p = sum(v for k, _, v in segs(ch) if k == 'pause')
+        q = sum(len(v.split()) for k, who, v in segs(ch) if k == 'say' and who == 'q')
+        words += w; pause += p
+        print(f"  {ep} {ch['n']:02d}  {w:5,} words ({q:3} examiner)  ~{(w / 155 + p / 60):4.1f} min  {ch['title']}")
+    print(f"{ep}: {len(chs)} chapters, {words:,} words, ~{words / 155 + pause / 60:.0f} min · {forecast(ep, chs)} questions shown")
+
+
+WORDS_OK = set("""about above across after again against along also although always among another answer answers around
+because become becomes before begin behind being below between both bring brings called cannot change changes come comes
+could different does doing done down during each either every first follow following from gives going happen happens
+having here inside into itself just keeps know large later least less little long made make makes many marks might more
+most much must near need needs never next none nothing number often once only other others over part parts people place
+question questions really right same says second should show shows side since small some something start starts still
+such take takes tell than that their them then there these they thing things think third this those three through time
+times together too toward towards under until very want what when where which while whole will with without words would
+write your yourself because""".split())
+
+
+def audit(eps):
+    seen = {}
+    for ep in eps:
+        for ch in chapters(ep):
+            for k, _, v in segs(ch):
+                if k == 'say':
+                    for w in re.findall(r"[A-Za-zāēīōū][A-Za-zāēīōū'’-]*", v):
+                        w = w.strip("'’-")
+                        if len(w) >= 6 and w.lower() not in WORDS_OK:
+                            seen.setdefault(w.lower(), w)
+    words = sorted(seen)
+    said = dict(zip(words, espeak([seen[w] for w in words])))
+    for lw in words:
+        tag = '*' if lw in IPA else ' '
+        print(f"{tag} {seen[lw]:24s} {IPA.get(lw) or said[lw]}")
+    print(f"{len(seen)} words (* = hand-written phonemes)")
+
+
+if __name__ == '__main__':
+    argv = sys.argv[1:]
+    if '--say' in argv:
+        text = argv[argv.index('--say') + 1]
+        who = 'q' if '--q' in argv else 'main'
+        ph = ' '.join(phonemes(v) for k, v in pieces(text) if k == 'say')
+        print(ph)
+        a = np.concatenate([level(say(v, who)) for k, v in pieces(text) if k == 'say'])
+        sf.write(os.path.join(WORK, 'say.wav'), a, SR, subtype='PCM_16')
+        print(f"{WORK}/say.wav  {len(a)/SR:.1f} s")
+        sys.exit()
+    if '--release' in argv:
+        zips = [os.path.join(WORK, E['zip'] + s) for E in EPISODES.values() for s in ('-Whole-episode.zip', '-Each-question.zip')]
+        if subprocess.run(['gh', 'release', 'view', 'downloads'], cwd=HERE, capture_output=True).returncode:
+            subprocess.run(['gh', 'release', 'create', 'downloads', '--title', 'Downloads', '--notes',
+                            'The download zips the player links to. Rebuilt by podcast.py --build, uploaded by --release.'], cwd=HERE, check=True)
+        subprocess.run(['gh', 'release', 'upload', 'downloads', '--clobber', *zips], cwd=HERE, check=True)
+        sys.exit()
+    eps = [a for a in argv if a in EPISODES] or list(EPISODES)
+    if '--audit' in argv:
+        audit(eps); sys.exit()
+    chs = {ep: chapters(ep) for ep in eps}
+    for ep in eps:
+        check(chs[ep], ep)
+        forecast(ep, chs[ep])
+    if '--dry' in argv:
+        for ep in eps:
+            dry(ep, chs[ep])
+        sys.exit()
+    if '--build' not in argv:
+        wanted = [int(a) for a in argv if a.isdigit()]
+        for ep in eps:
+            for ch in chs[ep]:
+                if not wanted or ch['n'] in wanted:
+                    voice_chapter(ep, ch)
+    if '--no-build' in argv:
+        sys.exit()
+    every = {ep: chapters(ep) for ep in EPISODES}
+    missing = [(ep, c['n']) for ep in EPISODES for c in every[ep] if any(k == 'say' and not cached(v, w) for k, w, v in segs(c))]
+    if missing:
+        print('still to voice:', missing)
+        sys.exit(1)
+    built = [build(ep, every[ep]) for ep in EPISODES]
+    for e in built:
+        feed(e)
+    page(built)

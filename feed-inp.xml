@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+  <title>INP Final — The forecast</title>
+  <link>https://jeremyspm.github.io/inp-pharm-podcast/</link>
+  <atom:link href="https://jeremyspm.github.io/inp-pharm-podcast/feed-inp.xml" rel="self" type="application/rss+xml"/>
+  <language>en-nz</language>
+  <description>There is no case booklet and no posted short-answer question, so this episode is a forecast. Every track is a question the lecturers pointed at: their Exam Content themes, the two revision decks (Lisa’s and Janine’s), the 27 Oct revision session, and their own Canvas quizzes. Each short answer is built the way Lisa taught on 27 Oct: find the command word, use the question’s keywords, about 150 words. Every track says why it is in. The final: Mon 2 Nov · 40 multi-choice + 15 short answers (about 4 marks each) · 2 h 30 · 50%.</description>
+  <itunes:author>BN2 Exam Podcast</itunes:author>
+  <itunes:type>serial</itunes:type>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:block>Yes</itunes:block>
+  <itunes:image href="https://jeremyspm.github.io/inp-pharm-podcast/audio/cover-inp.png"/>
+  <itunes:category text="Education"/>
+  <item>
+    <title>01 · How this forecast works</title>
+    <itunes:episode>1</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>There is no case booklet and no posted short-answer question, so this episode is a forecast. Every track is a question the lecturers pointed at: their Exam Content themes, the two revision decks (Lisa’s and Janine’s), the 27 Oct revision session, and their own Canvas quizzes. Each short answer is built the way Lisa taught on 27 Oct: find the command word, use the question’s keywords, about 150 words. Every track says why it is in.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/01.mp3?v=3fa67b94a8" length="1455118" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-01-3fa67b94a8</guid>
+    <pubDate>Sat, 31 Oct 2026 00:01:00 GMT</pubDate>
+    <itunes:duration>0:02:55</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/01.vtt?v=9ca83adfa5" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>02 · Social determinants of health</title>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define the social determinants of health. Identify two determinants and explain how each one affects health.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/02.mp3?v=5db2ae7b83" length="1403482" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-02-5db2ae7b83</guid>
+    <pubDate>Sat, 31 Oct 2026 00:02:00 GMT</pubDate>
+    <itunes:duration>0:02:49</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/02.vtt?v=d2c0f66ebd" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>03 · Equity, equality, inequality, inequity</title>
+    <itunes:episode>3</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Compare health equality and health equity, and explain the difference between a health inequality and a health inequity, using an example from Aotearoa New Zealand.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/03.mp3?v=481b5a1d0c" length="1068460" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-03-481b5a1d0c</guid>
+    <pubDate>Sat, 31 Oct 2026 00:03:00 GMT</pubDate>
+    <itunes:duration>0:02:07</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/03.vtt?v=899ed079cd" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>04 · Levels of prevention, upstream to downstream</title>
+    <itunes:episode>4</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the four levels of prevention, link each to upstream, midstream or downstream, and give a nursing example of each.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/04.mp3?v=257b5d8224" length="1048696" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-04-257b5d8224</guid>
+    <pubDate>Sat, 31 Oct 2026 00:04:00 GMT</pubDate>
+    <itunes:duration>0:02:04</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/04.vtt?v=8a9c88b79b" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>05 · Population health, demography and epidemiology</title>
+    <itunes:episode>5</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Differentiate between population health and personal health, and explain how demography and epidemiology help nurses plan care for a population.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/05.mp3?v=79094b5667" length="1202684" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-05-79094b5667</guid>
+    <pubDate>Sat, 31 Oct 2026 00:05:00 GMT</pubDate>
+    <itunes:duration>0:02:24</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/05.vtt?v=1b6ce7ed70" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>06 · Health screening</title>
+    <itunes:episode>6</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Explain the purpose of health screening, give one organised and one opportunistic example, and discuss why some people do not take part and what nurses can do about it.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/06.mp3?v=39fbf81d53" length="1117760" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-06-39fbf81d53</guid>
+    <pubDate>Sat, 31 Oct 2026 00:06:00 GMT</pubDate>
+    <itunes:duration>0:02:13</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/06.vtt?v=ccb7fdb0bd" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>07 · Primary health care and health promotion</title>
+    <itunes:episode>7</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Identify the five principles of primary health care and describe how a nurse could apply each one in a community setting.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/07.mp3?v=2f08c97c01" length="1064432" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-07-2f08c97c01</guid>
+    <pubDate>Sat, 31 Oct 2026 00:07:00 GMT</pubDate>
+    <itunes:duration>0:02:06</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/07.vtt?v=eca7e617b0" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>08 · The 2023 Health Strategy</title>
+    <itunes:episode>8</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Identify the two long-term goals of the New Zealand Health Strategy 2023 and describe how one of its priority areas applies to nursing practice.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/08.mp3?v=fdf6f6e6a6" length="1120464" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-08-fdf6f6e6a6</guid>
+    <pubDate>Sat, 31 Oct 2026 00:08:00 GMT</pubDate>
+    <itunes:duration>0:02:13</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/08.vtt?v=9f8b302b25" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>09 · Te Tiriti o Waitangi and cultural safety</title>
+    <itunes:episode>9</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Identify the three articles of Te Tiriti o Waitangi and explain how one of the five principles guides a nurse's practice with Māori patients and whānau.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/09.mp3?v=9613804dd3" length="1208624" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-09-9613804dd3</guid>
+    <pubDate>Sat, 31 Oct 2026 00:09:00 GMT</pubDate>
+    <itunes:duration>0:02:24</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/09.vtt?v=956ad188e4" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>10 · Standards of competence, scope and roles of nurses</title>
+    <itunes:episode>10</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Identify the six pou of the Registered Nurse Standards of Competence and explain the scope of practice of a BN2 student nurse, with an example.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/10.mp3?v=d427811bef" length="1174469" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-10-d427811bef</guid>
+    <pubDate>Sat, 31 Oct 2026 00:10:00 GMT</pubDate>
+    <itunes:duration>0:02:20</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/10.vtt?v=5d7c22ed78" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>11 · Therapeutic use of self and emotional intelligence</title>
+    <itunes:episode>11</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Explain the role of emotional intelligence and discuss its impact on therapeutic communication in nursing practice.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/11.mp3?v=d18b019539" length="1137029" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-11-d18b019539</guid>
+    <pubDate>Sat, 31 Oct 2026 00:11:00 GMT</pubDate>
+    <itunes:duration>0:02:15</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/11.vtt?v=54c9fbc946" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>12 · Family-centred care</title>
+    <itunes:episode>12</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define family in the context of family-centred care and describe the three principles that make up a partnership with the person and their family.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/12.mp3?v=0b238b8596" length="868935" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-12-0b238b8596</guid>
+    <pubDate>Sat, 31 Oct 2026 00:12:00 GMT</pubDate>
+    <itunes:duration>0:01:42</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/12.vtt?v=6aa5fea776" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>13 · Pain assessment</title>
+    <itunes:episode>13</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the difference between acute and chronic pain and explain how a nurse would assess a patient's pain.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/13.mp3?v=24be0509f3" length="1131391" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-13-24be0509f3</guid>
+    <pubDate>Sat, 31 Oct 2026 00:13:00 GMT</pubDate>
+    <itunes:duration>0:02:15</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/13.vtt?v=03249e9b70" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>14 · Discharge planning</title>
+    <itunes:episode>14</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Explain why discharge planning starts on admission and describe what a nurse would include in a patient's discharge plan.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/14.mp3?v=44a9d80c8b" length="841285" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-14-44a9d80c8b</guid>
+    <pubDate>Sat, 31 Oct 2026 00:14:00 GMT</pubDate>
+    <itunes:duration>0:01:38</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/14.vtt?v=3aff121a6d" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>15 · The nursing process and care planning</title>
+    <itunes:episode>15</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the five steps of the nursing process and compare a medical diagnosis with a nursing diagnosis.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/15.mp3?v=1fe9513083" length="1275627" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-15-1fe9513083</guid>
+    <pubDate>Sat, 31 Oct 2026 00:15:00 GMT</pubDate>
+    <itunes:duration>0:02:33</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/15.vtt?v=256db96b63" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>16 · Holistic assessment, falls and wounds</title>
+    <itunes:episode>16</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>An older patient has become unsteady when mobilising to the bathroom. Identify and describe five nursing strategies used to prevent falls, and explain how they reduce harm and improve patient outcomes.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/16.mp3?v=10ad6209d4" length="1405611" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-16-10ad6209d4</guid>
+    <pubDate>Sat, 31 Oct 2026 00:16:00 GMT</pubDate>
+    <itunes:duration>0:02:49</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/16.vtt?v=0f40cf99f6" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>17 · Informed consent</title>
+    <itunes:episode>17</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define informed consent and discuss the nurse's role in the consent process, including who can give consent.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/17.mp3?v=909b096a70" length="1210305" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-17-909b096a70</guid>
+    <pubDate>Sat, 31 Oct 2026 00:17:00 GMT</pubDate>
+    <itunes:duration>0:02:24</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/17.vtt?v=ab8cea523a" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>18 · Health literacy and patient education</title>
+    <itunes:episode>18</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define health literacy and describe strategies a nurse can use to educate a patient with low health literacy, including the teach-back method.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/18.mp3?v=421b8df4bf" length="1110315" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-18-421b8df4bf</guid>
+    <pubDate>Sat, 31 Oct 2026 00:18:00 GMT</pubDate>
+    <itunes:duration>0:02:12</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/18.vtt?v=c57f7cd084" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>19 · Vital signs, the primary survey, glucose and injections</title>
+    <itunes:episode>19</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the primary survey (A to E) and give the normal adult range for each vital sign it includes.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/19.mp3?v=77948a50a1" length="1324431" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-19-77948a50a1</guid>
+    <pubDate>Sat, 31 Oct 2026 00:19:00 GMT</pubDate>
+    <itunes:duration>0:02:39</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/19.vtt?v=037f390a19" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>20 · Documentation and ISBAR</title>
+    <itunes:episode>20</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Explain why clinical documentation is a legal and professional requirement and describe the ISBAR framework for handing over a deteriorating patient.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/20.mp3?v=f6d85d0f9e" length="1319759" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-20-f6d85d0f9e</guid>
+    <pubDate>Sat, 31 Oct 2026 00:20:00 GMT</pubDate>
+    <itunes:duration>0:02:38</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/20.vtt?v=d31d6ce69b" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>21 · Infection prevention and control</title>
+    <itunes:episode>21</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the chain of infection and explain how standard and transmission-based precautions break it, with an example of each type of transmission-based precaution.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/21.mp3?v=4bc3c6d8ce" length="1246625" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-21-4bc3c6d8ce</guid>
+    <pubDate>Sat, 31 Oct 2026 00:21:00 GMT</pubDate>
+    <itunes:duration>0:02:29</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/21.vtt?v=7c71109365" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>22 · Evidence-based practice</title>
+    <itunes:episode>22</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define evidence-based practice and discuss why it is a professional requirement for nurses, including the levels of evidence.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/22.mp3?v=d099028769" length="987407" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-22-d099028769</guid>
+    <pubDate>Sat, 31 Oct 2026 00:22:00 GMT</pubDate>
+    <itunes:duration>0:01:57</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/22.vtt?v=0f3889cffa" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>23 · Self-care, burnout and compassion fatigue</title>
+    <itunes:episode>23</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Compare burnout and compassion fatigue and describe self-care strategies that build a nurse's resilience.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/23.mp3?v=122ad011b3" length="1145075" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-23-122ad011b3</guid>
+    <pubDate>Sat, 31 Oct 2026 00:23:00 GMT</pubDate>
+    <itunes:duration>0:02:16</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/23.vtt?v=e81f193f1b" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>24 · Long-term conditions and self-management</title>
+    <itunes:episode>24</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Define self-management of a long-term condition and describe the nurse's role in self-management support.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/24.mp3?v=08a82d00e0" length="1130481" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-24-08a82d00e0</guid>
+    <pubDate>Sat, 31 Oct 2026 00:24:00 GMT</pubDate>
+    <itunes:duration>0:02:14</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/24.vtt?v=1af96a47bf" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>25 · Diabetes and rheumatic fever</title>
+    <itunes:episode>25</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>Describe the difference between type 1 and type 2 diabetes and explain how rheumatic fever develops, who it affects and why.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/25.mp3?v=0e926caaed" length="1236057" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-25-0e926caaed</guid>
+    <pubDate>Sat, 31 Oct 2026 00:25:00 GMT</pubDate>
+    <itunes:duration>0:02:28</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/25.vtt?v=0dec176fae" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>26 · The multi-choice: clinical facts</title>
+    <itunes:episode>26</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>The lecturers' quiz keys, clinical side (1 mark each)</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/26.mp3?v=cbeef24f66" length="1414817" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-26-cbeef24f66</guid>
+    <pubDate>Sat, 31 Oct 2026 00:26:00 GMT</pubDate>
+    <itunes:duration>0:02:50</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/26.vtt?v=5a1cecc6bd" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>27 · The multi-choice: population and professional facts</title>
+    <itunes:episode>27</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>The lecturers' quiz keys, population and professional side (1 mark each)</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/27.mp3?v=2b87d7206b" length="1399111" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-27-2b87d7206b</guid>
+    <pubDate>Sat, 31 Oct 2026 00:27:00 GMT</pubDate>
+    <itunes:duration>0:02:48</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/27.vtt?v=b3ebc4a54c" type="text/vtt" language="en"/>
+  </item>
+  <item>
+    <title>28 · Rapid-fire: every answer, back to back</title>
+    <itunes:episode>28</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <description>There is no case booklet and no posted short-answer question, so this episode is a forecast. Every track is a question the lecturers pointed at: their Exam Content themes, the two revision decks (Lisa’s and Janine’s), the 27 Oct revision session, and their own Canvas quizzes. Each short answer is built the way Lisa taught on 27 Oct: find the command word, use the question’s keywords, about 150 words. Every track says why it is in.</description>
+    <enclosure url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/28.mp3?v=48c700d509" length="5806061" type="audio/mpeg"/>
+    <guid isPermaLink="false">inp-pharm-podcast-inp-28-48c700d509</guid>
+    <pubDate>Sat, 31 Oct 2026 00:28:00 GMT</pubDate>
+    <itunes:duration>0:11:59</itunes:duration>
+    <podcast:transcript url="https://jeremyspm.github.io/inp-pharm-podcast/audio/inp/28.vtt?v=ee4f476b1a" type="text/vtt" language="en"/>
+  </item>
+</channel>
+</rss>

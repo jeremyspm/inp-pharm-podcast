@@ -1,0 +1,231 @@
+% Lisa's half: her revision deck (slides 10-96), her 27 Oct session (topics the class voted for, Mentimeter quizzes), the
+% Exam Content themes. Answers follow her slides' words; examples are hers where she gave one.
+
+# Social determinants of health
+@ why: Top of Lisa's list on 27 Oct, the first topic the class voted for, and three lines of the Exam Content page (social and economic determinants, inequalities and inequities, inequalities in Aotearoa). The lecturers' quiz on it is the biggest block in their bank, 14 questions.
+@ ask: Define the social determinants of health. Identify two determinants and explain how each one affects health. (4 marks) || Definition: the conditions in which people are born, grow, work, live and age; the wider forces and systems shaping daily life | Income and the social gradient: lower socioeconomic position, worse health and shorter life expectancy | Work and unemployment: less financial security; poor, unsafe conditions | Stress: chronic fight or flight harms the heart, immunity and mental health | Education: better jobs, income and health literacy | Early life: childhood trauma leads to mental illness and obesity, then CVD and type 2 diabetes | Social exclusion: discrimination limits work, leads to homelessness and the poverty cycle | Health system, transport, conflict, food security, addiction
+@ say: Social determinants
+
+Q: Four marks. Define the social determinants of health. Then identify two determinants, and explain how each one affects health.
+
+Three command words: define, identify, explain. So roughly one mark for the definition, one for naming two, and two for the explaining. Lisa said it plainly on the twenty-seventh: always give the why. Education is linked to better health is not enough.
+
+The definition, in her words. The social determinants of health are the conditions in which people are born, grow, work, live and age: the wider set of forces and systems that shape the conditions of daily life. There's no single fixed list. It changes as society changes.
+
+Determinant one: the social gradient, which is income. The lower a person's socioeconomic position, the worse their health and the shorter their life expectancy, even after you account for behaviour. Income is the most powerful determinant: poverty means less money for healthy food, warm housing and getting to the doctor, and the stress of money trouble itself harms health.
+
+Determinant two: stress. Chronic stress keeps the body in fight or flight. Over time that damages the cardiovascular system and the immune system, and it affects mental health.
+
+If you'd rather pick others, here are her eleven, each with its why. Work: a stable income helps, but unemployment means less security and stability. Education: better jobs, critical thinking and health literacy. Early life: childhood trauma and stress lead to mental illness and obesity, then heart disease and type 2 diabetes later. Social exclusion: discrimination by ethnicity, gender, age or rainbow identity, mostly in the workplace, limits work and can lead to homelessness and the poverty cycle. The health system itself: how accessible, affordable and available it is. Transport: access to services, pollution, and active travel. Conflict: it disrupts how resources and medicines are distributed. Food security: what's cheap is not always nutritious, and you can be malnourished while overweight. And addiction: tobacco, alcohol, drugs, gambling and food, which affect relationships and mental health.
+
+{recap} Social determinants: the conditions in which people are born, grow, work, live and age. Name one, then give its why. Income and the social gradient: lower status, worse health, shorter life. Stress: chronic fight or flight harms the heart, immunity and mental health. Education: jobs, income, health literacy. Early life: childhood trauma leads to mental illness, obesity, later heart disease and diabetes.
+
+# Equity, equality, inequality, inequity
+@ why: Lisa's deck gives these four words a slide each and she quizzed them on 27 Oct. Health inequalities and inequities is an Exam Content theme, and equity runs through the Health Strategy, Te Tiriti and screening tracks too.
+@ ask: Compare health equality and health equity, and explain the difference between a health inequality and a health inequity, using an example from Aotearoa New Zealand. (4 marks) || Equality: everyone gets the same | Equity: fairness; resources go out by need, to close the gap (the different-sized boxes) | Inequality: a difference in health between groups | Inequity: a difference that is unfair and avoidable, from social conditions, and could be reduced by the right policies | Example: Māori and Pacific adults twice as likely not to collect a prescription because of cost; higher diabetes complication rates
+@ say: Equity and inequity
+
+Q: Four marks. Compare health equality and health equity. Then explain the difference between a health inequality and a health inequity, using an example from Aotearoa New Zealand.
+
+Compare, so name both, then say how they relate. Equality means everyone gets the same. Equity means fairness: resources go out according to need, so that the gap closes. Lisa's picture is the people of different heights watching over a fence. Equality gives each of them the same box. Equity gives the shortest person more boxes, so that everyone can see. They relate because equal treatment of unequal starting points keeps the gap open. Equity is how you close it.
+
+Now the second pair. A health inequality is simply a difference in health between groups. Some differences are just biology. A health inequity is a difference that is unfair and avoidable. It comes from the social conditions people are born, grow, live, work and age in, and it could be reduced by the right mix of government policies. The test is her question on the slide: are these differences fair or not?
+
+An example from Aotearoa, from her deck. Māori and Pacific adults are about twice as likely as other adults not to collect a prescription because of cost, and Māori adults have higher hospitalisation rates for diabetes complications, like kidney failure and lower-limb amputation. That's not biology. It follows from barriers to access: cost, transport, appointment times. Unfair and avoidable, so it is an inequity, and the nurse's response is an equity lens: work out what this person needs to get the same outcome.
+
+{recap} Equality: everyone gets the same. Equity: fairness, resources by need, to close the gap. Inequality: any difference in health between groups. Inequity: a difference that is unfair and avoidable, from social conditions, and fixable with the right policies. Example: Māori and Pacific adults twice as likely not to collect a prescription because of cost.
+
+# Levels of prevention, upstream to downstream
+@ why: "Theory of Health Promotion, upstream, midstream, downstream factors" is an Exam Content theme that no lecturer quiz asks. Lisa joined it to the levels of prevention on 27 Oct and quizzed it, and her deck spends five slides on it.
+@ ask: Describe the four levels of prevention, link each to upstream, midstream or downstream, and give a nursing example of each. (4 marks) || Primordial: stops risk factors developing; the social determinants; upstream; advocating for warm, dry housing (Healthy Homes) | Primary: prevents disease where risk exists; populations and high-risk groups; upstream to midstream; vaccination, health education, PPE | Secondary: screening, early detection to stop progression; midstream; cervical screening, mammograms | Tertiary: manage existing disease, prevent it getting worse; downstream; supporting diabetes management | Work at every level at once
+@ say: Levels of prevention
+
+Q: Four marks. Describe the four levels of prevention. Link each one to upstream, midstream or downstream, and give a nursing example of each.
+
+Lisa's memory hooks are on her slides: primary, prevent. Secondary, screen. Tertiary, treat. And primordial comes before all of them.
+
+Primordial prevention stops the risk factors themselves from developing. It works on the social determinants, so it's upstream. Her example: a nurse advocating for better housing and transport, like the Healthy Homes standards. A warm, dry house prevents respiratory illness and stops asthma getting worse.
+
+Primary prevention prevents disease once risk factors exist, before it ever starts. It's aimed at populations and high-risk groups, upstream to midstream. Examples: the vaccination schedule, health education, and workplace safety like P P E.
+
+Secondary prevention is screening: detecting disease early to stop it progressing. That's midstream. Examples: cervical screening, mammograms, bowel screening, and regular check-ups.
+
+Tertiary prevention manages a disease that already exists, to stop it getting worse and to limit disability. That's downstream. Her example: helping someone manage diabetes after diagnosis. The right medicines, knowing what they're for, taking them, follow-up bloods. All of that prevents kidney and heart complications.
+
+And the point she made about both frameworks: a nurse has to work at every level at once, not just one. Upstream changes the conditions. Downstream looks after the person in front of you.
+
+{recap} Primordial: stop risk factors developing, the social determinants, upstream, like Healthy Homes. Primary, prevent: vaccination and education, upstream to midstream. Secondary, screen: early detection, midstream, like mammograms. Tertiary, treat: manage existing disease, downstream, like diabetes support. Work at every level at once.
+
+# Population health, demography and epidemiology
+@ why: Personal health versus population health, and demography and epidemiology, are two Exam Content themes, both voted for by the class and quizzed by Lisa on 27 Oct. Her slides give the definitions, the two study types and epidemic versus endemic.
+@ ask: Differentiate between population health and personal health, and explain how demography and epidemiology help nurses plan care for a population. (4 marks) || Population health: health outcomes of a group and how they are distributed; actions for the whole population | Personal health: one individual's risk factors and circumstances; one-to-one care | Public health: the approaches used to improve a population's health (Te Pou Hauora Tūmatanui) | Demography: size, distribution and structure (fertility, mortality, migration, marriage, social mobility) | Epidemiology: patterns, causes and control of disease in groups; observational or experimental | Ageing population: more aged care, multimorbidity, workforce planning | Epidemic: more cases than expected; endemic: stable, expected level
+@ say: Population health
+
+Q: Four marks. Differentiate between population health and personal health. Then explain how demography and epidemiology help nurses plan care for a population.
+
+Population health looks at the health outcomes of a group of people, and how those outcomes are spread across the group. The group can be big, like children in New Zealand, or small, like people over sixty-five with C O P D in Manukau. Its actions aim at the whole group. Personal health is the health of one individual: their own risk factors, symptoms and circumstances, usually one-to-one care between patient and clinician. Public health is the set of approaches used to improve a population's health. Here that's run by the Public Health Agency, Te Pou Hauora Tūmatanui, working towards pae ora, healthy futures. Think safe drinking water, smokefree laws, and immunisation.
+
+Demography is the study of human populations: their size, distribution and structure. Structure means fertility, mortality, migration, marriage and family, and social mobility. Epidemiology is the study of the patterns, causes and control of disease in groups of people. Its studies are either observational, which watch what happens without stepping in, or experimental, which actively change something and see what happens.
+
+How they help a nurse plan. Demography shows who is coming. Lisa's example: census data shows an ageing population, which means more demand for aged care and its workers, more people with several long-term conditions at once, and the need for workforce planning. Epidemiology shows what's spreading and why, so nurses can screen, monitor risk factors, vaccinate and educate. Two terms to know. Endemic is the stable, expected level, like a normal flu season. Epidemic means cases in excess of what's expected.
+
+{recap} Population health: outcomes across a group, actions for the group. Personal health: one person, one-to-one care. Demography: size and structure of a population, fertility, mortality, migration. Epidemiology: patterns, causes and control of disease, observational or experimental. Endemic is the expected level; epidemic is more than expected.
+
+# Health screening
+@ why: An Exam Content theme, taught on 20 Oct and quizzed again by Lisa on 27 Oct. Her one sample multi-choice in the revision deck is about screening: what a false negative means.
+@ ask: Explain the purpose of health screening, give one organised and one opportunistic example, and discuss why some people do not take part and what nurses can do about it. (4 marks) || Purpose: find people at risk or with disease before symptoms; reduces the chance of developing or dying from it | Organised (National Screening Unit): antenatal, newborn metabolic (heel prick), newborn hearing, cervical, breast (45 to 69, two-yearly), bowel | Opportunistic: STI checks, prostate checks, blood pressure | False negative: has the condition but is told they don't; more dangerous than a false positive | Barriers: cost, distance and transport, not knowing what happens, resources only in English | Equity: mobile clinics, self-testing (home bowel kits, cervical self-swabs); nurse educates, assesses and supports
+@ say: Health screening
+
+Q: Four marks. Explain the purpose of health screening. Give one organised and one opportunistic example. Then discuss why some people don't take part, and what nurses can do about it.
+
+The purpose: screening identifies people who are at risk, or who already have a disease, before they have symptoms. Finding it early reduces the chance of developing the condition, or of dying from it.
+
+Organised programmes are funded and monitored by the National Screening Unit. There are six: antenatal, newborn metabolic, universal newborn hearing, cervical, breast and bowel. Newborn metabolic screening is a heel-prick blood test a few days after birth. Free breast screening is for women aged forty-five to sixty-nine, a mammogram every two years. Opportunistic screening isn't run by the unit: you offer it if the person is eligible, or they ask. Examples: S T I checks, prostate checks for older men, and blood pressure.
+
+Now discuss, the part with the most marks. Not taking part is not always a choice. The barriers Lisa listed: cost, distance and transport, not knowing what will happen, and resources only in English. What nurses do: take screening to people, with mobile clinics, and use self-testing, like home bowel kits and cervical self-swabs. And remember the nurse's role isn't just doing the test. We educate, we assess, and we support.
+
+One fact for the multi-choice, from her sample question. A false negative means the disease is present but not detected. That's more dangerous than a false positive, because the person who has the condition is told they don't.
+
+{recap} Screening finds risk or disease before symptoms, to reduce illness and death. Organised, by the National Screening Unit: antenatal, newborn heel prick, hearing, cervical, breast from forty-five to sixty-nine every two years, bowel. Opportunistic: S T I, prostate, blood pressure. Barriers: cost, transport, fear of the unknown, English-only resources. Fixes: mobile clinics, self-testing. False negative: has it, told they don't.
+
+# Primary health care and health promotion
+@ why: "Principles of Primary Health Care" and "Theory of Health Promotion" are both Exam Content themes. Lisa taught the five principles and the health promotion continuum and quizzed them on 27 Oct. No lecturer quiz in the bank asks either, so the short answer is the likely place.
+@ ask: Identify the five principles of primary health care and describe how a nurse could apply each one in a community setting. (4 marks) || Accessibility: physical access, cost, transport, digital access, appointment times | Community participation: meet the community, find its needs, let people shape services (whānau shaping health plans) | Health promotion: education, nutrition, pamphlets, conversations, campaigns | Appropriate technology: telehealth, online consults | Intersectoral collaboration: working beyond health, with housing, education, transport, government | Continuum: health education, screening, community action, social marketing, influencing policy
+@ say: Primary health care
+
+Q: Four marks. Identify the five principles of primary health care, and describe how a nurse could apply each one in a community setting.
+
+Primary health care is people-centred, from birth to the end of life, and holistic: physical, mental and social. Its five principles, each with what it looks like in practice.
+
+One, accessibility. Care must reach everyone, whatever their race, faith or income. In practice: physical access, cost, transport, digital access, and appointment times that suit people.
+
+Two, community participation. Go and meet the community, find out what it needs, and let people shape the services. Lisa's quiz answer for this one: whānau helping to shape health plans and services.
+
+Three, health promotion. Helping people understand what drives their health and build the skills to improve it: education, nutrition advice, pamphlets, conversations and campaigns.
+
+Four, appropriate technology. Technology that's sound, fits local needs and is acceptable to the people using it, like telehealth and online consults for a rural community.
+
+Five, intersectoral collaboration. Health can't do it alone, so nurses work with other sectors: housing, education, transport and government agencies, not just doctors.
+
+If the question asks about health promotion instead, Lisa's continuum runs in five steps: health education, using teach-back; health screening, organised and opportunistic; community action, starting with a community needs assessment; social marketing, getting the word out; and influencing policy, locally by keeping practice in line with the evidence, and more widely by advocating on things like housing.
+
+{recap} Five principles of primary health care: accessibility, community participation, health promotion, appropriate technology, intersectoral collaboration. Health promotion continuum: education, screening, community action, social marketing, influencing policy.
+
+# The 2023 Health Strategy
+@ why: "2023 Health Strategy" is an Exam Content theme and was on Lisa's revision list. The deck's own learning outcomes say identify and describe the two goals and the six priorities, which is exactly how a short answer would be worded. The lecturers' Practice Quizzes ask the Act it sits under.
+@ ask: Identify the two long-term goals of the New Zealand Health Strategy 2023 and describe how one of its priority areas applies to nursing practice. (4 marks) || Vision: pae ora, healthy futures; under the Pae Ora (Healthy Futures) Act 2022 | Goal 1: achieve health equity, especially for Māori, Pacific, disabled people and others with poorer outcomes | Goal 2: improve health outcomes for all, so everyone lives longer, healthier, more independent lives | Six priorities: voice at the heart of the system; flexible, appropriate care; valuing our workforce; a learning culture; a resilient and sustainable system; partnerships for health and wellbeing | Example: voice at the heart, so the person and whānau shape the plan
+@ say: The Health Strategy
+
+Q: Four marks. Identify the two long-term goals of the New Zealand Health Strategy 2023, and describe how one of its priority areas applies to nursing practice.
+
+The strategy is published under the Pae Ora, Healthy Futures, Act 2022, and its vision is pae ora, healthy futures: a future where people from every community can live well, and where communities and environments support health. It sets a direction for the next five to ten years.
+
+Its two long-term goals. One: to achieve health equity, especially for Māori, Pacific peoples, disabled people and other groups who currently have poorer outcomes. Two: to improve health outcomes for all New Zealanders, so everyone can live longer, healthier and more independent lives.
+
+Its six priority areas, in order. Voice at the heart of the system. Flexible, appropriate care. Valuing our workforce. A learning culture. A resilient and sustainable system. And partnerships for health and wellbeing.
+
+Now describe one. Take the first, voice at the heart of the system: recognising and responding to the voices of people and communities throughout the health system, honouring Te Tiriti, and adapting to diverse and under-served communities. In nursing practice that means the person and their whānau shape their own care plan. You ask what matters to them, you involve them in decisions, and you advocate when their voice isn't heard. Or take the second, flexible, appropriate care: preventing illness and delivering care closer to home, with access for the most under-served. For a nurse, that's home visits, telehealth, and removing barriers to access.
+
+{recap} Health Strategy 2023, under the Pae Ora, Healthy Futures, Act 2022. Vision: pae ora. Two goals: health equity, especially for Māori, Pacific and disabled people; and better outcomes for all. Six priorities: voice at the heart; flexible, appropriate care; valuing our workforce; a learning culture; a resilient and sustainable system; partnerships for health and wellbeing.
+
+# Te Tiriti o Waitangi and cultural safety
+@ why: Lisa ended her 27 Oct list on the articles of Te Tiriti and gave them two slides. "Cultural awareness and sensitivity" sits on the Exam Content page beside therapeutic use of self, and the Population Health deck says outright never to use the three Ps.
+@ ask: Identify the three articles of Te Tiriti o Waitangi and explain how one of the five principles guides a nurse's practice with Māori patients and whānau. (4 marks) || Article 1, kāwanatanga: governance; Māori in decision-making | Article 2, tino rangatiratanga: Māori autonomy; control over knowledge, language and customs as taonga | Article 3, ōritetanga: equity for Māori | Five principles (Waitangi Tribunal 2019): tino rangatiratanga, mana taurite (equity), whakamarumarutia (active protection), kōwhiringa (options), pātuitanga (partnership) | The three Ps (1986) are outdated | Cultural safety, kawa whakaruruhau: the patient decides whether care is safe
+@ say: Te Tiriti
+
+Q: Four marks. Identify the three articles of Te Tiriti o Waitangi, and explain how one of the five principles guides a nurse's practice with Māori patients and whānau.
+
+The articles, from Lisa's slide. Article one, kāwanatanga: governance. Māori are involved in decision-making, at a personal level and at a policy level. Article two, tino rangatiratanga: self-determination, Māori autonomy. Māori control over their knowledge, language and customs, recognised as taonga. Article three, ōritetanga: equity for Māori, the same access and opportunity as non-Māori, and equal health outcomes.
+
+The principles. The three Ps, partnership, participation and protection, came from 1986 and are now considered outdated. In 2019 the Waitangi Tribunal said they oversimplified the treaty. Use the five principles instead. Tino rangatiratanga, self-determination. Mana taurite, equity. Whakamarumarutia, active protection. Kōwhiringa, options. And pātuitanga, partnership.
+
+Now explain one. Take kōwhiringa, options. It means Māori have real choices, including kaupapa Māori services and culturally appropriate care. In practice the nurse tells the patient and whānau what's available, including a kaupapa Māori provider or a Māori health team, supports them to involve whānau and tikanga in their care, and respects the choice they make. Or take mana taurite, equity: the nurse notices who gets poorer outcomes and why, then removes the barrier, like arranging transport or an earlier appointment.
+
+And cultural safety, kawa whakaruruhau. Cultural awareness is knowing differences exist. Sensitivity is respecting them. Safety goes further: it starts with the nurse reflecting on their own culture and bias, and it's the patient, not the nurse, who decides whether the care felt safe.
+
+{recap} Te Tiriti articles: one, kāwanatanga, governance; two, tino rangatiratanga, autonomy and taonga; three, ōritetanga, equity. Five principles: tino rangatiratanga, mana taurite, whakamarumarutia, kōwhiringa, pātuitanga. The three Ps are outdated. Cultural safety: the patient decides if care is safe.
+
+# Standards of competence, scope and roles of nurses
+@ why: "Standards of Competence and BN2 student nurse scope of practice", "Roles of nurses", "Nursing informatics" and "Continuum of care" are four Exam Content themes. Lisa listed competencies and roles on 27 Oct, and the lecturers' Practice Quizzes ask scope twice: both answers are decline.
+@ ask: Identify the six pou of the Registered Nurse Standards of Competence and explain the scope of practice of a BN2 student nurse, with an example. (4 marks) || Six pou: Māori health; cultural safety (kawa whakaruruhau); whanaungatanga and communication; pūkengatanga and evidence-informed practice; manaakitanga and people-centred care; rangatiratanga and leadership | Each pou has descriptors, examples of evidence of competence | Student scope: work under an RN's direction and supervision, only what you've been taught and assessed as competent in | Decline a doctor's telephone order; decline a preceptor's request to give an overdue paracetamol | Roles: aged care, primary and community, acute, mental health, informatics; continuum of care
+@ say: Competence and scope
+
+Q: Four marks. Identify the six pou of the Registered Nurse Standards of Competence, and explain the scope of practice of a B N 2 student nurse, with an example.
+
+The six pou. One, Māori health. Two, cultural safety, kawa whakaruruhau. Three, whanaungatanga and communication. Four, pūkengatanga and evidence-informed nursing practice. Five, manaakitanga and people-centred care. Six, rangatiratanga and leadership. Each pou comes with descriptors: examples of what competence looks like in practice. The words in them: whanaungatanga is building relationships, manaakitanga is caring and respect, rangatiratanga is leadership and advocacy, and pūkengatanga is skill and expertise.
+
+Student scope. As a second-year student you are not a registered nurse. You work under the direction and supervision of an R N, and you only do what you've been taught and assessed as competent in. Anything outside that, you decline and tell the R N. Both of the lecturers' practice quiz questions on scope have the same answer. A doctor gives you a telephone order: decline, it's not in your scope, and hand it to the R N. Your preceptor asks you to go and give an overdue paracetamol on your own: decline, for the same reason. Lisa's multi-choice tip fits here too: answer as a student nurse, so tell the R N can be the right answer.
+
+If the question is on roles of nurses instead: nurses work across aged care, with multimorbidity, independence and palliative care; primary and community care, across the whole lifespan, with a focus on prevention; acute care, with rapid assessment; mental health, with recovery and resilience; and informatics, using digital systems and data to support care. Continuum of care means services that cover the whole journey, from prevention to acute care, rehabilitation and community care, without gaps.
+
+{recap} Six pou: Māori health; cultural safety; whanaungatanga and communication; pūkengatanga and evidence; manaakitanga and people-centred care; rangatiratanga and leadership. Student scope: under an R N's supervision, only what you've been taught and assessed. Decline a telephone order. Decline giving meds alone.
+
+# Therapeutic use of self and emotional intelligence
+@ why: Lisa's worked practice question on 27 Oct was emotional intelligence and therapeutic communication, with a model answer on her slide. She said it was made up and not in the exam, but therapeutic use of self is an Exam Content theme and was on her revision list, so the same topic in other words is likely.
+@ ask: Explain the role of emotional intelligence and discuss its impact on therapeutic communication in nursing practice. (4 marks) || EI: recognising, understanding and managing your own emotions while responding appropriately to others | Hierarchy: self-awareness, self-regulation, motivation, empathy, social skills | Therapeutic use of self: personal insight, presence and authenticity to build trust; acknowledge your own bias | Rests on competent communication and emotional intelligence | Impact: empathy and trust, better understanding of needs, patient-centred care, manages challenging interactions, less conflict, better outcomes
+@ say: Therapeutic use of self
+
+Q: Four marks. Explain the role of emotional intelligence, and discuss its impact on therapeutic communication in nursing practice.
+
+This is Lisa's own practice question, so here's her model answer, close to word for word, with the structure she taught.
+
+Explain first. Emotional intelligence is the ability to recognise, understand and manage your own emotions while responding appropriately to others. It lets nurses respond compassionately and build trust. Its key components, in her order: self-awareness, self-regulation, motivation, empathy and social skills. Self-regulation means keeping your natural reaction concealed so the patient feels safe. Motivation is internal, not about rewards. Empathy is feeling with the person, not just recognising what they feel. Social skills are things like conflict management and collaboration.
+
+Now discuss, the bigger part. In nursing, emotional intelligence supports therapeutic communication by enabling empathy, self-awareness and emotional regulation. Its impact is significant. It improves the nurse-patient relationship, helps the nurse understand what the patient needs, and supports patient-centred care. It also helps manage challenging interactions and reduces conflict. Overall, it strengthens communication, leading to better patient outcomes and more effective therapeutic relationships.
+
+How it links to therapeutic use of self, in case that's the wording. Therapeutic use of self means using your personal insight, presence and authenticity to build trust, including acknowledging your own bias. It rests on two things, and the lecturers' practice quiz asks exactly this: competent communication, and emotional intelligence.
+
+{recap} Emotional intelligence: recognise, understand and manage your own emotions while responding to others. Self-awareness, self-regulation, motivation, empathy, social skills. Impact: empathy, trust, understanding needs, patient-centred care, less conflict, better outcomes. Therapeutic use of self rests on competent communication and emotional intelligence.
+
+# Family-centred care
+@ why: "Family centered care" is an Exam Content theme and was on Lisa's 27 Oct list. Her deck gives a definition and three principles; the lecturers' Practice Quiz asks a principle (partnership).
+@ ask: Define family in the context of family-centred care and describe the three principles that make up a partnership with the person and their family. (4 marks) || Family: whoever the person identifies as family, with or without biological or legal ties; blended, single-parent, shared care, same-sex, extended | Relationship: genuine and mutually respectful | Participation and involvement: respect the autonomy of the person and family | Tailoring care: to their needs, strengths, limits and context | Core: empowerment and advocacy, a Te Tiriti obligation
+@ say: Family-centred care
+
+Q: Four marks. Define family in the context of family-centred care, and describe the three principles that make up a partnership with the person and their family.
+
+Family is whoever the person identifies as family, with or without biological or legal ties. Structures vary: blended families, single parents, shared care, same-sex parents, and extended whānau. For some people it includes long-term friends and even pets. So the first move is always to ask the person who their family is.
+
+The three principles that make up partnership, from Lisa's deck.
+
+One, relationship. A genuine and mutually respectful relationship between the nurse, the person and the family.
+
+Two, participation and involvement. Respecting the autonomy of the person and the family, and involving them in care and decisions as much as they want to be.
+
+Three, tailoring care. Care fitted to their needs, strengths, limits and context, not a standard package.
+
+At the core are empowerment and advocacy, which she linked to Te Tiriti. In practice: involve them, keep communicating, find out what matters to them, and put services in place. In the multi-choice, the principle the practice quiz asks for is partnership, and what nursing now centres on is the client.
+
+{recap} Family: whoever the person says is family, with or without biological or legal ties. Three principles of partnership: relationship, genuine and respectful; participation and involvement, respecting autonomy; tailoring care to needs, strengths, limits and context. Core: empowerment and advocacy.
+
+# Pain assessment
+@ why: "Pain assessment" is named in the Exam Content assessment line, the class voted for it, and it was the first topic on Lisa's slides that she ran out of time to talk through on 27 Oct. The lecturers' Practice Quizzes ask the first thing to do for pain: assess it with a scale.
+@ ask: Describe the difference between acute and chronic pain and explain how a nurse would assess a patient's pain. (4 marks) || Pain: an unpleasant sensory and emotional experience linked to actual or potential tissue damage; what the person says it is | Acute: rapid onset, under 6 months, resolves as it heals | Chronic: over 6 months, non-life-threatening cause, sometimes unknown; can lead to depression and anxiety | Nociceptive (somatic: localised, sharp; visceral: diffuse, crampy) vs neuropathic (shooting, burning) | OLDCARTS: onset, location, duration, characteristics, aggravating, relieving, treatment, severity | Scales: 0 to 10 numerical, at rest and on movement; Wong-Baker faces for children, non-verbal or language barrier | Assess every time you check on the patient
+@ say: Pain assessment
+
+Q: Four marks. Describe the difference between acute and chronic pain, and explain how a nurse would assess a patient's pain.
+
+The definition first. Pain is an unpleasant sensory and emotional experience associated with actual or potential tissue damage. And the line to remember: pain is what the person says it is.
+
+Acute pain has a rapid onset, lasts less than six months, and resolves as the area heals, like pain after surgery. Chronic pain lasts more than six months, has a cause that isn't life-threatening and is sometimes unknown, like arthritis or back pain, and it can lead to depression and anxiety.
+
+The types, for the multi-choice. Nociceptive pain comes from tissue damage. Somatic pain is localised: sharp, aching, throbbing. Visceral pain is diffuse or referred: crampy, squeezing, colicky. Neuropathic pain comes from a lesion or disease of the nervous system: shooting, burning, numbness, or pain from a light touch.
+
+Now how to assess. Use OLD CARTS. Onset: when did it start? Location: where is it? Duration: how long does it last? Characteristics: what does it feel like? Aggravating factors: what makes it worse? Relieving factors: what makes it better? Treatment: what have you tried? Severity: how bad is it? Use a scale: zero to ten for most adults, asked at rest and on movement. For children, people who can't speak, or a language barrier, use the Wong-Baker faces scale. Ask the patient what level of pain is acceptable to them, meaning able to do their daily activities. And when do you assess? Every time you check on your patient. The first thing to do when someone complains of pain is assess it with a pain scale.
+
+{recap} Pain is what the person says it is. Acute: rapid onset, under six months, resolves with healing. Chronic: over six months, can bring depression and anxiety. Assess with OLD CARTS: onset, location, duration, characteristics, aggravating, relieving, treatment, severity. Zero-to-ten scale at rest and on movement; Wong-Baker faces for children or a language barrier.
+
+# Discharge planning
+@ why: "Discharge planning" is an Exam Content theme, the class voted for it, and it is on Lisa's slides. No lecturer question exists, and the lecture's Cyril Lear scenario is the closest thing in the course to a ready-made short answer.
+@ ask: Explain why discharge planning starts on admission and describe what a nurse would include in a patient's discharge plan. (4 marks) || Starts at admission: an interdisciplinary process for continuity of care and a smooth transition | Reduces readmissions, length of stay and community follow-up needed | Nurse coordinates; often the last point of contact | Process: assess, plan and prepare, implement, evaluate | Include: mode of discharge, self-care (medicines, diet, wounds, pain), equipment settings, follow-up appointments, permitted activities (lifting, driving), warning signs and what to do, health promotion | Patient and family understand and agree
+@ say: Discharge planning
+
+Q: Four marks. Explain why discharge planning starts on admission, and describe what a nurse would include in a patient's discharge plan.
+
+Explain first. Discharge planning starts on admission because it's an interdisciplinary process that takes time to coordinate, and its aim is continuity of care and a smooth transition home or to the next service. Starting early reduces readmissions, reduces the length of stay, and reduces the need for community follow-up. The nurse coordinates it, and is often the last point of contact before the patient leaves. The process runs like the nursing process: assess, plan and prepare, implement, evaluate.
+
+Now describe what goes in. From Lisa's slide. The mode of discharge: how they're getting home. Self-care: their medicines, diet, wound care and pain management. Equipment, and how it's set up. Follow-up appointments. Permitted activities, like lifting and driving. Warning signs, and what to do if they happen. And health promotion.
+
+And the step people forget: make sure the patient and their family understand the plan, agree with it, and have everything they need before they go. Teach-back is how you check that.
+
+{recap} Discharge planning starts at admission: interdisciplinary, for continuity and a smooth transition; it cuts readmissions and length of stay. Nurse coordinates. Assess, plan, implement, evaluate. Include: how they get home, medicines, diet, wounds, pain, equipment, follow-up, lifting and driving, warning signs, health promotion. Check they understand and agree.
